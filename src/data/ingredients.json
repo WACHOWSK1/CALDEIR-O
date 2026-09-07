@@ -5,7 +5,11 @@
     "normName": "essencia de sombra",
     "category": "Essência/Arcano",
     "rarity": "incomum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Aslothia (Cemitérios e Terras Necróticas). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Aslothia (Cemitérios e Terras Necróticas)",
+    "isEdible": false
   },
   {
     "id": "ing_2",
@@ -13,7 +17,11 @@
     "normName": "cristal mental",
     "category": "Mineral/Cristal",
     "rarity": "incomum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Elemento de alta densidade mística originário de Zakharov (Colinas & Minas de Yuvalin). Pulsando com ressonância arcana primordial ligada aos planos divinos de Arton, é cobiçado por arcanistas e artífices para alimentar elixires de grande poder.",
+    "resourceType": "Fonte",
+    "originRegion": "Zakharov (Colinas & Minas de Yuvalin)",
+    "isEdible": false
   },
   {
     "id": "ing_3",
@@ -21,7 +29,11 @@
     "normName": "essencia de teatro elfico",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Pondsmânia (Bosques Feéricos). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Pondsmânia (Bosques Feéricos)",
+    "isEdible": false
   },
   {
     "id": "ing_4",
@@ -29,7 +41,11 @@
     "normName": "sangue de salamandra",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Fluido biológico concentrado colhido de espécimes perigosos em Sckharshantallas (Domínios de Fogo). Extremamente instável fora de catalisadores, é a base para óleos cáusticos, peçonhas e bálsamos de combate de Tormenta 20.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Sckharshantallas (Domínios de Fogo)",
+    "isEdible": false
   },
   {
     "id": "ing_5",
@@ -37,7 +53,11 @@
     "normName": "alga do sopro",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Mar de Dragões & Arquipélago de Khubar. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": false
   },
   {
     "id": "ing_6",
@@ -45,7 +65,11 @@
     "normName": "po de sombra",
     "category": "Essência/Arcano",
     "rarity": "incomum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Aslothia (Cemitérios e Terras Necróticas). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Aslothia (Cemitérios e Terras Necróticas)",
+    "isEdible": false
   },
   {
     "id": "ing_7",
@@ -53,7 +77,11 @@
     "normName": "sangue de quimera",
     "category": "Parte de Criatura",
     "rarity": "lendário",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Fluido biológico concentrado colhido de espécimes perigosos em Sanguinárias (Gargantas Brutais de Megalokk). Extremamente instável fora de catalisadores, é a base para óleos cáusticos, peçonhas e bálsamos de combate de Tormenta 20.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Sanguinárias (Gargantas Brutais de Megalokk)",
+    "isEdible": false
   },
   {
     "id": "ing_8",
@@ -61,7 +89,11 @@
     "normName": "cristal de ressonancia",
     "category": "Mineral/Cristal",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Elemento de alta densidade mística originário de Deheon (Planícies e Arredores de Valkaria). Pulsando com ressonância arcana primordial ligada aos planos divinos de Arton, é cobiçado por arcanistas e artífices para alimentar elixires de grande poder.",
+    "resourceType": "Fonte",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_9",
@@ -69,7 +101,12 @@
     "normName": "flor-da-vida",
     "category": "Flor",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Flor de pétalas delicadas e vibrantes que brota sob as bênçãos das clareiras de Floresta de Greenaria & Ermos de Allihanna. Exala um frescor suave de vitalidade perene.",
+    "resourceType": "Mantimento",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Recupera 1d4 PV imediatamente e alivia enjoo."
   },
   {
     "id": "ing_10",
@@ -77,7 +114,11 @@
     "normName": "essencia de ieti",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Montanhas Uivantes (Região Glacial). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Montanhas Uivantes (Região Glacial)",
+    "isEdible": false
   },
   {
     "id": "ing_11",
@@ -85,7 +126,11 @@
     "normName": "gema de agua encantada",
     "category": "Mineral/Cristal",
     "rarity": "incomum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Elemento de alta densidade mística originário de Pondsmânia (Bosques Feéricos). Pulsando com ressonância arcana primordial ligada aos planos divinos de Arton, é cobiçado por arcanistas e artífices para alimentar elixires de grande poder.",
+    "resourceType": "Fonte",
+    "originRegion": "Pondsmânia (Bosques Feéricos)",
+    "isEdible": false
   },
   {
     "id": "ing_12",
@@ -93,7 +138,11 @@
     "normName": "sal da profundeza",
     "category": "Mineral/Cristal",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Mineral cristalizado sob alta pressão tectônica ou mágica em Mar de Dragões & Arquipélago de Khubar. Atua como âncora estabilizadora para infusões arcanas, amplificando a pureza e a duração de preparados transmutatórios.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": false
   },
   {
     "id": "ing_13",
@@ -101,7 +150,11 @@
     "normName": "pena de coruja veloz",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_14",
@@ -109,7 +162,11 @@
     "normName": "seda ilusoria",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Pondsmânia (Bosques Feéricos). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Pondsmânia (Bosques Feéricos)",
+    "isEdible": false
   },
   {
     "id": "ing_15",
@@ -117,7 +174,11 @@
     "normName": "lingua de poliglota magico",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_16",
@@ -125,7 +186,11 @@
     "normName": "runa da compreensao",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Elemento de alta densidade mística originário de Deheon (Planícies e Arredores de Valkaria). Pulsando com ressonância arcana primordial ligada aos planos divinos de Arton, é cobiçado por arcanistas e artífices para alimentar elixires de grande poder.",
+    "resourceType": "Fonte",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_17",
@@ -133,7 +198,11 @@
     "normName": "essencia de memoria",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_18",
@@ -141,7 +210,11 @@
     "normName": "poeira de raio",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_19",
@@ -149,7 +222,11 @@
     "normName": "luz de sol engarrafada",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Estrutura biológica resistente coletada de criaturas ou ruínas antigas em Deserto da Perdição. Conforme catalogado no Bazar Monstruoso, possui dureza ou propriedades condutoras ideais para amálgamas alquímicos e reforços de equipamento.",
+    "resourceType": "Matéria-Prima",
+    "originRegion": "Deserto da Perdição",
+    "isEdible": false
   },
   {
     "id": "ing_20",
@@ -157,7 +234,11 @@
     "normName": "essencia de camaleao",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_21",
@@ -165,7 +246,11 @@
     "normName": "nevoa destilada",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_22",
@@ -173,7 +258,11 @@
     "normName": "oleo de lotus azul",
     "category": "Flor",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_23",
@@ -181,7 +270,11 @@
     "normName": "cinzas noturnas",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Aslothia (Cemitérios e Terras Necróticas). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Aslothia (Cemitérios e Terras Necróticas)",
+    "isEdible": false
   },
   {
     "id": "ing_24",
@@ -189,7 +282,12 @@
     "normName": "cha de serenidade",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Mistura aromática de folhas e brotos selecionados em Pondsmânia (Bosques Feéricos). Quando infusionada em água fervente na Cozinha Mágica, libera vapores reconfortantes que aplacam a ansiedade, clareiam o raciocínio e renovam o espírito.",
+    "resourceType": "Mantimento",
+    "originRegion": "Pondsmânia (Bosques Feéricos)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em testes de Vontade contra medo e encantamento por 2 horas."
   },
   {
     "id": "ing_25",
@@ -197,7 +295,11 @@
     "normName": "essencia de lua cheia",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Elemento de alta densidade mística originário de Deheon (Planícies e Arredores de Valkaria). Pulsando com ressonância arcana primordial ligada aos planos divinos de Arton, é cobiçado por arcanistas e artífices para alimentar elixires de grande poder.",
+    "resourceType": "Fonte",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_26",
@@ -205,7 +307,11 @@
     "normName": "fragmento glacial",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Montanhas Uivantes (Região Glacial). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Montanhas Uivantes (Região Glacial)",
+    "isEdible": false
   },
   {
     "id": "ing_27",
@@ -213,7 +319,11 @@
     "normName": "relogio de pulso arcano",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Estrutura biológica resistente coletada de criaturas ou ruínas antigas em Deheon (Planícies e Arredores de Valkaria). Conforme catalogado no Bazar Monstruoso, possui dureza ou propriedades condutoras ideais para amálgamas alquímicos e reforços de equipamento.",
+    "resourceType": "Matéria-Prima",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_28",
@@ -221,7 +331,11 @@
     "normName": "espinho de relampago",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_29",
@@ -229,7 +343,11 @@
     "normName": "po de disfarce",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_30",
@@ -237,7 +355,12 @@
     "normName": "pimenta ignea",
     "category": "Tempero/Fruta",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Condimento pungente e termogênico nativo de Sckharshantallas (Domínios de Fogo). Bastante apreciado pela culinária de aventureiros descrita em Heróis de Arton, elevando o calor do sangue e a velocidade de reação quando cozido em refeições de campanha.",
+    "resourceType": "Mantimento",
+    "originRegion": "Sckharshantallas (Domínios de Fogo)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em rolagens de dano corpo a corpo no próximo combate (até o fim da cena)."
   },
   {
     "id": "ing_31",
@@ -245,7 +368,11 @@
     "normName": "cinzas de vulcao",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Sckharshantallas (Domínios de Fogo). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Sckharshantallas (Domínios de Fogo)",
+    "isEdible": false
   },
   {
     "id": "ing_32",
@@ -253,7 +380,11 @@
     "normName": "lingua de morcego",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_33",
@@ -261,7 +392,11 @@
     "normName": "bigode de felino noturno",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_34",
@@ -269,7 +404,11 @@
     "normName": "essencia de nevoa",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_35",
@@ -277,7 +416,11 @@
     "normName": "vapor de elemental do ar",
     "category": "Essência/Arcano",
     "rarity": "raro",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_36",
@@ -285,7 +428,12 @@
     "normName": "raiz-nevoa",
     "category": "Erva/Raiz",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Floresta de Greenaria & Ermos de Allihanna. Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em testes de resistência contra frio ou clima adverso por 4 horas."
   },
   {
     "id": "ing_37",
@@ -293,7 +441,11 @@
     "normName": "petala de flor eterea",
     "category": "Flor",
     "rarity": "raro",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Floresta de Greenaria & Ermos de Allihanna. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": false
   },
   {
     "id": "ing_38",
@@ -301,7 +453,11 @@
     "normName": "lingua de minotauro",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_39",
@@ -309,7 +465,11 @@
     "normName": "pocao de raiva",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_40",
@@ -317,7 +477,11 @@
     "normName": "chifre moido",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Estrutura biológica resistente coletada de criaturas ou ruínas antigas em Deheon (Planícies e Arredores de Valkaria). Conforme catalogado no Bazar Monstruoso, possui dureza ou propriedades condutoras ideais para amálgamas alquímicos e reforços de equipamento.",
+    "resourceType": "Matéria-Prima",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_41",
@@ -325,7 +489,12 @@
     "normName": "orvalho de aurora",
     "category": "Vegetal/Hortaliça",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_42",
@@ -333,7 +502,11 @@
     "normName": "medula de lobo-dourado",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_43",
@@ -341,7 +514,12 @@
     "normName": "nectar de flor celeste",
     "category": "Flor",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Néctar puro recolhido por colmeias selvagens nas clareiras de Pondsmânia (Bosques Feéricos). Concentra a doçura vital da natureza, alimentando instantaneamente e restaurando fagulhas de energia mágica a quem o consome.",
+    "resourceType": "Mantimento",
+    "originRegion": "Pondsmânia (Bosques Feéricos)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto."
   },
   {
     "id": "ing_44",
@@ -349,7 +527,11 @@
     "normName": "asa de passaro elemental",
     "category": "Parte de Criatura",
     "rarity": "raro",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_45",
@@ -357,7 +539,11 @@
     "normName": "vento engarrafado",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Estrutura biológica resistente coletada de criaturas ou ruínas antigas em Namalkah (Pradarias dos Centauros). Conforme catalogado no Bazar Monstruoso, possui dureza ou propriedades condutoras ideais para amálgamas alquímicos e reforços de equipamento.",
+    "resourceType": "Matéria-Prima",
+    "originRegion": "Namalkah (Pradarias dos Centauros)",
+    "isEdible": false
   },
   {
     "id": "ing_46",
@@ -365,7 +551,11 @@
     "normName": "saliva de silfideo",
     "category": "Mineral/Cristal",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Mineral cristalizado sob alta pressão tectônica ou mágica em Deheon (Planícies e Arredores de Valkaria). Atua como âncora estabilizadora para infusões arcanas, amplificando a pureza e a duração de preparados transmutatórios.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_47",
@@ -373,7 +563,11 @@
     "normName": "coracao de gnoll",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_48",
@@ -381,7 +575,11 @@
     "normName": "essencia de bravura",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_49",
@@ -389,7 +587,11 @@
     "normName": "lagrima de bronze",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_50",
@@ -397,7 +599,11 @@
     "normName": "po de granito magico",
     "category": "Mineral/Cristal",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_51",
@@ -405,7 +611,11 @@
     "normName": "lagrima de elemental da terra",
     "category": "Reagente Geral",
     "rarity": "raro",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_52",
@@ -413,7 +623,11 @@
     "normName": "seiva endurecida",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_53",
@@ -421,7 +635,11 @@
     "normName": "essencia de alma errante",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Elemento de alta densidade mística originário de Deheon (Planícies e Arredores de Valkaria). Pulsando com ressonância arcana primordial ligada aos planos divinos de Arton, é cobiçado por arcanistas e artífices para alimentar elixires de grande poder.",
+    "resourceType": "Fonte",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_54",
@@ -429,7 +647,11 @@
     "normName": "essencia de carvao vivo",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_55",
@@ -437,7 +659,11 @@
     "normName": "tinta de prata liquida",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Zakharov (Colinas & Minas de Yuvalin). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Zakharov (Colinas & Minas de Yuvalin)",
+    "isEdible": false
   },
   {
     "id": "ing_56",
@@ -445,7 +671,11 @@
     "normName": "oleo de serpente polar",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Montanhas Uivantes (Região Glacial). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Montanhas Uivantes (Região Glacial)",
+    "isEdible": false
   },
   {
     "id": "ing_57",
@@ -453,7 +683,11 @@
     "normName": "seiva de planta-grude",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_58",
@@ -461,7 +695,11 @@
     "normName": "ar de passagem secreta",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_59",
@@ -469,7 +707,11 @@
     "normName": "suor de duelista",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_60",
@@ -477,7 +719,11 @@
     "normName": "poeira de fada",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Pondsmânia (Bosques Feéricos). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Pondsmânia (Bosques Feéricos)",
+    "isEdible": false
   },
   {
     "id": "ing_61",
@@ -485,7 +731,11 @@
     "normName": "olho de falcao",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_62",
@@ -493,7 +743,11 @@
     "normName": "pluma flutuante",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_63",
@@ -501,7 +755,11 @@
     "normName": "fio de contencao",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_64",
@@ -509,7 +767,11 @@
     "normName": "tinta de aco",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_65",
@@ -517,7 +779,11 @@
     "normName": "tinta de escarlate",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_66",
@@ -525,7 +791,12 @@
     "normName": "farinha de trigo dourado",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Grãos moídos finamente a partir de espigas robustas colhidas nos vastos campos agrícolas de Sambúrdia (O Celeiro de Arton).",
+    "resourceType": "Mantimento",
+    "originRegion": "Sambúrdia (O Celeiro de Arton)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_67",
@@ -533,7 +804,12 @@
     "normName": "cenoura selvagem",
     "category": "Vegetal/Hortaliça",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Hortaliça robusta cultivada no solo fértil e abençoado de Sambúrdia (O Celeiro de Arton). Repleta de nutrientes rústicos que alimentam com vigor, servindo de base para caldos que aguçam a prontidão e a resistência física.",
+    "resourceType": "Mantimento",
+    "originRegion": "Sambúrdia (O Celeiro de Arton)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1d4 em um teste de Atletismo ou Sobrevivência realizado hoje."
   },
   {
     "id": "ing_68",
@@ -541,7 +817,12 @@
     "normName": "abobora-do-vento",
     "category": "Vegetal/Hortaliça",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Hortaliça robusta cultivada no solo fértil e abençoado de Sambúrdia (O Celeiro de Arton). Repleta de nutrientes rústicos que alimentam com vigor, servindo de base para caldos que aguçam a prontidão e a resistência física.",
+    "resourceType": "Mantimento",
+    "originRegion": "Sambúrdia (O Celeiro de Arton)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1d4 em um teste de Atletismo ou Sobrevivência realizado hoje."
   },
   {
     "id": "ing_69",
@@ -549,7 +830,12 @@
     "normName": "raiz de batao",
     "category": "Erva/Raiz",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Vegetal carnudo e rústico colhido sob solo fértil em Sambúrdia (O Celeiro de Arton). Casca firme e polpa suculenta repleta de seiva da terra artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Sambúrdia (O Celeiro de Arton)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1d4 em um teste de Atletismo ou Sobrevivência realizado hoje."
   },
   {
     "id": "ing_70",
@@ -557,7 +843,12 @@
     "normName": "ervas frescas",
     "category": "Erva/Raiz",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Sambúrdia (O Celeiro de Arton). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Sambúrdia (O Celeiro de Arton)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em testes de resistência contra frio ou clima adverso por 4 horas."
   },
   {
     "id": "ing_71",
@@ -565,7 +856,12 @@
     "normName": "cenoura dourada",
     "category": "Vegetal/Hortaliça",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Hortaliça robusta cultivada no solo fértil e abençoado de Sambúrdia (O Celeiro de Arton). Repleta de nutrientes rústicos que alimentam com vigor, servindo de base para caldos que aguçam a prontidão e a resistência física.",
+    "resourceType": "Mantimento",
+    "originRegion": "Sambúrdia (O Celeiro de Arton)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em testes de Percepção e Iniciativa por 1 hora."
   },
   {
     "id": "ing_72",
@@ -573,7 +869,11 @@
     "normName": "raiz-de-vigilante",
     "category": "Erva/Raiz",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Floresta de Greenaria & Ermos de Allihanna. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": false
   },
   {
     "id": "ing_73",
@@ -581,7 +881,11 @@
     "normName": "seiva de mutante",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_74",
@@ -589,7 +893,11 @@
     "normName": "baba de gosma protetora",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Fluido biológico concentrado colhido de espécimes perigosos em Deheon (Planícies e Arredores de Valkaria). Extremamente instável fora de catalisadores, é a base para óleos cáusticos, peçonhas e bálsamos de combate de Tormenta 20.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_75",
@@ -597,7 +905,11 @@
     "normName": "casca de casco-vivo",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Estrutura biológica resistente coletada de criaturas ou ruínas antigas em Deheon (Planícies e Arredores de Valkaria). Conforme catalogado no Bazar Monstruoso, possui dureza ou propriedades condutoras ideais para amálgamas alquímicos e reforços de equipamento.",
+    "resourceType": "Matéria-Prima",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_76",
@@ -605,7 +917,12 @@
     "normName": "mel selvagem",
     "category": "Tempero/Fruta",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Néctar puro recolhido por colmeias selvagens nas clareiras de Sambúrdia (O Celeiro de Arton). Concentra a doçura vital da natureza, alimentando instantaneamente e restaurando fagulhas de energia mágica a quem o consome.",
+    "resourceType": "Mantimento",
+    "originRegion": "Sambúrdia (O Celeiro de Arton)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto."
   },
   {
     "id": "ing_77",
@@ -613,7 +930,11 @@
     "normName": "cera de caracol blindado",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_78",
@@ -621,7 +942,11 @@
     "normName": "folha de reversa",
     "category": "Erva/Raiz",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Floresta de Greenaria & Ermos de Allihanna. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": false
   },
   {
     "id": "ing_79",
@@ -629,7 +954,12 @@
     "normName": "melodia encantada",
     "category": "Tempero/Fruta",
     "rarity": "incomum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Néctar puro recolhido por colmeias selvagens nas clareiras de Pondsmânia (Bosques Feéricos). Concentra a doçura vital da natureza, alimentando instantaneamente e restaurando fagulhas de energia mágica a quem o consome.",
+    "resourceType": "Mantimento",
+    "originRegion": "Pondsmânia (Bosques Feéricos)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto."
   },
   {
     "id": "ing_80",
@@ -637,7 +967,11 @@
     "normName": "musgo sagrado",
     "category": "Erva/Raiz",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Floresta de Greenaria & Ermos de Allihanna. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": false
   },
   {
     "id": "ing_81",
@@ -645,7 +979,12 @@
     "normName": "erva-do-crepusculo",
     "category": "Erva/Raiz",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_82",
@@ -653,7 +992,12 @@
     "normName": "canela dos ceus",
     "category": "Tempero/Fruta",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Condimento pungente e termogênico nativo de Deheon (Planícies e Arredores de Valkaria). Bastante apreciado pela culinária de aventureiros descrita em Heróis de Arton, elevando o calor do sangue e a velocidade de reação quando cozido em refeições de campanha.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em iniciativa no próximo combate."
   },
   {
     "id": "ing_83",
@@ -661,7 +1005,12 @@
     "normName": "cogumelo-vento",
     "category": "Fungo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Néctar puro recolhido por colmeias selvagens nas clareiras de Namalkah (Pradarias dos Centauros). Concentra a doçura vital da natureza, alimentando instantaneamente e restaurando fagulhas de energia mágica a quem o consome.",
+    "resourceType": "Mantimento",
+    "originRegion": "Namalkah (Pradarias dos Centauros)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto."
   },
   {
     "id": "ing_84",
@@ -669,7 +1018,11 @@
     "normName": "olhos de mimetizador",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_85",
@@ -677,7 +1030,11 @@
     "normName": "po de mimetismo",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_86",
@@ -685,7 +1042,11 @@
     "normName": "lagrima de sombra",
     "category": "Reagente Geral",
     "rarity": "incomum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Aslothia (Cemitérios e Terras Necróticas). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Aslothia (Cemitérios e Terras Necróticas)",
+    "isEdible": false
   },
   {
     "id": "ing_87",
@@ -693,7 +1054,11 @@
     "normName": "fumaca solidificada",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deserto da Perdição. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deserto da Perdição",
+    "isEdible": false
   },
   {
     "id": "ing_88",
@@ -701,7 +1066,11 @@
     "normName": "tinta de medo",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_89",
@@ -709,7 +1078,11 @@
     "normName": "tinta de pesadelo",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Aslothia (Cemitérios e Terras Necróticas). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Aslothia (Cemitérios e Terras Necróticas)",
+    "isEdible": false
   },
   {
     "id": "ing_90",
@@ -717,7 +1090,11 @@
     "normName": "garganta de banshee",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_91",
@@ -725,7 +1102,11 @@
     "normName": "osso de fantasma",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Estrutura biológica resistente coletada de criaturas ou ruínas antigas em Deheon (Planícies e Arredores de Valkaria). Conforme catalogado no Bazar Monstruoso, possui dureza ou propriedades condutoras ideais para amálgamas alquímicos e reforços de equipamento.",
+    "resourceType": "Matéria-Prima",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_92",
@@ -733,7 +1114,12 @@
     "normName": "cogumelo-luz",
     "category": "Fungo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Néctar puro recolhido por colmeias selvagens nas clareiras de Floresta de Greenaria & Ermos de Allihanna. Concentra a doçura vital da natureza, alimentando instantaneamente e restaurando fagulhas de energia mágica a quem o consome.",
+    "resourceType": "Mantimento",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto."
   },
   {
     "id": "ing_93",
@@ -741,7 +1127,12 @@
     "normName": "cebola das sombras",
     "category": "Vegetal/Hortaliça",
     "rarity": "incomum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Aslothia (Cemitérios e Terras Necróticas). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Aslothia (Cemitérios e Terras Necróticas)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em Furtividade por 1 hora."
   },
   {
     "id": "ing_94",
@@ -749,7 +1140,11 @@
     "normName": "ar rarefeito de montanha",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Zakharov (Colinas & Minas de Yuvalin). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Zakharov (Colinas & Minas de Yuvalin)",
+    "isEdible": false
   },
   {
     "id": "ing_95",
@@ -757,7 +1152,11 @@
     "normName": "sangue de draco",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Fluido biológico concentrado colhido de espécimes perigosos em Deheon (Planícies e Arredores de Valkaria). Extremamente instável fora de catalisadores, é a base para óleos cáusticos, peçonhas e bálsamos de combate de Tormenta 20.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_96",
@@ -765,7 +1164,12 @@
     "normName": "coracao de carvalho anciao",
     "category": "Vegetal/Hortaliça",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_97",
@@ -773,7 +1177,12 @@
     "normName": "raiz da centelha",
     "category": "Erva/Raiz",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Floresta de Greenaria & Ermos de Allihanna. Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_98",
@@ -781,7 +1190,11 @@
     "normName": "lamina de prata runica moida",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Zakharov (Colinas & Minas de Yuvalin). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Zakharov (Colinas & Minas de Yuvalin)",
+    "isEdible": false
   },
   {
     "id": "ing_99",
@@ -789,7 +1202,11 @@
     "normName": "pluma de falcao de ar",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_100",
@@ -797,7 +1214,12 @@
     "normName": "rocha de determinacao",
     "category": "Mineral/Cristal",
     "rarity": "incomum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Mistura aromática de folhas e brotos selecionados em Zakharov (Colinas & Minas de Yuvalin). Quando infusionada em água fervente na Cozinha Mágica, libera vapores reconfortantes que aplacam a ansiedade, clareiam o raciocínio e renovam o espírito.",
+    "resourceType": "Mantimento",
+    "originRegion": "Zakharov (Colinas & Minas de Yuvalin)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em testes de Vontade contra medo e encantamento por 2 horas."
   },
   {
     "id": "ing_101",
@@ -805,7 +1227,11 @@
     "normName": "chifre de criatura ancestral",
     "category": "Parte de Criatura",
     "rarity": "lendário",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Estrutura biológica resistente coletada de criaturas ou ruínas antigas em Deheon (Planícies e Arredores de Valkaria). Conforme catalogado no Bazar Monstruoso, possui dureza ou propriedades condutoras ideais para amálgamas alquímicos e reforços de equipamento.",
+    "resourceType": "Matéria-Prima",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_102",
@@ -813,7 +1239,12 @@
     "normName": "ervas de montanha",
     "category": "Erva/Raiz",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Zakharov (Colinas & Minas de Yuvalin). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Zakharov (Colinas & Minas de Yuvalin)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em testes de resistência contra frio ou clima adverso por 4 horas."
   },
   {
     "id": "ing_103",
@@ -821,7 +1252,11 @@
     "normName": "garras de grifo (trituradas)",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Estrutura biológica resistente coletada de criaturas ou ruínas antigas em Deheon (Planícies e Arredores de Valkaria). Conforme catalogado no Bazar Monstruoso, possui dureza ou propriedades condutoras ideais para amálgamas alquímicos e reforços de equipamento.",
+    "resourceType": "Matéria-Prima",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_104",
@@ -829,7 +1264,12 @@
     "normName": "pimenta-vulcao",
     "category": "Tempero/Fruta",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Condimento pungente e termogênico nativo de Sckharshantallas (Domínios de Fogo). Bastante apreciado pela culinária de aventureiros descrita em Heróis de Arton, elevando o calor do sangue e a velocidade de reação quando cozido em refeições de campanha.",
+    "resourceType": "Mantimento",
+    "originRegion": "Sckharshantallas (Domínios de Fogo)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em rolagens de dano corpo a corpo no próximo combate (até o fim da cena)."
   },
   {
     "id": "ing_105",
@@ -837,7 +1277,12 @@
     "normName": "carne de salamandra",
     "category": "Alimento/Proteína",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Corte fibroso e consistente de caça obtido nas regiões selvagens de Sckharshantallas (Domínios de Fogo). Suas fibras densas retêm calor vital e substância dos grandes espécimes de Arton.",
+    "resourceType": "Mantimento",
+    "originRegion": "Sckharshantallas (Domínios de Fogo)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +5 PV temporários até o fim da cena."
   },
   {
     "id": "ing_106",
@@ -845,7 +1290,11 @@
     "normName": "gordura cristalina",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Elemento de alta densidade mística originário de Deheon (Planícies e Arredores de Valkaria). Pulsando com ressonância arcana primordial ligada aos planos divinos de Arton, é cobiçado por arcanistas e artífices para alimentar elixires de grande poder.",
+    "resourceType": "Fonte",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_107",
@@ -853,7 +1302,11 @@
     "normName": "asa de harpia",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_108",
@@ -861,7 +1314,11 @@
     "normName": "po de obsidiana",
     "category": "Mineral/Cristal",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_109",
@@ -869,7 +1326,11 @@
     "normName": "unguento de pedra do corte",
     "category": "Mineral/Cristal",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Zakharov (Colinas & Minas de Yuvalin). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Zakharov (Colinas & Minas de Yuvalin)",
+    "isEdible": false
   },
   {
     "id": "ing_110",
@@ -877,7 +1338,11 @@
     "normName": "escama de serpente magica",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Estrutura biológica resistente coletada de criaturas ou ruínas antigas em Deheon (Planícies e Arredores de Valkaria). Conforme catalogado no Bazar Monstruoso, possui dureza ou propriedades condutoras ideais para amálgamas alquímicos e reforços de equipamento.",
+    "resourceType": "Matéria-Prima",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_111",
@@ -885,7 +1350,11 @@
     "normName": "poeira dimensional",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_112",
@@ -893,7 +1362,11 @@
     "normName": "gema lubrificante",
     "category": "Mineral/Cristal",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Elemento de alta densidade mística originário de Deheon (Planícies e Arredores de Valkaria). Pulsando com ressonância arcana primordial ligada aos planos divinos de Arton, é cobiçado por arcanistas e artífices para alimentar elixires de grande poder.",
+    "resourceType": "Fonte",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_113",
@@ -901,7 +1374,11 @@
     "normName": "espinho metalico",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_114",
@@ -909,7 +1386,11 @@
     "normName": "espinho selvagem",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_115",
@@ -917,7 +1398,11 @@
     "normName": "carvao animado",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_116",
@@ -925,7 +1410,12 @@
     "normName": "lombo de bicho-pedra",
     "category": "Alimento/Proteína",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Corte fibroso e consistente de caça obtido nas regiões selvagens de Zakharov (Colinas & Minas de Yuvalin). Suas fibras densas retêm calor vital e substância dos grandes espécimes de Arton.",
+    "resourceType": "Mantimento",
+    "originRegion": "Zakharov (Colinas & Minas de Yuvalin)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +5 PV temporários até o fim da cena."
   },
   {
     "id": "ing_117",
@@ -933,7 +1423,11 @@
     "normName": "faisca capturada",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_118",
@@ -941,7 +1435,11 @@
     "normName": "po de prata",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Zakharov (Colinas & Minas de Yuvalin). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Zakharov (Colinas & Minas de Yuvalin)",
+    "isEdible": false
   },
   {
     "id": "ing_119",
@@ -949,7 +1447,11 @@
     "normName": "vento cortante",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Namalkah (Pradarias dos Centauros). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Namalkah (Pradarias dos Centauros)",
+    "isEdible": false
   },
   {
     "id": "ing_120",
@@ -957,7 +1459,11 @@
     "normName": "tinta de desespero",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_121",
@@ -965,7 +1471,11 @@
     "normName": "areia eterea",
     "category": "Mineral/Cristal",
     "rarity": "raro",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deserto da Perdição. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deserto da Perdição",
+    "isEdible": false
   },
   {
     "id": "ing_122",
@@ -973,7 +1483,12 @@
     "normName": "limao das dunas",
     "category": "Tempero/Fruta",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_123",
@@ -981,7 +1496,12 @@
     "normName": "tamarindo solar",
     "category": "Tempero/Fruta",
     "rarity": "raro",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Deserto da Perdição. Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deserto da Perdição",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_124",
@@ -989,7 +1509,12 @@
     "normName": "nectar protetor",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Néctar puro recolhido por colmeias selvagens nas clareiras de Deheon (Planícies e Arredores de Valkaria). Concentra a doçura vital da natureza, alimentando instantaneamente e restaurando fagulhas de energia mágica a quem o consome.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto."
   },
   {
     "id": "ing_125",
@@ -997,7 +1522,12 @@
     "normName": "cha das ideias",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Mistura aromática de folhas e brotos selecionados em Deheon (Planícies e Arredores de Valkaria). Quando infusionada em água fervente na Cozinha Mágica, libera vapores reconfortantes que aplacam a ansiedade, clareiam o raciocínio e renovam o espírito.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em testes de Vontade contra medo e encantamento por 2 horas."
   },
   {
     "id": "ing_126",
@@ -1005,7 +1535,11 @@
     "normName": "vela de templo antigo",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_127",
@@ -1013,7 +1547,11 @@
     "normName": "essencia de pureza",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_128",
@@ -1021,7 +1559,12 @@
     "normName": "figo-das-dunas",
     "category": "Tempero/Fruta",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_129",
@@ -1029,7 +1572,11 @@
     "normName": "cristal de neve eterna",
     "category": "Mineral/Cristal",
     "rarity": "incomum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Elemento de alta densidade mística originário de Montanhas Uivantes (Região Glacial). Pulsando com ressonância arcana primordial ligada aos planos divinos de Arton, é cobiçado por arcanistas e artífices para alimentar elixires de grande poder.",
+    "resourceType": "Fonte",
+    "originRegion": "Montanhas Uivantes (Região Glacial)",
+    "isEdible": false
   },
   {
     "id": "ing_130",
@@ -1037,7 +1584,11 @@
     "normName": "essencia de ventos do norte",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Namalkah (Pradarias dos Centauros). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Namalkah (Pradarias dos Centauros)",
+    "isEdible": false
   },
   {
     "id": "ing_131",
@@ -1045,7 +1596,11 @@
     "normName": "essencia de eter",
     "category": "Essência/Arcano",
     "rarity": "incomum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_132",
@@ -1053,7 +1608,11 @@
     "normName": "nevoa de entardecer",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_133",
@@ -1061,7 +1620,11 @@
     "normName": "nevoa espiritual",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_134",
@@ -1069,7 +1632,12 @@
     "normName": "hortela-do-norte",
     "category": "Erva/Raiz",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_135",
@@ -1077,7 +1645,11 @@
     "normName": "agua congelada",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Mar de Dragões & Arquipélago de Khubar. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": false
   },
   {
     "id": "ing_136",
@@ -1085,7 +1657,11 @@
     "normName": "sal lunar",
     "category": "Mineral/Cristal",
     "rarity": "raro",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Mineral cristalizado sob alta pressão tectônica ou mágica em Deheon (Planícies e Arredores de Valkaria). Atua como âncora estabilizadora para infusões arcanas, amplificando a pureza e a duração de preparados transmutatórios.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_137",
@@ -1093,7 +1669,11 @@
     "normName": "lagrima de druida",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_138",
@@ -1101,7 +1681,11 @@
     "normName": "fio solar",
     "category": "Reagente Geral",
     "rarity": "raro",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deserto da Perdição. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deserto da Perdição",
+    "isEdible": false
   },
   {
     "id": "ing_139",
@@ -1109,7 +1693,11 @@
     "normName": "pena de juiz celestial",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_140",
@@ -1117,7 +1705,11 @@
     "normName": "gema dos veus",
     "category": "Mineral/Cristal",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Elemento de alta densidade mística originário de Deheon (Planícies e Arredores de Valkaria). Pulsando com ressonância arcana primordial ligada aos planos divinos de Arton, é cobiçado por arcanistas e artífices para alimentar elixires de grande poder.",
+    "resourceType": "Fonte",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_141",
@@ -1125,7 +1717,11 @@
     "normName": "baba de limo forte",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Fluido biológico concentrado colhido de espécimes perigosos em Deheon (Planícies e Arredores de Valkaria). Extremamente instável fora de catalisadores, é a base para óleos cáusticos, peçonhas e bálsamos de combate de Tormenta 20.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_142",
@@ -1133,7 +1729,11 @@
     "normName": "po de aderencia",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_143",
@@ -1141,7 +1741,12 @@
     "normName": "peixe-crispo",
     "category": "Alimento/Proteína",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Pescado fresco das correntes cristalinas de Mar de Dragões & Arquipélago de Khubar. Carne tenra de fácil digestão, reverenciada por marinheiros e eremitas por aliviar a fadiga e saciar a fome em jornadas árduas.",
+    "resourceType": "Mantimento",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em Fortitude por 2 horas."
   },
   {
     "id": "ing_144",
@@ -1149,7 +1754,12 @@
     "normName": "gordura de peixe abissal",
     "category": "Alimento/Proteína",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Pescado fresco das correntes cristalinas de Mar de Dragões & Arquipélago de Khubar. Carne tenra de fácil digestão, reverenciada por marinheiros e eremitas por aliviar a fadiga e saciar a fome em jornadas árduas.",
+    "resourceType": "Mantimento",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em Fortitude por 2 horas."
   },
   {
     "id": "ing_145",
@@ -1157,7 +1767,11 @@
     "normName": "ovo de limo",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_146",
@@ -1165,7 +1779,11 @@
     "normName": "fragmento de ectoplasma",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_147",
@@ -1173,7 +1791,11 @@
     "normName": "po de luz consagrada",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_148",
@@ -1181,7 +1803,11 @@
     "normName": "sal marinho",
     "category": "Mineral/Cristal",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Mineral cristalizado sob alta pressão tectônica ou mágica em Mar de Dragões & Arquipélago de Khubar. Atua como âncora estabilizadora para infusões arcanas, amplificando a pureza e a duração de preparados transmutatórios.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": false
   },
   {
     "id": "ing_149",
@@ -1189,7 +1815,11 @@
     "normName": "casco macio de caranguejo",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_150",
@@ -1197,7 +1827,12 @@
     "normName": "especiarias do mar",
     "category": "Tempero/Fruta",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Condimento pungente e termogênico nativo de Mar de Dragões & Arquipélago de Khubar. Bastante apreciado pela culinária de aventureiros descrita em Heróis de Arton, elevando o calor do sangue e a velocidade de reação quando cozido em refeições de campanha.",
+    "resourceType": "Mantimento",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em iniciativa no próximo combate."
   },
   {
     "id": "ing_151",
@@ -1205,7 +1840,11 @@
     "normName": "algas picantes",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Mar de Dragões & Arquipélago de Khubar. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": false
   },
   {
     "id": "ing_152",
@@ -1213,7 +1852,12 @@
     "normName": "limao dos ceus",
     "category": "Tempero/Fruta",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_153",
@@ -1221,7 +1865,11 @@
     "normName": "baba de aracnideo",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Fluido biológico concentrado colhido de espécimes perigosos em Deheon (Planícies e Arredores de Valkaria). Extremamente instável fora de catalisadores, é a base para óleos cáusticos, peçonhas e bálsamos de combate de Tormenta 20.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_154",
@@ -1229,7 +1877,11 @@
     "normName": "resina negra de teia",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_155",
@@ -1237,7 +1889,12 @@
     "normName": "chave quebrada",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Mistura aromática de folhas e brotos selecionados em Deheon (Planícies e Arredores de Valkaria). Quando infusionada em água fervente na Cozinha Mágica, libera vapores reconfortantes que aplacam a ansiedade, clareiam o raciocínio e renovam o espírito.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em testes de Vontade contra medo e encantamento por 2 horas."
   },
   {
     "id": "ing_156",
@@ -1245,7 +1902,11 @@
     "normName": "po de ilusao",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_157",
@@ -1253,7 +1914,11 @@
     "normName": "nevoa eterea",
     "category": "Essência/Arcano",
     "rarity": "raro",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_158",
@@ -1261,7 +1926,11 @@
     "normName": "seiva grudenta",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_159",
@@ -1269,7 +1938,11 @@
     "normName": "oleo mineral",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Mineral cristalizado sob alta pressão tectônica ou mágica em Deheon (Planícies e Arredores de Valkaria). Atua como âncora estabilizadora para infusões arcanas, amplificando a pureza e a duração de preparados transmutatórios.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_160",
@@ -1277,7 +1950,12 @@
     "normName": "sal de rocha",
     "category": "Mineral/Cristal",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Mistura aromática de folhas e brotos selecionados em Deheon (Planícies e Arredores de Valkaria). Quando infusionada em água fervente na Cozinha Mágica, libera vapores reconfortantes que aplacam a ansiedade, clareiam o raciocínio e renovam o espírito.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em testes de Vontade contra medo e encantamento por 2 horas."
   },
   {
     "id": "ing_161",
@@ -1285,7 +1963,11 @@
     "normName": "cerebro de gnomo",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_162",
@@ -1293,7 +1975,11 @@
     "normName": "tinta de silencio",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_163",
@@ -1301,7 +1987,11 @@
     "normName": "engrenagem dourada",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_164",
@@ -1309,7 +1999,11 @@
     "normName": "dobradica encantada",
     "category": "Reagente Geral",
     "rarity": "incomum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Pondsmânia (Bosques Feéricos). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Pondsmânia (Bosques Feéricos)",
+    "isEdible": false
   },
   {
     "id": "ing_165",
@@ -1317,7 +2011,11 @@
     "normName": "vinho negro",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_166",
@@ -1325,7 +2023,12 @@
     "normName": "carne de rato gigante",
     "category": "Alimento/Proteína",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Corte fibroso e consistente de caça obtido nas regiões selvagens de Deheon (Planícies e Arredores de Valkaria). Suas fibras densas retêm calor vital e substância dos grandes espécimes de Arton.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +5 PV temporários até o fim da cena."
   },
   {
     "id": "ing_167",
@@ -1333,7 +2036,11 @@
     "normName": "essencia de antidoto puro",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_168",
@@ -1341,7 +2048,11 @@
     "normName": "lingua de serpente muda",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_169",
@@ -1349,7 +2060,11 @@
     "normName": "azeite do pantano",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_170",
@@ -1357,7 +2072,11 @@
     "normName": "nucleo de gosma acida",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_171",
@@ -1365,7 +2084,12 @@
     "normName": "alho-fantasma",
     "category": "Vegetal/Hortaliça",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_172",
@@ -1373,7 +2097,11 @@
     "normName": "gota de eco cristalino",
     "category": "Mineral/Cristal",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Elemento de alta densidade mística originário de Deheon (Planícies e Arredores de Valkaria). Pulsando com ressonância arcana primordial ligada aos planos divinos de Arton, é cobiçado por arcanistas e artífices para alimentar elixires de grande poder.",
+    "resourceType": "Fonte",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_173",
@@ -1381,7 +2109,11 @@
     "normName": "arroz prateado",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_174",
@@ -1389,7 +2121,12 @@
     "normName": "maca flutuante",
     "category": "Tempero/Fruta",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em testes de resistência contra doenças ou fadiga leve por 2 horas."
   },
   {
     "id": "ing_175",
@@ -1397,7 +2134,11 @@
     "normName": "essencia de clerigo",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_176",
@@ -1405,7 +2146,11 @@
     "normName": "tinta ilusoria",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Pondsmânia (Bosques Feéricos). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Pondsmânia (Bosques Feéricos)",
+    "isEdible": false
   },
   {
     "id": "ing_177",
@@ -1413,7 +2158,11 @@
     "normName": "tecido ilusorio",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_178",
@@ -1421,7 +2170,11 @@
     "normName": "fio de veu dimensional",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_179",
@@ -1429,7 +2182,11 @@
     "normName": "lagrima solar",
     "category": "Reagente Geral",
     "rarity": "raro",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deserto da Perdição. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deserto da Perdição",
+    "isEdible": false
   },
   {
     "id": "ing_180",
@@ -1437,7 +2194,11 @@
     "normName": "lagrima de clerigo",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_181",
@@ -1445,7 +2206,11 @@
     "normName": "escama de dragao de ferro",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Estrutura biológica resistente coletada de criaturas ou ruínas antigas em Zakharov (Colinas & Minas de Yuvalin). Conforme catalogado no Bazar Monstruoso, possui dureza ou propriedades condutoras ideais para amálgamas alquímicos e reforços de equipamento.",
+    "resourceType": "Matéria-Prima",
+    "originRegion": "Zakharov (Colinas & Minas de Yuvalin)",
+    "isEdible": false
   },
   {
     "id": "ing_182",
@@ -1453,7 +2218,11 @@
     "normName": "tentaculo de polvo sombrio",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_183",
@@ -1461,7 +2230,11 @@
     "normName": "sangue de troll purificado",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Fluido biológico concentrado colhido de espécimes perigosos em Deheon (Planícies e Arredores de Valkaria). Extremamente instável fora de catalisadores, é a base para óleos cáusticos, peçonhas e bálsamos de combate de Tormenta 20.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_184",
@@ -1469,7 +2242,11 @@
     "normName": "essencia de precisao",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_185",
@@ -1477,7 +2254,11 @@
     "normName": "tinta do veredito",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_186",
@@ -1485,7 +2266,11 @@
     "normName": "pena da lei",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_187",
@@ -1493,7 +2278,12 @@
     "normName": "carne de minotauro",
     "category": "Alimento/Proteína",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Corte fibroso e consistente de caça obtido nas regiões selvagens de Deheon (Planícies e Arredores de Valkaria). Suas fibras densas retêm calor vital e substância dos grandes espécimes de Arton.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +5 PV temporários até o fim da cena."
   },
   {
     "id": "ing_188",
@@ -1501,7 +2291,11 @@
     "normName": "agua benta espessa",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Mar de Dragões & Arquipélago de Khubar. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": false
   },
   {
     "id": "ing_189",
@@ -1509,7 +2303,11 @@
     "normName": "essencia sagrada",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_190",
@@ -1517,7 +2315,11 @@
     "normName": "po de bencao",
     "category": "Essência/Arcano",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_191",
@@ -1525,7 +2327,11 @@
     "normName": "oleo de baleia",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_192",
@@ -1533,7 +2339,11 @@
     "normName": "essencia de agua encantada",
     "category": "Essência/Arcano",
     "rarity": "incomum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Pondsmânia (Bosques Feéricos). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Pondsmânia (Bosques Feéricos)",
+    "isEdible": false
   },
   {
     "id": "ing_193",
@@ -1541,7 +2351,11 @@
     "normName": "sangue de berserker",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Fluido biológico concentrado colhido de espécimes perigosos em Deheon (Planícies e Arredores de Valkaria). Extremamente instável fora de catalisadores, é a base para óleos cáusticos, peçonhas e bálsamos de combate de Tormenta 20.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_194",
@@ -1549,7 +2363,11 @@
     "normName": "pena de bardo da paz",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_195",
@@ -1557,7 +2375,11 @@
     "normName": "agua cristalina",
     "category": "Mineral/Cristal",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Elemento de alta densidade mística originário de Mar de Dragões & Arquipélago de Khubar. Pulsando com ressonância arcana primordial ligada aos planos divinos de Arton, é cobiçado por arcanistas e artífices para alimentar elixires de grande poder.",
+    "resourceType": "Fonte",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": false
   },
   {
     "id": "ing_196",
@@ -1565,7 +2387,12 @@
     "normName": "mel silvestre",
     "category": "Tempero/Fruta",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Néctar puro recolhido por colmeias selvagens nas clareiras de Deheon (Planícies e Arredores de Valkaria). Concentra a doçura vital da natureza, alimentando instantaneamente e restaurando fagulhas de energia mágica a quem o consome.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto."
   },
   {
     "id": "ing_197",
@@ -1573,7 +2400,11 @@
     "normName": "fermento seco",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_198",
@@ -1581,7 +2412,12 @@
     "normName": "cebola carmesim",
     "category": "Vegetal/Hortaliça",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_199",
@@ -1589,7 +2425,12 @@
     "normName": "leite de cabra",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_200",
@@ -1597,7 +2438,11 @@
     "normName": "oleo leve",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_201",
@@ -1605,7 +2450,11 @@
     "normName": "caldo leve",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_202",
@@ -1613,7 +2462,11 @@
     "normName": "massa fina",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_203",
@@ -1621,7 +2474,11 @@
     "normName": "raizes frias",
     "category": "Erva/Raiz",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Floresta de Greenaria & Ermos de Allihanna. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": false
   },
   {
     "id": "ing_204",
@@ -1629,7 +2486,11 @@
     "normName": "ovos caipiras",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_205",
@@ -1637,7 +2498,11 @@
     "normName": "queijo curado",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_206",
@@ -1645,7 +2510,11 @@
     "normName": "olho de troll",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_207",
@@ -1653,7 +2522,11 @@
     "normName": "agua fervente",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Mar de Dragões & Arquipélago de Khubar. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": false
   },
   {
     "id": "ing_208",
@@ -1661,7 +2534,11 @@
     "normName": "vinho tinto",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_209",
@@ -1669,7 +2546,12 @@
     "normName": "cebola amarga",
     "category": "Vegetal/Hortaliça",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Mar de Dragões & Arquipélago de Khubar. Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_210",
@@ -1677,7 +2559,11 @@
     "normName": "vinho escuro",
     "category": "Líquido/Óleo",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_211",
@@ -1685,7 +2571,11 @@
     "normName": "garras trituradas",
     "category": "Parte de Criatura",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Estrutura biológica resistente coletada de criaturas ou ruínas antigas em Deheon (Planícies e Arredores de Valkaria). Conforme catalogado no Bazar Monstruoso, possui dureza ou propriedades condutoras ideais para amálgamas alquímicos e reforços de equipamento.",
+    "resourceType": "Matéria-Prima",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_212",
@@ -1693,7 +2583,12 @@
     "normName": "maca verde",
     "category": "Tempero/Fruta",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Floresta de Greenaria & Ermos de Allihanna. Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em testes de resistência contra doenças ou fadiga leve por 2 horas."
   },
   {
     "id": "ing_213",
@@ -1701,7 +2596,11 @@
     "normName": "casco macio",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_214",
@@ -1709,7 +2608,11 @@
     "normName": "manteiga de coral",
     "category": "Reagente Geral",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Mar de Dragões & Arquipélago de Khubar. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": false
   },
   {
     "id": "ing_215",
@@ -1717,7 +2620,12 @@
     "normName": "limao acido",
     "category": "Tempero/Fruta",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_216",
@@ -1725,7 +2633,11 @@
     "normName": "acucar cristal",
     "category": "Mineral/Cristal",
     "rarity": "comum",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Elemento de alta densidade mística originário de Deheon (Planícies e Arredores de Valkaria). Pulsando com ressonância arcana primordial ligada aos planos divinos de Arton, é cobiçado por arcanistas e artífices para alimentar elixires de grande poder.",
+    "resourceType": "Fonte",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_217",
@@ -1733,7 +2645,11 @@
     "normName": "sangue de salamandra flamejante",
     "category": "Parte de Criatura",
     "rarity": "incomum",
-    "quantity": 2
+    "quantity": 2,
+    "description": "Fluido biológico concentrado colhido de espécimes perigosos em Sckharshantallas (Domínios de Fogo). Extremamente instável fora de catalisadores, é a base para óleos cáusticos, peçonhas e bálsamos de combate de Tormenta 20.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Sckharshantallas (Domínios de Fogo)",
+    "isEdible": false
   },
   {
     "id": "ing_218",
@@ -1741,7 +2657,11 @@
     "normName": "essencia de fuga",
     "category": "Essência/Arcano",
     "rarity": "incomum",
-    "quantity": 2
+    "quantity": 2,
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "ing_219",
@@ -1749,7 +2669,12 @@
     "normName": "ovo de limao",
     "category": "Tempero/Fruta",
     "rarity": "incomum",
-    "quantity": 2
+    "quantity": 2,
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "ing_220",
@@ -1757,7 +2682,12 @@
     "normName": "raiz de batao (tipo batata)",
     "category": "Erva/Raiz",
     "rarity": "incomum",
-    "quantity": 2
+    "quantity": 2,
+    "description": "Vegetal carnudo e rústico colhido sob solo fértil em Sambúrdia (O Celeiro de Arton). Casca firme e polpa suculenta repleta de seiva da terra artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Sambúrdia (O Celeiro de Arton)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1d4 em um teste de Atletismo ou Sobrevivência realizado hoje."
   },
   {
     "id": "herb_1",
@@ -1766,7 +2696,10 @@
     "category": "Erva/Raiz",
     "rarity": "raro",
     "quantity": 3,
-    "description": "Planta de flores púrpuras venenosas. Repelente potente contra lobos e licantropos; usada em venenos de caça."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_2",
@@ -1775,7 +2708,10 @@
     "category": "Árvores mágicas",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Madeira que queima rápido gerando carvão de alta potência explosiva. Suas folhas atraem elementais do ar."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_3",
@@ -1784,7 +2720,11 @@
     "category": "Erva/Raiz",
     "rarity": "raro",
     "quantity": 3,
-    "description": "Suculenta com folhas pontiagudas contendo gel cicatrizante e purificador."
+    "description": "Espécime botânico colhido nos ermos de Deserto da Perdição. Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deserto da Perdição",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "herb_4",
@@ -1793,7 +2733,10 @@
     "category": "Flor",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Pequenas flores brancas que formam tapetes em bosques. Possuem aroma pungente usado em filtros de ilusão."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Floresta de Greenaria & Ermos de Allihanna. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": false
   },
   {
     "id": "herb_5",
@@ -1802,7 +2745,10 @@
     "category": "Flor",
     "rarity": "raro",
     "quantity": 3,
-    "description": "Flor mítica ligada ao descanso eterno e aos reinos sombrios. Ingrediente de poções de sono profundo."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Floresta de Greenaria & Ermos de Allihanna. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": false
   },
   {
     "id": "herb_6",
@@ -1811,7 +2757,10 @@
     "category": "Flor",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Arbusto florido com néctar intoxicante que confunde os sentidos de quem o inala."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_7",
@@ -1820,7 +2769,10 @@
     "category": "Árvores mágicas",
     "rarity": "raro",
     "quantity": 3,
-    "description": "Figueira de raízes aéreas colossais que criam templos naturais nos bosques."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_8",
@@ -1829,7 +2781,10 @@
     "category": "Erva/Raiz",
     "rarity": "raro",
     "quantity": 3,
-    "description": "Frutos negros reluzentes de extrema toxicidade. Provoca visões e paralisia."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_9",
@@ -1838,7 +2793,10 @@
     "category": "Erva/Raiz",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Casca prateada resinosa e impermeável, excelente para preparar bálsamos e repelir umidade."
+    "description": "Estrutura biológica resistente coletada de criaturas ou ruínas antigas em Deheon (Planícies e Arredores de Valkaria). Conforme catalogado no Bazar Monstruoso, possui dureza ou propriedades condutoras ideais para amálgamas alquímicos e reforços de equipamento.",
+    "resourceType": "Matéria-Prima",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_10",
@@ -1847,7 +2805,10 @@
     "category": "Erva/Raiz",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Trepadeira com bagas vermelhas usada tradicionalmente em cataplasmas contra dores musculares."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_11",
@@ -1856,7 +2817,11 @@
     "category": "Erva/Raiz",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Arbusto de espinhos pontiagudos com frutos escuros e ácidos. Suas varas são usadas em cajados de canalização."
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "herb_12",
@@ -1865,7 +2830,10 @@
     "category": "Flor",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Flores em forma de sino que indicam presença feérica e locais tocados por magia antiga."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_13",
@@ -1874,7 +2842,10 @@
     "category": "Erva/Raiz",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Erva perene famosa por acelerar a recuperação de fraturas e conter febres graves."
+    "description": "Estrutura biológica resistente coletada de criaturas ou ruínas antigas em Deheon (Planícies e Arredores de Valkaria). Conforme catalogado no Bazar Monstruoso, possui dureza ou propriedades condutoras ideais para amálgamas alquímicos e reforços de equipamento.",
+    "resourceType": "Matéria-Prima",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_14",
@@ -1883,7 +2854,11 @@
     "category": "Fungo",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Líquen resistente do norte que pode ser moído como farinha de emergência."
+    "description": "Líquen rústico e fibroso que recobre rochas e encostas glaciais em Montanhas Uivantes (Região Glacial). Altamente resistente ao frio extremo, absorve umidade e preserva essência vegetal nativa.",
+    "resourceType": "Mantimento",
+    "originRegion": "Montanhas Uivantes (Região Glacial)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "herb_15",
@@ -1892,7 +2867,10 @@
     "category": "Erva/Raiz",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Planta insetívora com folhas pegajosas que coalham líquidos e retêm insetos peçonhentos."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_16",
@@ -1901,7 +2879,11 @@
     "category": "Flor",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Flor esguia associada à purificação de água e proteção contra corrupções."
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "herb_17",
@@ -1910,7 +2892,11 @@
     "category": "Flor",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Pétalas aveludadas usadas em infusões aromáticas que acalmam a mente e refinam o foco."
+    "description": "Néctar puro recolhido por colmeias selvagens nas clareiras de Deheon (Planícies e Arredores de Valkaria). Concentra a doçura vital da natureza, alimentando instantaneamente e restaurando fagulhas de energia mágica a quem o consome.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto."
   },
   {
     "id": "herb_18",
@@ -1919,7 +2905,10 @@
     "category": "Flor",
     "rarity": "raro",
     "quantity": 3,
-    "description": "Flor gigantesca de odor cadavérico usada em elixires necromânticos e venenos paralisantes."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Floresta de Greenaria & Ermos de Allihanna. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": false
   },
   {
     "id": "herb_19",
@@ -1928,7 +2917,10 @@
     "category": "Erva/Raiz",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Arbusto das terras secas cujas bagas causam dormência e lentidão motora prolongada."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_20",
@@ -1937,7 +2929,10 @@
     "category": "Flor",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Flor singela e abundante em pradarias, usada em pomadas simples contra contusões."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Mar de Dragões & Arquipélago de Khubar. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": false
   },
   {
     "id": "herb_21",
@@ -1946,7 +2941,10 @@
     "category": "Erva/Raiz",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Gramínea parasita cujas sementes contêm alcaloides que causam vertigem e perda de equilíbrio."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_22",
@@ -1955,7 +2953,10 @@
     "category": "Flor",
     "rarity": "raro",
     "quantity": 3,
-    "description": "Grandes trombetas brancas que se abrem à noite. Provoca alucinações e estados de transe místico."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_23",
@@ -1964,7 +2965,10 @@
     "category": "Árvores mágicas",
     "rarity": "lendário",
     "quantity": 3,
-    "description": "Resina escarlate cristalizada de árvore ancestral. Fortalece óleos de combate e rituais de fogo."
+    "description": "Fluido biológico concentrado colhido de espécimes perigosos em Deheon (Planícies e Arredores de Valkaria). Extremamente instável fora de catalisadores, é a base para óleos cáusticos, peçonhas e bálsamos de combate de Tormenta 20.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_24",
@@ -1973,7 +2977,10 @@
     "category": "Árvores mágicas",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Bagas e flores consagradas aos espíritos da natureza; potente contra febres e resfriados."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Pondsmânia (Bosques Feéricos). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Pondsmânia (Bosques Feéricos)",
+    "isEdible": false
   },
   {
     "id": "herb_25",
@@ -1982,7 +2989,10 @@
     "category": "Erva/Raiz",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Folhas plumosas que absorvem umidade e orvalho místico em clareiras úmidas."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Zakharov (Colinas & Minas de Yuvalin). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Zakharov (Colinas & Minas de Yuvalin)",
+    "isEdible": false
   },
   {
     "id": "herb_26",
@@ -1991,7 +3001,11 @@
     "category": "Fungo",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Cogumelo vermelho com pintas brancas. Induz frenesi de combate ou sonhos proféticos."
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "herb_27",
@@ -2000,7 +3014,10 @@
     "category": "Flor",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Campânulas rosadas com veneno cardíaco que desacelera a pulsação em doses controladas."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_28",
@@ -2009,7 +3026,10 @@
     "category": "Erva/Raiz",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Emite óleos voláteis perfumados que podem inflamar no calor intenso do verão."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_29",
@@ -2018,7 +3038,11 @@
     "category": "Alimento/Proteína",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Bulbo aromático com forte ação antibacteriana e repelente contra criaturas da noite."
+    "description": "Espécime botânico colhido nos ermos de Zakharov (Colinas & Minas de Yuvalin). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Zakharov (Colinas & Minas de Yuvalin)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "herb_30",
@@ -2027,7 +3051,10 @@
     "category": "Erva/Raiz",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Planta descomunal com seiva fototóxica que causa queimaduras graves quando exposta à luz solar."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_31",
@@ -2036,7 +3063,10 @@
     "category": "Fungo",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Musgo fosforescente que brilha com reflexo esmeralda na escuridão de minas e fendas."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Zakharov (Colinas & Minas de Yuvalin). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Zakharov (Colinas & Minas de Yuvalin)",
+    "isEdible": false
   },
   {
     "id": "herb_32",
@@ -2045,7 +3075,11 @@
     "category": "Fungo",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Fungo gelatinoso cor de ouro que se expande na chuva. Ingrediente refinado em caldos nobres."
+    "description": "Néctar puro recolhido por colmeias selvagens nas clareiras de Deheon (Planícies e Arredores de Valkaria). Concentra a doçura vital da natureza, alimentando instantaneamente e restaurando fagulhas de energia mágica a quem o consome.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto."
   },
   {
     "id": "herb_33",
@@ -2054,7 +3088,10 @@
     "category": "Árvores mágicas",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Árvore sagrada associada ao coração, à coragem física e à barreira contra espíritos hostis."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_34",
@@ -2063,7 +3100,10 @@
     "category": "Flor",
     "rarity": "raro",
     "quantity": 3,
-    "description": "Floresce na neve de inverno; usada em rituais de purificação e venenos purgativos potentes."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_35",
@@ -2072,7 +3112,10 @@
     "category": "Erva/Raiz",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Planta de aroma fétido e flores rajadas de roxo. Causa letargia, amnésia e delírios."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_36",
@@ -2081,7 +3124,11 @@
     "category": "Fungo",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Cogumelo que se autodissolve em tinta negra densa; tóxico se consumido com álcool."
+    "description": "Néctar puro recolhido por colmeias selvagens nas clareiras de Floresta de Greenaria & Ermos de Allihanna. Concentra a doçura vital da natureza, alimentando instantaneamente e restaurando fagulhas de energia mágica a quem o consome.",
+    "resourceType": "Mantimento",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto."
   },
   {
     "id": "herb_37",
@@ -2090,7 +3137,10 @@
     "category": "Erva/Raiz",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Trepadeira perene que sufoca paredes de pedra e absorve resíduos mágicos de construções antigas."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_38",
@@ -2099,7 +3149,11 @@
     "category": "Tempero/Fruta",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Bagas roxo-escuras resinosas usadas na destilação de bebidas estimulantes e unguentos térmicos."
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em testes de resistência contra doenças ou fadiga leve por 2 horas."
   },
   {
     "id": "herb_39",
@@ -2108,7 +3162,10 @@
     "category": "Erva/Raiz",
     "rarity": "raro",
     "quantity": 3,
-    "description": "Folhas recortadas que retêm gotas perfeitas de orvalho matinal, tidas como água pura alquímica."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Pondsmânia (Bosques Feéricos). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Pondsmânia (Bosques Feéricos)",
+    "isEdible": false
   },
   {
     "id": "herb_40",
@@ -2117,7 +3174,10 @@
     "category": "Erva/Raiz",
     "rarity": "lendário",
     "quantity": 3,
-    "description": "Raiz humanoide lendária que emite um grito atordoante ao ser arrancada da terra."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_41",
@@ -2126,7 +3186,10 @@
     "category": "Erva/Raiz",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Planta parasita que vive nas copas de carvalhos; símbolo supremo de fertilidade e cura druídica."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_42",
@@ -2135,7 +3198,10 @@
     "category": "Erva/Raiz",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Pó amarelo altamente inflamável e repelente de água; usado em poções de visão e clarividência."
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Zakharov (Colinas & Minas de Yuvalin). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Zakharov (Colinas & Minas de Yuvalin)",
+    "isEdible": false
   },
   {
     "id": "herb_43",
@@ -2144,7 +3210,10 @@
     "category": "Erva/Raiz",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Erva amarga usada para afastar fadiga mental, proteger viajantes e afiar a intuição."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Pondsmânia (Bosques Feéricos). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Pondsmânia (Bosques Feéricos)",
+    "isEdible": false
   },
   {
     "id": "herb_44",
@@ -2153,7 +3222,11 @@
     "category": "Tempero/Fruta",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Folhas nutritivas que sustentam lagartas de seda mágica e frutos doces ricos em energia."
+    "description": "Espécime botânico colhido nos ermos de Floresta de Greenaria & Ermos de Allihanna. Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "herb_45",
@@ -2162,7 +3235,11 @@
     "category": "Árvores mágicas",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Casca adstringente impregnada de força terrena; endurece a pele contra armas de corte."
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "herb_46",
@@ -2171,7 +3248,10 @@
     "category": "Erva/Raiz",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Arbusto espinhoso de flores rubras que parece morto na seca e floresce subitamente com chuvas."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_47",
@@ -2180,7 +3260,10 @@
     "category": "Flor",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Pequena flor vermelha que se fecha antes de tempestades, servindo como barômetro natural."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_48",
@@ -2189,7 +3272,10 @@
     "category": "Flor",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Fonte de ópio narcótico que induz sono profundo e alívio imediato de dores corporais."
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_49",
@@ -2198,7 +3284,10 @@
     "category": "Erva/Raiz",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Cipó flexível e ultra resistente usado para tecer cestas de boticário e amarras mágicas."
+    "description": "Substância refinada obtida a partir de espécimes raros encontrados em Deheon (Planícies e Arredores de Valkaria). Suas partículas reagem vigorosamente quando submetidas ao calor e reagentes no Caldeirão, transmutando propriedades elementais.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_50",
@@ -2207,7 +3296,11 @@
     "category": "Fungo",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Líquen que cresce em rochedos marítimos, produtor do corante púrpura real mais valorizado de Arton."
+    "description": "Líquen que cresce em rochedos marítimos, produtor do corante púrpura real mais valorizado de Arton.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "herb_51",
@@ -2216,7 +3309,10 @@
     "category": "Flor",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Pétalas aromáticas usadas na consagração de óleos aromáticos e bálsamos de rejuvenescimento."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Namalkah (Pradarias dos Centauros). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Namalkah (Pradarias dos Centauros)",
+    "isEdible": false
   },
   {
     "id": "herb_52",
@@ -2225,7 +3321,11 @@
     "category": "Tempero/Fruta",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Bagas vermelhas protetoras consagradas contra feitiçaria e tempestades no mar."
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em testes de resistência contra doenças ou fadiga leve por 2 horas."
   },
   {
     "id": "herb_53",
@@ -2234,7 +3334,11 @@
     "category": "Fungo",
     "rarity": "raro",
     "quantity": 3,
-    "description": "Cogumelo venenoso de chapéu cinza e tronco vermelho sangue. Causa intoxicações violentas."
+    "description": "Néctar puro recolhido por colmeias selvagens nas clareiras de Floresta de Greenaria & Ermos de Allihanna. Concentra a doçura vital da natureza, alimentando instantaneamente e restaurando fagulhas de energia mágica a quem o consome.",
+    "resourceType": "Mantimento",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto."
   },
   {
     "id": "herb_54",
@@ -2243,7 +3347,10 @@
     "category": "Flor",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Flor de cacto gigante que retém néctar aquoso purificado em meio ao calor escaldante."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Mar de Dragões & Arquipélago de Khubar. Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": false
   },
   {
     "id": "herb_55",
@@ -2252,7 +3359,10 @@
     "category": "Árvores mágicas",
     "rarity": "raro",
     "quantity": 3,
-    "description": "Fruto couraçado que explode com barulho de canhão arremessando sementes em alta velocidade."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_56",
@@ -2261,7 +3371,11 @@
     "category": "Fungo",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Fungo em forma de taça rubra que acumula água feérica revigorante."
+    "description": "Espécime botânico colhido nos ermos de Pondsmânia (Bosques Feéricos). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Pondsmânia (Bosques Feéricos)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "herb_57",
@@ -2270,7 +3384,11 @@
     "category": "Vegetal/Hortaliça",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Algas ricas em salitre e minerais marinhos, essenciais para caldos fortificantes."
+    "description": "Espécime botânico colhido nos ermos de Mar de Dragões & Arquipélago de Khubar. Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Mar de Dragões & Arquipélago de Khubar",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em Fortitude por 2 horas."
   },
   {
     "id": "herb_58",
@@ -2279,7 +3397,11 @@
     "category": "Fungo",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Cogumelo lenhoso aromático que confere sabor terroso intenso e revigora os músculos."
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "herb_59",
@@ -2288,7 +3410,10 @@
     "category": "Flor",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Flores com formato de mandíbula draconiana que estalam ao toque, usadas para quebrar maldições."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_60",
@@ -2297,7 +3422,11 @@
     "category": "Fungo",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Musgo ultra-absorvente com propriedades bactericidas essenciais para ataduras de campo."
+    "description": "Líquen rústico e fibroso que recobre rochas e encostas glaciais em Floresta de Greenaria & Ermos de Allihanna. Altamente resistente ao frio extremo, absorve umidade e preserva essência vegetal nativa.",
+    "resourceType": "Mantimento",
+    "originRegion": "Floresta de Greenaria & Ermos de Allihanna",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "herb_61",
@@ -2306,7 +3435,11 @@
     "category": "Tempero/Fruta",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Erva culinária que incita coragem e determinação inabalável antes de batalhas."
+    "description": "Espécime botânico colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui consistência natural e notas campestres típicas da vegetação artoniana.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia."
   },
   {
     "id": "herb_62",
@@ -2315,7 +3448,10 @@
     "category": "Árvores mágicas",
     "rarity": "lendário",
     "quantity": 3,
-    "description": "Árvore lendária cuja seiva exala gases mortais capazes de abater feras em instantes."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_63",
@@ -2324,7 +3460,10 @@
     "category": "Flor",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Hastes púrpuras apreciadas por conjuradores para acalmar a mente durante invocações difíceis."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Pondsmânia (Bosques Feéricos). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Pondsmânia (Bosques Feéricos)",
+    "isEdible": false
   },
   {
     "id": "herb_64",
@@ -2333,7 +3472,10 @@
     "category": "Árvores mágicas",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Casca rica em ácido salicílico natural, excelente para conter febres e aliviar dores de combate."
+    "description": "Estrutura biológica resistente coletada de criaturas ou ruínas antigas em Deheon (Planícies e Arredores de Valkaria). Conforme catalogado no Bazar Monstruoso, possui dureza ou propriedades condutoras ideais para amálgamas alquímicos e reforços de equipamento.",
+    "resourceType": "Matéria-Prima",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_65",
@@ -2342,7 +3484,10 @@
     "category": "Erva/Raiz",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Planta medicinal tradicional com flores brancas; estanca hemorragias e concede clarividência."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   },
   {
     "id": "herb_66",
@@ -2351,7 +3496,11 @@
     "category": "Fungo",
     "rarity": "incomum",
     "quantity": 3,
-    "description": "Líquen amarelo brilhante que absorve radiação solar e potencializa poções de luz."
+    "description": "Mistura aromática de folhas e brotos selecionados em Deheon (Planícies e Arredores de Valkaria). Quando infusionada em água fervente na Cozinha Mágica, libera vapores reconfortantes que aplacam a ansiedade, clareiam o raciocínio e renovam o espírito.",
+    "resourceType": "Mantimento",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": true,
+    "singleEffect": "Sustento por 1 dia. Concede +1 em testes de Vontade contra medo e encantamento por 2 horas."
   },
   {
     "id": "herb_67",
@@ -2360,6 +3509,9 @@
     "category": "Árvores mágicas",
     "rarity": "comum",
     "quantity": 3,
-    "description": "Árvore sagrada associada à fronteira da vida e da morte. Madeira de elite para arcos compostos."
+    "description": "Reagente clássico do cenário de Tormenta 20, colhido nos ermos de Deheon (Planícies e Arredores de Valkaria). Possui afinidade alquímica comprovada em tratados de boticários, essencial para fórmulas que exigem equilíbrio e catalisação.",
+    "resourceType": "Ingrediente",
+    "originRegion": "Deheon (Planícies e Arredores de Valkaria)",
+    "isEdible": false
   }
 ]

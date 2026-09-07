@@ -139,11 +139,17 @@ export const Cauldron: React.FC<Props> = ({
             boxShadow: `0 0 8px ${cauldronState === 'reacting' ? '#eab308' : '#22c55e'}`
           }} />
           <span style={{ fontSize: '0.78rem', color: '#c5b59e', fontFamily: 'var(--font-flavor)' }}>
-            {cauldronState === 'idle' && (slottedIngredients.length === 0 ? 'Bancada pronta • Adicione ingredientes' : `${slottedIngredients.length}/4 ingredientes no caldeirão`)}
-            {cauldronState === 'receiving' && 'Recebendo reagente...'}
-            {cauldronState === 'reacting' && 'Reação alquímica em andamento!'}
-            {cauldronState === 'unstable' && 'Mistura instável! Resíduo alquímico.'}
-            {cauldronState === 'success' && 'Transmutação concluída!'}
+            {cauldronState === 'idle' && (
+              slottedIngredients.length === 0 
+                ? (mode === 'alquimia' ? 'Bancada pronta • Adicione ao menos 2 reagentes' : 'Fogão pronto • Adicione mantimentos ou ingredientes')
+                : mode === 'cozinha' && slottedIngredients.length === 1
+                  ? '1 mantimento na panela • Pronto para refeição simples'
+                  : `${slottedIngredients.length}/4 ingredientes no caldeirão`
+            )}
+            {cauldronState === 'receiving' && 'Recebendo ingrediente...'}
+            {cauldronState === 'reacting' && (mode === 'alquimia' ? 'Reação alquímica em andamento!' : 'Cozinhando no caldeirão...')}
+            {cauldronState === 'unstable' && 'Mistura instável / Incomestível!'}
+            {cauldronState === 'success' && (mode === 'alquimia' ? 'Transmutação concluída!' : 'Prato preparado com sucesso!')}
           </span>
         </div>
 
@@ -443,7 +449,7 @@ export const Cauldron: React.FC<Props> = ({
         </div>
 
         {/* Pre-emptive Failure Warning if recipe previously failed */}
-        {isKnownFailure && slottedIngredients.length >= 2 && (
+        {isKnownFailure && ((mode === 'cozinha' && slottedIngredients.length >= 1) || (mode === 'alquimia' && slottedIngredients.length >= 2)) && (
           <div style={{
             background: 'rgba(239, 68, 68, 0.18)',
             border: '1px solid #ef4444',
@@ -460,8 +466,24 @@ export const Cauldron: React.FC<Props> = ({
           }}>
             <AlertTriangle size={18} color="#ef4444" style={{ flexShrink: 0 }} />
             <span>
-              <b>Aviso de Memória Alquímica:</b> Você já testou essa combinação antes e ela gerou <b>Mistura Instável</b>! Esvazie para não perder ingredientes à toa.
+              <b>Aviso de Memória {mode === 'alquimia' ? 'Alquímica' : 'Culinária'}:</b> Você já testou essa combinação antes e ela gerou <b>{mode === 'alquimia' ? 'Mistura Instável' : 'Prato Incomestível'}</b>! Esvazie para não perder ingredientes à toa.
             </span>
+          </div>
+        )}
+
+        {/* Alchemy hint when only 1 ingredient is slotted in alchemy mode */}
+        {mode === 'alquimia' && slottedIngredients.length === 1 && (
+          <div style={{
+            background: 'rgba(99, 102, 241, 0.12)',
+            border: '1px dashed #6366f1',
+            borderRadius: '6px',
+            padding: '6px 10px',
+            marginBottom: '8px',
+            color: '#c7d2fe',
+            fontSize: '0.72rem',
+            textAlign: 'center'
+          }}>
+            ⚗️ A Alquimia Arcana exige ao menos <b>2 reagentes</b> combinados para iniciar a transmutação.
           </div>
         )}
 
@@ -582,36 +604,53 @@ export const Cauldron: React.FC<Props> = ({
         </button>
 
         {/* Big Transmute / Craft Button */}
-        <button
-          onClick={onCombine}
-          disabled={slottedIngredients.length < 2 || cauldronState === 'reacting'}
-          style={{
-            flex: '2',
-            padding: '12px 14px',
-            background: slottedIngredients.length >= 2 
-              ? mode === 'alquimia'
-                ? 'linear-gradient(180deg, #b8863b 0%, #855818 100%)'
-                : 'linear-gradient(180deg, #ea580c 0%, #9a3412 100%)'
-              : '#261e18',
-            border: slottedIngredients.length >= 2 ? '1px solid #facc15' : '1px solid #3d2f25',
-            color: slottedIngredients.length >= 2 ? '#ffffff' : '#6b5847',
-            borderRadius: '8px',
-            fontFamily: 'var(--font-display)',
-            fontSize: '0.95rem',
-            fontWeight: 700,
-            letterSpacing: '0.5px',
-            cursor: slottedIngredients.length >= 2 ? 'pointer' : 'not-allowed',
-            boxShadow: slottedIngredients.length >= 2 ? '0 4px 16px rgba(184, 134, 59, 0.45)' : 'none',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '8px',
-            transition: 'all 0.18s ease'
-          }}
-        >
-          <Sparkles size={18} />
-          {mode === 'alquimia' ? 'Transmutar Mistura' : 'Cozinhar Prato'}
-        </button>
+        {(() => {
+          const isCraftable = mode === 'cozinha' 
+            ? slottedIngredients.length >= 1 && cauldronState !== 'reacting'
+            : slottedIngredients.length >= 2 && cauldronState !== 'reacting';
+
+          let buttonText = '';
+          if (mode === 'alquimia') {
+            buttonText = slottedIngredients.length < 2 ? 'Transmutar (Mín. 2 Reagentes)' : 'Transmutar Mistura Arcana';
+          } else {
+            if (slottedIngredients.length === 0) buttonText = 'Adicione Ingredientes';
+            else if (slottedIngredients.length === 1) buttonText = 'Cozinhar Refeição Simples';
+            else buttonText = 'Cozinhar Prato / Banquete';
+          }
+
+          return (
+            <button
+              onClick={onCombine}
+              disabled={!isCraftable}
+              style={{
+                flex: '2',
+                padding: '12px 14px',
+                background: isCraftable 
+                  ? mode === 'alquimia'
+                    ? 'linear-gradient(180deg, #b8863b 0%, #855818 100%)'
+                    : 'linear-gradient(180deg, #ea580c 0%, #9a3412 100%)'
+                  : '#261e18',
+                border: isCraftable ? '1px solid #facc15' : '1px solid #3d2f25',
+                color: isCraftable ? '#ffffff' : '#6b5847',
+                borderRadius: '8px',
+                fontFamily: 'var(--font-display)',
+                fontSize: '0.92rem',
+                fontWeight: 700,
+                letterSpacing: '0.5px',
+                cursor: isCraftable ? 'pointer' : 'not-allowed',
+                boxShadow: isCraftable ? '0 4px 16px rgba(184, 134, 59, 0.45)' : 'none',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '8px',
+                transition: 'all 0.18s ease'
+              }}
+            >
+              <Sparkles size={18} />
+              {buttonText}
+            </button>
+          );
+        })()}
       </div>
     </section>
   );

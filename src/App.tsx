@@ -81,16 +81,18 @@ export const App: React.FC = () => {
 
   // Pre-emptive check: has this exact slotted combination already failed in history?
   const isKnownFailure = useMemo(() => {
-    if (slottedIngredients.length < 2) return false;
+    const minRequired = mode === 'alquimia' ? 2 : 1;
+    if (slottedIngredients.length < minRequired) return false;
     const slottedNorms = slottedIngredients.map(i => i.normName || getNorm(i.name)).sort();
 
     return experimentHistory.some(exp => {
       if (exp.isSuccess) return false;
+      if (exp.mode !== mode) return false;
       const expNorms = exp.ingredients.map(getNorm).sort();
       if (expNorms.length !== slottedNorms.length) return false;
       return expNorms.every((n, idx) => n === slottedNorms[idx]);
     });
-  }, [slottedIngredients, experimentHistory]);
+  }, [slottedIngredients, experimentHistory, mode]);
 
   // Add ingredient to cauldron (max 4)
   const handleAddIngredient = (ingredient: Ingredient) => {
@@ -125,7 +127,8 @@ export const App: React.FC = () => {
 
   // Check and craft recipe
   const handleCombine = () => {
-    if (slottedIngredients.length < 2) return;
+    const minRequired = mode === 'alquimia' ? 2 : 1;
+    if (slottedIngredients.length < minRequired) return;
 
     setCauldronState('reacting');
 
@@ -146,7 +149,7 @@ export const App: React.FC = () => {
 
       // Deduct consumed ingredients from stock
       setIngredients(prev => prev.map(item => {
-        const used = slottedIngredients.filter(s => s.normName === item.normName).length;
+        const used = slottedIngredients.filter(s => (s.normName || getNorm(s.name)) === (item.normName || getNorm(item.name))).length;
         if (used > 0) {
           return { ...item, quantity: Math.max(0, item.quantity - used) };
         }
@@ -179,9 +182,14 @@ export const App: React.FC = () => {
 
         setSlottedIngredients([]);
       } else {
-        // Unstable Mixture
+        // Unstable Mixture / Inedible
         setCauldronState('unstable');
-        showNotification('A mistura ferveu e virou cinzas instáveis. A combinação foi registrada em seu histórico para evitar repetições.');
+        const failureMsg = mode === 'cozinha' && slottedIngredients.length === 1
+          ? 'Este item é um reagente não-comestível e queimou na panela sem produzir alimento. Fórmulas compostas ou alquimia são necessárias.'
+          : mode === 'cozinha'
+            ? 'Os ingredientes não harmonizaram e a receita desandou. A tentativa foi registrada no histórico.'
+            : 'A mistura ferveu e virou cinzas instáveis. A combinação foi registrada em seu histórico para evitar repetições.';
+        showNotification(failureMsg);
 
         setExperimentHistory(prev => [
           {
@@ -205,13 +213,21 @@ export const App: React.FC = () => {
     const needed = recipe.ingredients.map(ingName => {
       const norm = ingName.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
       const found = ingredients.find(i => i.normName === norm || i.name.toLowerCase().trim() === norm);
-      return found || {
+      if (found) return found;
+
+      const masterItem = (initialIngredientsData as Ingredient[]).find(i => i.normName === norm);
+      if (masterItem) return { ...masterItem, quantity: 1 };
+
+      return {
         id: `temp_${Math.random()}`,
         name: ingName,
         normName: norm,
         category: 'Reagente',
         rarity: 'comum' as const,
-        quantity: 1
+        quantity: 1,
+        description: 'Reagente de fórmula arquivada.',
+        resourceType: 'Ingrediente' as const,
+        isEdible: false
       };
     });
 
@@ -230,14 +246,22 @@ export const App: React.FC = () => {
         if (existing) {
           existing.quantity += 1;
         } else {
-          next.unshift({
-            id: `gathered_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`,
-            name,
-            normName: norm,
-            category: 'Erva/Coletado',
-            rarity: 'comum',
-            quantity: 1
-          });
+          const masterItem = (initialIngredientsData as Ingredient[]).find(i => i.normName === norm);
+          if (masterItem) {
+            next.unshift({ ...masterItem, quantity: 1 });
+          } else {
+            next.unshift({
+              id: `gathered_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`,
+              name,
+              normName: norm,
+              category: 'Erva/Coletado',
+              rarity: 'comum',
+              quantity: 1,
+              description: 'Item coletado nos ermos do cenário de Tormenta 20.',
+              resourceType: 'Ingrediente',
+              isEdible: false
+            });
+          }
         }
       });
       return next;

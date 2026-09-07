@@ -1728,5 +1728,857 @@
       "ovos caipiras",
       "queijo curado"
     ]
+  },
+  {
+    "id": "gastro_solo_flor_da_vida",
+    "name": "Chá Suave de Flor-da-vida",
+    "effect": "Sustento por 1 dia. Recupera 1d4 PV imediatamente e alivia enjoo.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "flor-da-vida"
+    ],
+    "normalizedIngredients": [
+      "flor-da-vida"
+    ]
+  },
+  {
+    "id": "gastro_solo_cha_de_serenidade",
+    "name": "Infusão de Cha de serenidade",
+    "effect": "Sustento por 1 dia. Concede +1 em testes de Vontade contra medo e encantamento por 2 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "cha de serenidade"
+    ],
+    "normalizedIngredients": [
+      "cha de serenidade"
+    ]
+  },
+  {
+    "id": "gastro_solo_pimenta_ignea",
+    "name": "Conserva Ardente de Pimenta ignea",
+    "effect": "Sustento por 1 dia. Concede +1 em rolagens de dano corpo a corpo no próximo combate (até o fim da cena).",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "pimenta ignea"
+    ],
+    "normalizedIngredients": [
+      "pimenta ignea"
+    ]
+  },
+  {
+    "id": "gastro_solo_raiz_nevoa",
+    "name": "Porção Cozida de Raiz-nevoa",
+    "effect": "Sustento por 1 dia. Concede +1 em testes de resistência contra frio ou clima adverso por 4 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "raiz-nevoa"
+    ],
+    "normalizedIngredients": [
+      "raiz-nevoa"
+    ]
+  },
+  {
+    "id": "gastro_solo_orvalho_de_aurora",
+    "name": "Prato Rústico de Orvalho de aurora",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "orvalho de aurora"
+    ],
+    "normalizedIngredients": [
+      "orvalho de aurora"
+    ]
+  },
+  {
+    "id": "gastro_solo_nectar_de_flor_celeste",
+    "name": "Chá Suave de Nectar de flor celeste",
+    "effect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "nectar de flor celeste"
+    ],
+    "normalizedIngredients": [
+      "nectar de flor celeste"
+    ]
+  },
+  {
+    "id": "gastro_solo_farinha_de_trigo_dourado",
+    "name": "Prato Rústico de Farinha de trigo dourado",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "farinha de trigo dourado"
+    ],
+    "normalizedIngredients": [
+      "farinha de trigo dourado"
+    ]
+  },
+  {
+    "id": "gastro_solo_cenoura_selvagem",
+    "name": "Porção Cozida de Cenoura selvagem",
+    "effect": "Sustento por 1 dia. Concede +1d4 em um teste de Atletismo ou Sobrevivência realizado hoje.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "cenoura selvagem"
+    ],
+    "normalizedIngredients": [
+      "cenoura selvagem"
+    ]
+  },
+  {
+    "id": "gastro_solo_abobora_do_vento",
+    "name": "Porção Cozida de Abobora-do-vento",
+    "effect": "Sustento por 1 dia. Concede +1d4 em um teste de Atletismo ou Sobrevivência realizado hoje.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "abobora-do-vento"
+    ],
+    "normalizedIngredients": [
+      "abobora-do-vento"
+    ]
+  },
+  {
+    "id": "gastro_solo_raiz_de_batao",
+    "name": "Porção Cozida de Raiz de batao",
+    "effect": "Sustento por 1 dia. Concede +1d4 em um teste de Atletismo ou Sobrevivência realizado hoje.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "raiz de batao"
+    ],
+    "normalizedIngredients": [
+      "raiz de batao"
+    ]
+  },
+  {
+    "id": "gastro_solo_ervas_frescas",
+    "name": "Prato Rústico de Ervas frescas",
+    "effect": "Sustento por 1 dia. Concede +1 em testes de resistência contra frio ou clima adverso por 4 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "ervas frescas"
+    ],
+    "normalizedIngredients": [
+      "ervas frescas"
+    ]
+  },
+  {
+    "id": "gastro_solo_cenoura_dourada",
+    "name": "Porção Cozida de Cenoura dourada",
+    "effect": "Sustento por 1 dia. Concede +1 em testes de Percepção e Iniciativa por 1 hora.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "cenoura dourada"
+    ],
+    "normalizedIngredients": [
+      "cenoura dourada"
+    ]
+  },
+  {
+    "id": "gastro_solo_mel_selvagem",
+    "name": "Dose de Mel selvagem Purificado",
+    "effect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "mel selvagem"
+    ],
+    "normalizedIngredients": [
+      "mel selvagem"
+    ]
+  },
+  {
+    "id": "gastro_solo_melodia_encantada",
+    "name": "Dose de Melodia encantada Purificado",
+    "effect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "melodia encantada"
+    ],
+    "normalizedIngredients": [
+      "melodia encantada"
+    ]
+  },
+  {
+    "id": "gastro_solo_erva_do_crepusculo",
+    "name": "Prato Rústico de Erva-do-crepusculo",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "erva-do-crepusculo"
+    ],
+    "normalizedIngredients": [
+      "erva-do-crepusculo"
+    ]
+  },
+  {
+    "id": "gastro_solo_canela_dos_ceus",
+    "name": "Prato Rústico de Canela dos ceus",
+    "effect": "Sustento por 1 dia. Concede +1 em iniciativa no próximo combate.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "canela dos ceus"
+    ],
+    "normalizedIngredients": [
+      "canela dos ceus"
+    ]
+  },
+  {
+    "id": "gastro_solo_cogumelo_vento",
+    "name": "Cogumelo-vento Salteado na Manteiga",
+    "effect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "cogumelo-vento"
+    ],
+    "normalizedIngredients": [
+      "cogumelo-vento"
+    ]
+  },
+  {
+    "id": "gastro_solo_cogumelo_luz",
+    "name": "Cogumelo-luz Salteado na Manteiga",
+    "effect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "cogumelo-luz"
+    ],
+    "normalizedIngredients": [
+      "cogumelo-luz"
+    ]
+  },
+  {
+    "id": "gastro_solo_cebola_das_sombras",
+    "name": "Prato Rústico de Cebola das sombras",
+    "effect": "Sustento por 1 dia. Concede +1 em Furtividade por 1 hora.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "cebola das sombras"
+    ],
+    "normalizedIngredients": [
+      "cebola das sombras"
+    ]
+  },
+  {
+    "id": "gastro_solo_coracao_de_carvalho_anciao",
+    "name": "Prato Rústico de Coracao de carvalho anciao",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "coracao de carvalho anciao"
+    ],
+    "normalizedIngredients": [
+      "coracao de carvalho anciao"
+    ]
+  },
+  {
+    "id": "gastro_solo_raiz_da_centelha",
+    "name": "Porção Cozida de Raiz da centelha",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "raiz da centelha"
+    ],
+    "normalizedIngredients": [
+      "raiz da centelha"
+    ]
+  },
+  {
+    "id": "gastro_solo_rocha_de_determinacao",
+    "name": "Infusão de Rocha de determinacao",
+    "effect": "Sustento por 1 dia. Concede +1 em testes de Vontade contra medo e encantamento por 2 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "rocha de determinacao"
+    ],
+    "normalizedIngredients": [
+      "rocha de determinacao"
+    ]
+  },
+  {
+    "id": "gastro_solo_ervas_de_montanha",
+    "name": "Prato Rústico de Ervas de montanha",
+    "effect": "Sustento por 1 dia. Concede +1 em testes de resistência contra frio ou clima adverso por 4 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "ervas de montanha"
+    ],
+    "normalizedIngredients": [
+      "ervas de montanha"
+    ]
+  },
+  {
+    "id": "gastro_solo_pimenta_vulcao",
+    "name": "Conserva Ardente de Pimenta-vulcao",
+    "effect": "Sustento por 1 dia. Concede +1 em rolagens de dano corpo a corpo no próximo combate (até o fim da cena).",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "pimenta-vulcao"
+    ],
+    "normalizedIngredients": [
+      "pimenta-vulcao"
+    ]
+  },
+  {
+    "id": "gastro_solo_carne_de_salamandra",
+    "name": "Carne de salamandra Grelhada na Brasa",
+    "effect": "Sustento por 1 dia. Concede +5 PV temporários até o fim da cena.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "carne de salamandra"
+    ],
+    "normalizedIngredients": [
+      "carne de salamandra"
+    ]
+  },
+  {
+    "id": "gastro_solo_lombo_de_bicho_pedra",
+    "name": "Lombo de bicho-pedra Grelhada na Brasa",
+    "effect": "Sustento por 1 dia. Concede +5 PV temporários até o fim da cena.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "lombo de bicho-pedra"
+    ],
+    "normalizedIngredients": [
+      "lombo de bicho-pedra"
+    ]
+  },
+  {
+    "id": "gastro_solo_limao_das_dunas",
+    "name": "Prato Rústico de Limao das dunas",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "limao das dunas"
+    ],
+    "normalizedIngredients": [
+      "limao das dunas"
+    ]
+  },
+  {
+    "id": "gastro_solo_tamarindo_solar",
+    "name": "Prato Rústico de Tamarindo solar",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "tamarindo solar"
+    ],
+    "normalizedIngredients": [
+      "tamarindo solar"
+    ]
+  },
+  {
+    "id": "gastro_solo_nectar_protetor",
+    "name": "Dose de Nectar protetor Purificado",
+    "effect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "nectar protetor"
+    ],
+    "normalizedIngredients": [
+      "nectar protetor"
+    ]
+  },
+  {
+    "id": "gastro_solo_cha_das_ideias",
+    "name": "Infusão de Cha das ideias",
+    "effect": "Sustento por 1 dia. Concede +1 em testes de Vontade contra medo e encantamento por 2 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "cha das ideias"
+    ],
+    "normalizedIngredients": [
+      "cha das ideias"
+    ]
+  },
+  {
+    "id": "gastro_solo_figo_das_dunas",
+    "name": "Prato Rústico de Figo-das-dunas",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "figo-das-dunas"
+    ],
+    "normalizedIngredients": [
+      "figo-das-dunas"
+    ]
+  },
+  {
+    "id": "gastro_solo_hortela_do_norte",
+    "name": "Prato Rústico de Hortela-do-norte",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "hortela-do-norte"
+    ],
+    "normalizedIngredients": [
+      "hortela-do-norte"
+    ]
+  },
+  {
+    "id": "gastro_solo_peixe_crispo",
+    "name": "Peixe-crispo Grelhado com Sal Grosso",
+    "effect": "Sustento por 1 dia. Concede +1 em Fortitude por 2 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "peixe-crispo"
+    ],
+    "normalizedIngredients": [
+      "peixe-crispo"
+    ]
+  },
+  {
+    "id": "gastro_solo_gordura_de_peixe_abissal",
+    "name": "Gordura de peixe abissal Grelhado com Sal Grosso",
+    "effect": "Sustento por 1 dia. Concede +1 em Fortitude por 2 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "gordura de peixe abissal"
+    ],
+    "normalizedIngredients": [
+      "gordura de peixe abissal"
+    ]
+  },
+  {
+    "id": "gastro_solo_especiarias_do_mar",
+    "name": "Prato Rústico de Especiarias do mar",
+    "effect": "Sustento por 1 dia. Concede +1 em iniciativa no próximo combate.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "especiarias do mar"
+    ],
+    "normalizedIngredients": [
+      "especiarias do mar"
+    ]
+  },
+  {
+    "id": "gastro_solo_limao_dos_ceus",
+    "name": "Prato Rústico de Limao dos ceus",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "limao dos ceus"
+    ],
+    "normalizedIngredients": [
+      "limao dos ceus"
+    ]
+  },
+  {
+    "id": "gastro_solo_chave_quebrada",
+    "name": "Infusão de Chave quebrada",
+    "effect": "Sustento por 1 dia. Concede +1 em testes de Vontade contra medo e encantamento por 2 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "chave quebrada"
+    ],
+    "normalizedIngredients": [
+      "chave quebrada"
+    ]
+  },
+  {
+    "id": "gastro_solo_sal_de_rocha",
+    "name": "Infusão de Sal de rocha",
+    "effect": "Sustento por 1 dia. Concede +1 em testes de Vontade contra medo e encantamento por 2 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "sal de rocha"
+    ],
+    "normalizedIngredients": [
+      "sal de rocha"
+    ]
+  },
+  {
+    "id": "gastro_solo_carne_de_rato_gigante",
+    "name": "Carne de rato gigante Grelhada na Brasa",
+    "effect": "Sustento por 1 dia. Concede +5 PV temporários até o fim da cena.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "carne de rato gigante"
+    ],
+    "normalizedIngredients": [
+      "carne de rato gigante"
+    ]
+  },
+  {
+    "id": "gastro_solo_alho_fantasma",
+    "name": "Prato Rústico de Alho-fantasma",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "alho-fantasma"
+    ],
+    "normalizedIngredients": [
+      "alho-fantasma"
+    ]
+  },
+  {
+    "id": "gastro_solo_maca_flutuante",
+    "name": "Prato Rústico de Maca flutuante",
+    "effect": "Sustento por 1 dia. Concede +1 em testes de resistência contra doenças ou fadiga leve por 2 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "maca flutuante"
+    ],
+    "normalizedIngredients": [
+      "maca flutuante"
+    ]
+  },
+  {
+    "id": "gastro_solo_carne_de_minotauro",
+    "name": "Carne de minotauro Grelhada na Brasa",
+    "effect": "Sustento por 1 dia. Concede +5 PV temporários até o fim da cena.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "carne de minotauro"
+    ],
+    "normalizedIngredients": [
+      "carne de minotauro"
+    ]
+  },
+  {
+    "id": "gastro_solo_mel_silvestre",
+    "name": "Dose de Mel silvestre Purificado",
+    "effect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "mel silvestre"
+    ],
+    "normalizedIngredients": [
+      "mel silvestre"
+    ]
+  },
+  {
+    "id": "gastro_solo_cebola_carmesim",
+    "name": "Prato Rústico de Cebola carmesim",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "cebola carmesim"
+    ],
+    "normalizedIngredients": [
+      "cebola carmesim"
+    ]
+  },
+  {
+    "id": "gastro_solo_leite_de_cabra",
+    "name": "Prato Rústico de Leite de cabra",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "leite de cabra"
+    ],
+    "normalizedIngredients": [
+      "leite de cabra"
+    ]
+  },
+  {
+    "id": "gastro_solo_cebola_amarga",
+    "name": "Prato Rústico de Cebola amarga",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "cebola amarga"
+    ],
+    "normalizedIngredients": [
+      "cebola amarga"
+    ]
+  },
+  {
+    "id": "gastro_solo_maca_verde",
+    "name": "Prato Rústico de Maca verde",
+    "effect": "Sustento por 1 dia. Concede +1 em testes de resistência contra doenças ou fadiga leve por 2 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "maca verde"
+    ],
+    "normalizedIngredients": [
+      "maca verde"
+    ]
+  },
+  {
+    "id": "gastro_solo_limao_acido",
+    "name": "Prato Rústico de Limao acido",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "limao acido"
+    ],
+    "normalizedIngredients": [
+      "limao acido"
+    ]
+  },
+  {
+    "id": "gastro_solo_ovo_de_limao",
+    "name": "Prato Rústico de Ovo de limao",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "ovo de limao"
+    ],
+    "normalizedIngredients": [
+      "ovo de limao"
+    ]
+  },
+  {
+    "id": "gastro_solo_raiz_de_batao__tipo_batata_",
+    "name": "Porção Cozida de Raiz de batao (tipo batata)",
+    "effect": "Sustento por 1 dia. Concede +1d4 em um teste de Atletismo ou Sobrevivência realizado hoje.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "raiz de batao (tipo batata)"
+    ],
+    "normalizedIngredients": [
+      "raiz de batao (tipo batata)"
+    ]
+  },
+  {
+    "id": "gastro_solo_babosa_do_deserto__aloe_",
+    "name": "Prato Rústico de Babosa do Deserto (Aloé)",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Babosa do Deserto (Aloé)"
+    ],
+    "normalizedIngredients": [
+      "babosa do deserto (aloe)"
+    ]
+  },
+  {
+    "id": "gastro_solo_abrunheiro__espinheiro_negro_",
+    "name": "Prato Rústico de Abrunheiro (Espinheiro-Negro)",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Abrunheiro (Espinheiro-Negro)"
+    ],
+    "normalizedIngredients": [
+      "abrunheiro (espinheiro-negro)"
+    ]
+  },
+  {
+    "id": "gastro_solo_musgo_do_pao_glacial",
+    "name": "Prato Rústico de Musgo-do-Pão Glacial",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Musgo-do-Pão Glacial"
+    ],
+    "normalizedIngredients": [
+      "musgo-do-pao glacial"
+    ]
+  },
+  {
+    "id": "gastro_solo_copo_de_leite_puro",
+    "name": "Prato Rústico de Copo-de-Leite Puro",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Copo-de-Leite Puro"
+    ],
+    "normalizedIngredients": [
+      "copo-de-leite puro"
+    ]
+  },
+  {
+    "id": "gastro_solo_camelia_nobre",
+    "name": "Dose de Camélia Nobre Purificado",
+    "effect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Camélia Nobre"
+    ],
+    "normalizedIngredients": [
+      "camelia nobre"
+    ]
+  },
+  {
+    "id": "gastro_solo_amanita_carmesim",
+    "name": "Prato Rústico de Amanita Carmesim",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Amanita Carmesim"
+    ],
+    "normalizedIngredients": [
+      "amanita carmesim"
+    ]
+  },
+  {
+    "id": "gastro_solo_alho_da_montanha",
+    "name": "Prato Rústico de Alho-da-Montanha",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Alho-da-Montanha"
+    ],
+    "normalizedIngredients": [
+      "alho-da-montanha"
+    ]
+  },
+  {
+    "id": "gastro_solo_geleia_dourada__tremella_",
+    "name": "Dose de Geleia-Dourada (Tremella) Purificado",
+    "effect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Geleia-Dourada (Tremella)"
+    ],
+    "normalizedIngredients": [
+      "geleia-dourada (tremella)"
+    ]
+  },
+  {
+    "id": "gastro_solo_coprino__cogumelo_de_tinta_",
+    "name": "Coprino (Cogumelo-de-Tinta) Salteado na Manteiga",
+    "effect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Coprino (Cogumelo-de-Tinta)"
+    ],
+    "normalizedIngredients": [
+      "coprino (cogumelo-de-tinta)"
+    ]
+  },
+  {
+    "id": "gastro_solo_bagas_de_zimbro",
+    "name": "Tigela de Bagas de Zimbro Frescas",
+    "effect": "Sustento por 1 dia. Concede +1 em testes de resistência contra doenças ou fadiga leve por 2 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Bagas de Zimbro"
+    ],
+    "normalizedIngredients": [
+      "bagas de zimbro"
+    ]
+  },
+  {
+    "id": "gastro_solo_folhas_de_amoreira_negra",
+    "name": "Prato Rústico de Folhas de Amoreira-Negra",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Folhas de Amoreira-Negra"
+    ],
+    "normalizedIngredients": [
+      "folhas de amoreira-negra"
+    ]
+  },
+  {
+    "id": "gastro_solo_casca_de_carvalho_anciao",
+    "name": "Prato Rústico de Casca de Carvalho-Ancião",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Casca de Carvalho-Ancião"
+    ],
+    "normalizedIngredients": [
+      "casca de carvalho-anciao"
+    ]
+  },
+  {
+    "id": "gastro_solo_orcela_costeira__liquen_purpura_",
+    "name": "Prato Rústico de Orcela Costeira (Líquen Púrpura)",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Orcela Costeira (Líquen Púrpura)"
+    ],
+    "normalizedIngredients": [
+      "orcela costeira (liquen purpura)"
+    ]
+  },
+  {
+    "id": "gastro_solo_bagas_de_tramazeira__sorveira_",
+    "name": "Tigela de Bagas de Tramazeira (Sorveira) Frescas",
+    "effect": "Sustento por 1 dia. Concede +1 em testes de resistência contra doenças ou fadiga leve por 2 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Bagas de Tramazeira (Sorveira)"
+    ],
+    "normalizedIngredients": [
+      "bagas de tramazeira (sorveira)"
+    ]
+  },
+  {
+    "id": "gastro_solo_boleto_rubro__cogumelo_satanico_",
+    "name": "Boleto-Rubro (Cogumelo-Satânico) Salteado na Manteiga",
+    "effect": "Sustento por 1 dia. Concede +1 PM temporário até o próximo descanso curto.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Boleto-Rubro (Cogumelo-Satânico)"
+    ],
+    "normalizedIngredients": [
+      "boleto-rubro (cogumelo-satanico)"
+    ]
+  },
+  {
+    "id": "gastro_solo_taca_escarlate_das_fadas",
+    "name": "Prato Rústico de Taça-Escarlate-das-Fadas",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Taça-Escarlate-das-Fadas"
+    ],
+    "normalizedIngredients": [
+      "taca-escarlate-das-fadas"
+    ]
+  },
+  {
+    "id": "gastro_solo_alga_kelp_costeira",
+    "name": "Prato Rústico de Alga-Kelp Costeira",
+    "effect": "Sustento por 1 dia. Concede +1 em Fortitude por 2 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Alga-Kelp Costeira"
+    ],
+    "normalizedIngredients": [
+      "alga-kelp costeira"
+    ]
+  },
+  {
+    "id": "gastro_solo_shiitake_selvagem",
+    "name": "Prato Rústico de Shiitake Selvagem",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Shiitake Selvagem"
+    ],
+    "normalizedIngredients": [
+      "shiitake selvagem"
+    ]
+  },
+  {
+    "id": "gastro_solo_musgo_esfagno_dos_brejos",
+    "name": "Prato Rústico de Musgo Esfagno dos Brejos",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Musgo Esfagno dos Brejos"
+    ],
+    "normalizedIngredients": [
+      "musgo esfagno dos brejos"
+    ]
+  },
+  {
+    "id": "gastro_solo_tomilho_da_bravura",
+    "name": "Prato Rústico de Tomilho-da-Bravura",
+    "effect": "Sustento por 1 dia (sacia a fome). Concede +1 em um teste de perícia à escolha até o fim do dia.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Tomilho-da-Bravura"
+    ],
+    "normalizedIngredients": [
+      "tomilho-da-bravura"
+    ]
+  },
+  {
+    "id": "gastro_solo_liquen_dourado_das_rochas",
+    "name": "Infusão de Líquen-Dourado das Rochas",
+    "effect": "Sustento por 1 dia. Concede +1 em testes de Vontade contra medo e encantamento por 2 horas.",
+    "category": "Refeição Simples / Sustento",
+    "ingredients": [
+      "Líquen-Dourado das Rochas"
+    ],
+    "normalizedIngredients": [
+      "liquen-dourado das rochas"
+    ]
   }
 ]

@@ -28,9 +28,9 @@ export const IngredientShelf: React.FC<Props> = ({
       // Category match
       let catMatch = true;
       if (activeCategory === 'Ervas & Raízes') {
-        catMatch = item.category.includes('Erva') || item.category.includes('Flor') || item.category.includes('Fungo') || item.category.includes('Vegetal');
+        catMatch = item.category.includes('Erva') || item.category.includes('Flor') || item.category.includes('Fungo') || item.category.includes('Raiz');
       } else if (activeCategory === 'Minerais') {
-        catMatch = item.category.includes('Mineral');
+        catMatch = item.category.includes('Mineral') || item.category.includes('Cristal');
       } else if (activeCategory === 'Criaturas') {
         catMatch = item.category.includes('Criatura') || item.category.includes('Proteína');
       } else if (activeCategory === 'Essências') {
@@ -39,8 +39,10 @@ export const IngredientShelf: React.FC<Props> = ({
         catMatch = item.category.includes('Alimento') || item.category.includes('Tempero') || item.category.includes('Vegetal');
       }
 
-      // Search match
-      const nameMatch = normalize(item.name).includes(term);
+      // Search match across name, region and description
+      const nameMatch = normalize(item.name).includes(term) ||
+                        normalize(item.originRegion || '').includes(term) ||
+                        normalize(item.description || '').includes(term);
       return catMatch && nameMatch;
     });
   }, [ingredients, searchTerm, activeCategory]);
@@ -267,14 +269,13 @@ export const IngredientShelf: React.FC<Props> = ({
                   border: '1px solid #5a4230',
                   color: disabledSlots ? '#554234' : '#c59341',
                   borderRadius: '4px',
-                  width: '24px',
-                  height: '24px',
+                  width: '28px',
+                  height: '28px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   cursor: disabledSlots ? 'not-allowed' : 'pointer',
-                  flexShrink: 0,
-                  transition: 'background 0.12s'
+                  flexShrink: 0
                 }}
               >
                 <Plus size={14} />
@@ -324,24 +325,39 @@ export const IngredientShelf: React.FC<Props> = ({
           </button>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
-            <span style={{ fontSize: '22px' }}>{getItemEmoji(inspectedItem.category)}</span>
+            <span style={{ fontSize: '24px' }}>{getItemEmoji(inspectedItem.category)}</span>
             <div>
               <h3 style={{
-                fontSize: '0.92rem',
+                fontSize: '0.94rem',
                 fontWeight: 700,
                 fontFamily: 'var(--font-display)',
                 color: '#241a12'
               }}>
                 {inspectedItem.name}
               </h3>
-              <span style={{ fontSize: '0.7rem', color: '#6e5a48', textTransform: 'uppercase' }}>
+              <span style={{ fontSize: '0.68rem', color: '#6e5a48', textTransform: 'uppercase', fontWeight: 600 }}>
                 {inspectedItem.category} • {inspectedItem.rarity}
               </span>
             </div>
           </div>
 
-          <p style={{ fontSize: '0.78rem', color: '#453526', lineHeight: '1.3', marginBottom: '8px' }}>
-            {inspectedItem.description || 'Reagente de alta pureza coletado nos ermos do cenário de Tormenta 20.'}
+          {/* Region tag */}
+          {inspectedItem.originRegion && (
+            <div style={{
+              fontSize: '0.68rem',
+              color: '#5c4530',
+              fontWeight: 600,
+              display: 'flex',
+              alignItems: 'center',
+              gap: '4px',
+              marginBottom: '6px'
+            }}>
+              <span>📍 Origem:</span> <span>{inspectedItem.originRegion}</span>
+            </div>
+          )}
+
+          <p style={{ fontSize: '0.78rem', color: '#453526', lineHeight: '1.35', marginBottom: '12px' }}>
+            {inspectedItem.description}
           </p>
 
           <button

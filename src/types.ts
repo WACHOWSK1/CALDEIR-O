@@ -1,5 +1,7 @@
 export type Rarity = 'comum' | 'incomum' | 'raro' | 'lendário';
 
+export type NaturalResourceType = 'Mantimento' | 'Ingrediente' | 'Fonte' | 'Matéria-Prima';
+
 export interface Ingredient {
   id: string;
   name: string;
@@ -7,7 +9,11 @@ export interface Ingredient {
   category: string;
   rarity: Rarity;
   quantity: number;
-  description?: string;
+  description: string;
+  resourceType: NaturalResourceType;
+  originRegion?: string;
+  isEdible: boolean;
+  singleEffect?: string;
   price?: number;
 }
 
