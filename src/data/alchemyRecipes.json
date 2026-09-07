@@ -1,0 +1,2602 @@
+[
+  {
+    "id": "alq_1",
+    "name": "Poção de Mente Clara",
+    "effect": "remove confusão mental",
+    "category": "Pó",
+    "ingredients": [
+      "oleo de serpente polar",
+      "cha de serenidade",
+      "asa de passaro elemental"
+    ],
+    "normalizedIngredients": [
+      "asa de passaro elemental",
+      "cha de serenidade",
+      "oleo de serpente polar"
+    ]
+  },
+  {
+    "id": "alq_2",
+    "name": "Óleo de Arak-Zun (Grude Mortal)",
+    "effect": "Armas cobertas com esse óleo ficam pegajosas; +2 em testes para desarmar.",
+    "category": "Óleo",
+    "ingredients": [
+      "resina negra de teia",
+      "baba de aracnideo",
+      "seiva grudenta"
+    ],
+    "normalizedIngredients": [
+      "baba de aracnideo",
+      "resina negra de teia",
+      "seiva grudenta"
+    ]
+  },
+  {
+    "id": "alq_3",
+    "name": "Óleo do Gelo Silencioso",
+    "effect": "Congela superfícies por onde passa; inimigos precisam passar em Reflexos CD 15 ou caem.",
+    "category": "Óleo",
+    "ingredients": [
+      "cristal de neve eterna",
+      "essencia de ventos do norte",
+      "oleo de serpente polar"
+    ],
+    "normalizedIngredients": [
+      "cristal de neve eterna",
+      "essencia de ventos do norte",
+      "oleo de serpente polar"
+    ]
+  },
+  {
+    "id": "alq_4",
+    "name": "Óleo de Afiamento Vorpal",
+    "effect": "Armas recebem +1 em dano por 1 hora.",
+    "category": "Óleo",
+    "ingredients": [
+      "lamina de prata runica moida",
+      "sangue de quimera",
+      "unguento de pedra do corte"
+    ],
+    "normalizedIngredients": [
+      "lamina de prata runica moida",
+      "sangue de quimera",
+      "unguento de pedra do corte"
+    ]
+  },
+  {
+    "id": "alq_5",
+    "name": "Óleo de Invisibilidade Parcial",
+    "effect": "Itens cobertos ficam translúcidos por 1 minuto.",
+    "category": "Óleo",
+    "ingredients": [
+      "poeira de fada",
+      "nevoa de entardecer",
+      "essencia de camaleao"
+    ],
+    "normalizedIngredients": [
+      "essencia de camaleao",
+      "nevoa de entardecer",
+      "poeira de fada"
+    ]
+  },
+  {
+    "id": "alq_6",
+    "name": "Óleo da Armadura Viva",
+    "effect": "Armaduras cobertas com esse óleo recebem +1 na Defesa por 10 minutos.",
+    "category": "Óleo",
+    "ingredients": [
+      "baba de gosma protetora",
+      "casca de casco-vivo",
+      "cera de caracol blindado"
+    ],
+    "normalizedIngredients": [
+      "baba de gosma protetora",
+      "casca de casco-vivo",
+      "cera de caracol blindado"
+    ]
+  },
+  {
+    "id": "alq_7",
+    "name": "Óleo de Transmutação Lenta",
+    "effect": "Pode alterar cor ou textura de um objeto por 1 hora.",
+    "category": "Óleo",
+    "ingredients": [
+      "seiva de mutante",
+      "po de mimetismo",
+      "olhos de mimetizador"
+    ],
+    "normalizedIngredients": [
+      "olhos de mimetizador",
+      "po de mimetismo",
+      "seiva de mutante"
+    ]
+  },
+  {
+    "id": "alq_8",
+    "name": "Óleo do Golpe Certeiro",
+    "effect": "Próximo ataque com a arma recebe vantagem.",
+    "category": "Óleo",
+    "ingredients": [
+      "olho de falcao",
+      "essencia de precisao",
+      "suor de duelista"
+    ],
+    "normalizedIngredients": [
+      "essencia de precisao",
+      "olho de falcao",
+      "suor de duelista"
+    ]
+  },
+  {
+    "id": "alq_9",
+    "name": "Óleo de Escorregadio",
+    "effect": "Cria uma área escorregadia de 3m por 3m durante 1d4 rodadas.",
+    "category": "Óleo",
+    "ingredients": [
+      "gema lubrificante",
+      "ovo de limo",
+      "gordura de peixe abissal"
+    ],
+    "normalizedIngredients": [
+      "gema lubrificante",
+      "gordura de peixe abissal",
+      "ovo de limo"
+    ]
+  },
+  {
+    "id": "alq_10",
+    "name": "Óleo do Guardião",
+    "effect": "Uma criatura recebe +1 em testes de resistência por 1 hora.",
+    "category": "Óleo",
+    "ingredients": [
+      "coracao de carvalho anciao",
+      "nectar protetor",
+      "escama de dragao de ferro"
+    ],
+    "normalizedIngredients": [
+      "coracao de carvalho anciao",
+      "escama de dragao de ferro",
+      "nectar protetor"
+    ]
+  },
+  {
+    "id": "alq_11",
+    "name": "Óleo de Reversão",
+    "effect": "Remove efeitos de veneno ou doenças aplicados a um item ou substância.",
+    "category": "Óleo",
+    "ingredients": [
+      "folha de reversa",
+      "essencia de antidoto puro",
+      "lagrima de clerigo"
+    ],
+    "normalizedIngredients": [
+      "essencia de antidoto puro",
+      "folha de reversa",
+      "lagrima de clerigo"
+    ]
+  },
+  {
+    "id": "alq_12",
+    "name": "Óleo de Proteção contra o Mal",
+    "effect": "Confere +2 em Defesa e resistência contra efeitos mágicos malignos por 1 hora.",
+    "category": "Óleo",
+    "ingredients": [
+      "agua benta espessa",
+      "essencia de pureza",
+      "vela de templo antigo"
+    ],
+    "normalizedIngredients": [
+      "agua benta espessa",
+      "essencia de pureza",
+      "vela de templo antigo"
+    ]
+  },
+  {
+    "id": "alq_13",
+    "name": "Óleo de Fogo Vivo",
+    "effect": "Arma coberta causa +1d6 de dano de fogo por 3 ataques.",
+    "category": "Óleo",
+    "ingredients": [
+      "sangue de salamandra flamejante",
+      "essencia de carvao vivo",
+      "faisca capturada"
+    ],
+    "normalizedIngredients": [
+      "essencia de carvao vivo",
+      "faisca capturada",
+      "sangue de salamandra flamejante"
+    ]
+  },
+  {
+    "id": "alq_14",
+    "name": "Óleo do Limiar",
+    "effect": "Permite atravessar portas trancadas como névoa (1 uso).",
+    "category": "Óleo",
+    "ingredients": [
+      "poeira dimensional",
+      "chave quebrada",
+      "ar de passagem secreta"
+    ],
+    "normalizedIngredients": [
+      "ar de passagem secreta",
+      "chave quebrada",
+      "poeira dimensional"
+    ]
+  },
+  {
+    "id": "alq_15",
+    "name": "Óleo de Adesão Total",
+    "effect": "Cria uma substância ultraaderente, útil para escalar ou prender objetos.",
+    "category": "Óleo",
+    "ingredients": [
+      "seiva de planta-grude",
+      "baba de limo forte",
+      "po de aderencia"
+    ],
+    "normalizedIngredients": [
+      "baba de limo forte",
+      "po de aderencia",
+      "seiva de planta-grude"
+    ]
+  },
+  {
+    "id": "alq_16",
+    "name": "Óleo da Lâmina do Vento",
+    "effect": "Ataques com a arma coberta ignoram cobertura parcial.",
+    "category": "Óleo",
+    "ingredients": [
+      "pluma de falcao de ar",
+      "essencia de precisao",
+      "vento cortante"
+    ],
+    "normalizedIngredients": [
+      "essencia de precisao",
+      "pluma de falcao de ar",
+      "vento cortante"
+    ]
+  },
+  {
+    "id": "alq_17",
+    "name": "Óleo da Regeneração",
+    "effect": "Cura 1 PV por rodada durante 1d6 rodadas.",
+    "category": "Óleo",
+    "ingredients": [
+      "sangue de troll purificado",
+      "musgo sagrado",
+      "lagrima de druida"
+    ],
+    "normalizedIngredients": [
+      "lagrima de druida",
+      "musgo sagrado",
+      "sangue de troll purificado"
+    ]
+  },
+  {
+    "id": "alq_18",
+    "name": "Óleo da Purificação",
+    "effect": "Remove veneno e doença de um item ou área pequena.",
+    "category": "Óleo",
+    "ingredients": [
+      "sal lunar",
+      "essencia de clerigo",
+      "po de bencao"
+    ],
+    "normalizedIngredients": [
+      "essencia de clerigo",
+      "po de bencao",
+      "sal lunar"
+    ]
+  },
+  {
+    "id": "alq_19",
+    "name": "Óleo das Sombras",
+    "effect": "Escurece a área coberta por 3m, concedendo camuflagem por 1 minuto.",
+    "category": "Óleo",
+    "ingredients": [
+      "cinzas noturnas",
+      "fumaca solidificada",
+      "lagrima de sombra"
+    ],
+    "normalizedIngredients": [
+      "cinzas noturnas",
+      "fumaca solidificada",
+      "lagrima de sombra"
+    ]
+  },
+  {
+    "id": "alq_20",
+    "name": "Óleo da Arma Fulgurante",
+    "effect": "Arma emite luz intensa (como tocha) e causa dano adicional contra mortos-vivos.",
+    "category": "Óleo",
+    "ingredients": [
+      "luz de sol engarrafada",
+      "po de prata",
+      "essencia sagrada"
+    ],
+    "normalizedIngredients": [
+      "essencia sagrada",
+      "luz de sol engarrafada",
+      "po de prata"
+    ]
+  },
+  {
+    "id": "alq_21",
+    "name": "Óleo do Toque Espectral",
+    "effect": "Permite tocar/alcançar criaturas incorpóreas por 1d4 rodadas.",
+    "category": "Óleo",
+    "ingredients": [
+      "nevoa espiritual",
+      "essencia de alma errante",
+      "fragmento de ectoplasma"
+    ],
+    "normalizedIngredients": [
+      "essencia de alma errante",
+      "fragmento de ectoplasma",
+      "nevoa espiritual"
+    ]
+  },
+  {
+    "id": "alq_22",
+    "name": "Poção de Abençoar Alimentos (óleo)",
+    "effect": "Preserva alimentos, anulando venenos e doenças.",
+    "category": "Óleo",
+    "ingredients": [
+      "lagrima de clerigo",
+      "essencia de pureza",
+      "agua benta espessa"
+    ],
+    "normalizedIngredients": [
+      "agua benta espessa",
+      "essencia de pureza",
+      "lagrima de clerigo"
+    ]
+  },
+  {
+    "id": "alq_23",
+    "name": "Poção de Área Escorregadia (granada)",
+    "effect": "Cria uma área escorregadia, derrubando criaturas.",
+    "category": "Pó",
+    "ingredients": [
+      "oleo de serpente polar",
+      "seiva de planta-grude",
+      "ar de passagem secreta"
+    ],
+    "normalizedIngredients": [
+      "ar de passagem secreta",
+      "oleo de serpente polar",
+      "seiva de planta-grude"
+    ]
+  },
+  {
+    "id": "alq_24",
+    "name": "Poção de Arma Mágica (óleo)",
+    "effect": "Encanta uma arma com bônus mágico.",
+    "category": "Óleo",
+    "ingredients": [
+      "essencia de carvao vivo",
+      "poeira de raio",
+      "tinta de prata liquida"
+    ],
+    "normalizedIngredients": [
+      "essencia de carvao vivo",
+      "poeira de raio",
+      "tinta de prata liquida"
+    ]
+  },
+  {
+    "id": "alq_25",
+    "name": "Poção de Compreensão",
+    "effect": "Permite ler e compreender idiomas escritos e falados.",
+    "category": "Pó",
+    "ingredients": [
+      "lingua de poliglota magico",
+      "runa da compreensao",
+      "essencia de alma errante"
+    ],
+    "normalizedIngredients": [
+      "essencia de alma errante",
+      "lingua de poliglota magico",
+      "runa da compreensao"
+    ]
+  },
+  {
+    "id": "alq_26",
+    "name": "Poção de Curar Ferimentos (2d8+2 PV)",
+    "effect": "Cura pontos de vida de uma criatura tocada.",
+    "category": "Pó",
+    "ingredients": [
+      "flor-da-vida",
+      "lagrima de druida",
+      "nectar protetor"
+    ],
+    "normalizedIngredients": [
+      "flor-da-vida",
+      "lagrima de druida",
+      "nectar protetor"
+    ]
+  },
+  {
+    "id": "alq_27",
+    "name": "Poção de Disfarce Ilusório",
+    "effect": "Muda a aparência visual do alvo.",
+    "category": "Pó",
+    "ingredients": [
+      "seda ilusoria",
+      "po de disfarce",
+      "essencia de camaleao"
+    ],
+    "normalizedIngredients": [
+      "essencia de camaleao",
+      "po de disfarce",
+      "seda ilusoria"
+    ]
+  },
+  {
+    "id": "alq_28",
+    "name": "Poção de Escuridão (óleo)",
+    "effect": "Cria uma área de escuridão mágica.",
+    "category": "Óleo",
+    "ingredients": [
+      "essencia de sombra",
+      "cinzas noturnas",
+      "oleo de lotus azul"
+    ],
+    "normalizedIngredients": [
+      "cinzas noturnas",
+      "essencia de sombra",
+      "oleo de lotus azul"
+    ]
+  },
+  {
+    "id": "alq_29",
+    "name": "Poção de Luz (óleo)",
+    "effect": "Cria uma fonte de luz equivalente a uma tocha.",
+    "category": "Óleo",
+    "ingredients": [
+      "luz de sol engarrafada",
+      "fio solar",
+      "oleo de baleia"
+    ],
+    "normalizedIngredients": [
+      "fio solar",
+      "luz de sol engarrafada",
+      "oleo de baleia"
+    ]
+  },
+  {
+    "id": "alq_30",
+    "name": "Poção de Névoa (granada)",
+    "effect": "Cria uma névoa densa que obscurece a visão.",
+    "category": "Pó",
+    "ingredients": [
+      "nevoa destilada",
+      "essencia de nevoa",
+      "vapor de elemental do ar"
+    ],
+    "normalizedIngredients": [
+      "essencia de nevoa",
+      "nevoa destilada",
+      "vapor de elemental do ar"
+    ]
+  },
+  {
+    "id": "alq_31",
+    "name": "Poção de Primor Atlético",
+    "effect": "Concede bônus altos em Atletismo e Acrobacia.",
+    "category": "Pó",
+    "ingredients": [
+      "suor de duelista",
+      "essencia de bravura",
+      "medula de lobo-dourado"
+    ],
+    "normalizedIngredients": [
+      "essencia de bravura",
+      "medula de lobo-dourado",
+      "suor de duelista"
+    ]
+  },
+  {
+    "id": "alq_32",
+    "name": "Poção de Proteção Divina",
+    "effect": "Concede bônus altos em testes de resistência.",
+    "category": "Pó",
+    "ingredients": [
+      "essencia sagrada",
+      "po de bencao",
+      "musgo sagrado"
+    ],
+    "normalizedIngredients": [
+      "essencia sagrada",
+      "musgo sagrado",
+      "po de bencao"
+    ]
+  },
+  {
+    "id": "alq_33",
+    "name": "Poção de Resistência a Energia (gelo)",
+    "effect": "Reduz dano de um tipo específico de energia.",
+    "category": "Pó",
+    "ingredients": [
+      "escama de dragao de ferro",
+      "fragmento glacial",
+      "essencia de antidoto puro"
+    ],
+    "normalizedIngredients": [
+      "escama de dragao de ferro",
+      "essencia de antidoto puro",
+      "fragmento glacial"
+    ]
+  },
+  {
+    "id": "alq_34",
+    "name": "Poção de Resistência a Energia (fogo)",
+    "effect": "Reduz dano de um tipo específico de energia.",
+    "category": "Pó",
+    "ingredients": [
+      "escama de dragao de ferro",
+      "pimenta ignea",
+      "essencia de antidoto puro"
+    ],
+    "normalizedIngredients": [
+      "escama de dragao de ferro",
+      "essencia de antidoto puro",
+      "pimenta ignea"
+    ]
+  },
+  {
+    "id": "alq_35",
+    "name": "Poção de Resistência a Energia (raio)",
+    "effect": "Reduz dano de um tipo específico de energia.",
+    "category": "Pó",
+    "ingredients": [
+      "escama de dragao de ferro",
+      "poeira de raio",
+      "essencia de antidoto puro"
+    ],
+    "normalizedIngredients": [
+      "escama de dragao de ferro",
+      "essencia de antidoto puro",
+      "poeira de raio"
+    ]
+  },
+  {
+    "id": "alq_36",
+    "name": "Poção de Sono",
+    "effect": "Adormece criaturas em uma área.",
+    "category": "Pó",
+    "ingredients": [
+      "nevoa de entardecer",
+      "lagrima de sombra",
+      "tinta de pesadelo"
+    ],
+    "normalizedIngredients": [
+      "lagrima de sombra",
+      "nevoa de entardecer",
+      "tinta de pesadelo"
+    ]
+  },
+  {
+    "id": "alq_37",
+    "name": "Poção de Suporte Ambiental",
+    "effect": "Permite sobreviver em ambientes hostis.",
+    "category": "Pó",
+    "ingredients": [
+      "ar rarefeito de montanha",
+      "sangue de salamandra flamejante",
+      "fragmento de ectoplasma"
+    ],
+    "normalizedIngredients": [
+      "ar rarefeito de montanha",
+      "fragmento de ectoplasma",
+      "sangue de salamandra flamejante"
+    ]
+  },
+  {
+    "id": "alq_38",
+    "name": "Poção de Tranca Arcana (óleo)",
+    "effect": "Tranca magicamente uma porta, baú ou similar.",
+    "category": "Óleo",
+    "ingredients": [
+      "essencia de teatro elfico",
+      "poeira dimensional",
+      "tinta de aco"
+    ],
+    "normalizedIngredients": [
+      "essencia de teatro elfico",
+      "poeira dimensional",
+      "tinta de aco"
+    ]
+  },
+  {
+    "id": "alq_39",
+    "name": "Poção de Visão Mística",
+    "effect": "Permite ver magias e auras ocultas.",
+    "category": "Pó",
+    "ingredients": [
+      "essencia de eter",
+      "olho de falcao",
+      "cha das ideias"
+    ],
+    "normalizedIngredients": [
+      "cha das ideias",
+      "essencia de eter",
+      "olho de falcao"
+    ]
+  },
+  {
+    "id": "alq_40",
+    "name": "Poção de Vitalidade Fantasma",
+    "effect": "Recupera muitos PV; uso pessoal.",
+    "category": "Pó",
+    "ingredients": [
+      "essencia de alma errante",
+      "fragmento de ectoplasma",
+      "flor-da-vida"
+    ],
+    "normalizedIngredients": [
+      "essencia de alma errante",
+      "flor-da-vida",
+      "fragmento de ectoplasma"
+    ]
+  },
+  {
+    "id": "alq_41",
+    "name": "Poção de Escudo da Fé",
+    "effect": "Aumenta bastante a Defesa até o fim da cena.",
+    "category": "Pó",
+    "ingredients": [
+      "essencia de clerigo",
+      "vela de templo antigo",
+      "essencia de bravura"
+    ],
+    "normalizedIngredients": [
+      "essencia de bravura",
+      "essencia de clerigo",
+      "vela de templo antigo"
+    ]
+  },
+  {
+    "id": "alq_42",
+    "name": "Poção de Alterar Tamanho",
+    "effect": "Dobra ou reduz o tamanho da criatura.",
+    "category": "Pó",
+    "ingredients": [
+      "chifre moido",
+      "seiva de mutante",
+      "essencia de teatro elfico"
+    ],
+    "normalizedIngredients": [
+      "chifre moido",
+      "essencia de teatro elfico",
+      "seiva de mutante"
+    ]
+  },
+  {
+    "id": "alq_43",
+    "name": "Poção de Aparência Perfeita",
+    "effect": "Bônus altos em Enganação e Diplomacia.",
+    "category": "Pó",
+    "ingredients": [
+      "seda ilusoria",
+      "nectar de flor celeste",
+      "essencia de camaleao"
+    ],
+    "normalizedIngredients": [
+      "essencia de camaleao",
+      "nectar de flor celeste",
+      "seda ilusoria"
+    ]
+  },
+  {
+    "id": "alq_44",
+    "name": "Poção de Armamento da Natureza (óleo)",
+    "effect": "Invoca uma arma natural mágica.",
+    "category": "Óleo",
+    "ingredients": [
+      "espinho selvagem",
+      "coracao de carvalho anciao",
+      "essencia de bravura"
+    ],
+    "normalizedIngredients": [
+      "coracao de carvalho anciao",
+      "espinho selvagem",
+      "essencia de bravura"
+    ]
+  },
+  {
+    "id": "alq_45",
+    "name": "Poção de Bola de Fogo (granada)",
+    "effect": "Causa dano de fogo em área.",
+    "category": "Pó",
+    "ingredients": [
+      "pimenta ignea",
+      "poeira de raio",
+      "essencia de carvao vivo"
+    ],
+    "normalizedIngredients": [
+      "essencia de carvao vivo",
+      "pimenta ignea",
+      "poeira de raio"
+    ]
+  },
+  {
+    "id": "alq_46",
+    "name": "Poção de Camuflagem Ilusória",
+    "effect": "Oculta presença em ambientes naturais.",
+    "category": "Pó",
+    "ingredients": [
+      "po de mimetismo",
+      "essencia de camaleao",
+      "casca de casco-vivo"
+    ],
+    "normalizedIngredients": [
+      "casca de casco-vivo",
+      "essencia de camaleao",
+      "po de mimetismo"
+    ]
+  },
+  {
+    "id": "alq_47",
+    "name": "Poção de Concentração de Combate",
+    "effect": "Bônus em testes de concentração.",
+    "category": "Pó",
+    "ingredients": [
+      "cristal mental",
+      "cha das ideias",
+      "gota de eco cristalino"
+    ],
+    "normalizedIngredients": [
+      "cha das ideias",
+      "cristal mental",
+      "gota de eco cristalino"
+    ]
+  },
+  {
+    "id": "alq_48",
+    "name": "Poção de Físico Divino",
+    "effect": "Bônus alto em um atributo físico à escolha.",
+    "category": "Pó",
+    "ingredients": [
+      "medula de lobo-dourado",
+      "essencia de bravura",
+      "raiz da centelha"
+    ],
+    "normalizedIngredients": [
+      "essencia de bravura",
+      "medula de lobo-dourado",
+      "raiz da centelha"
+    ]
+  },
+  {
+    "id": "alq_49",
+    "name": "Poção de Mente Divina",
+    "effect": "Bônus alto em um atributo mental à escolha.",
+    "category": "Pó",
+    "ingredients": [
+      "cerebro de gnomo",
+      "cristal de ressonancia",
+      "essencia de alma errante"
+    ],
+    "normalizedIngredients": [
+      "cerebro de gnomo",
+      "cristal de ressonancia",
+      "essencia de alma errante"
+    ]
+  },
+  {
+    "id": "alq_50",
+    "name": "Poção de Metamorfose",
+    "effect": "Muda a forma física da criatura.",
+    "category": "Pó",
+    "ingredients": [
+      "seiva de mutante",
+      "essencia de teatro elfico",
+      "olhos de mimetizador"
+    ],
+    "normalizedIngredients": [
+      "essencia de teatro elfico",
+      "olhos de mimetizador",
+      "seiva de mutante"
+    ]
+  },
+  {
+    "id": "alq_51",
+    "name": "Poção de Purificação",
+    "effect": "Remove doenças, venenos e maldições.",
+    "category": "Pó",
+    "ingredients": [
+      "essencia de antidoto puro",
+      "lagrima de clerigo",
+      "essencia de pureza"
+    ],
+    "normalizedIngredients": [
+      "essencia de antidoto puro",
+      "essencia de pureza",
+      "lagrima de clerigo"
+    ]
+  },
+  {
+    "id": "alq_52",
+    "name": "Poção de Velocidade",
+    "effect": "Ganha uma ação adicional por turno.",
+    "category": "Pó",
+    "ingredients": [
+      "pena de coruja veloz",
+      "suor de duelista",
+      "vento cortante"
+    ],
+    "normalizedIngredients": [
+      "pena de coruja veloz",
+      "suor de duelista",
+      "vento cortante"
+    ]
+  },
+  {
+    "id": "alq_53",
+    "name": "Poção de Vestimenta da Fé (óleo)",
+    "effect": "Invoca uma armadura sagrada temporária.",
+    "category": "Óleo",
+    "ingredients": [
+      "essencia sagrada",
+      "po de luz consagrada",
+      "fio solar"
+    ],
+    "normalizedIngredients": [
+      "essencia sagrada",
+      "fio solar",
+      "po de luz consagrada"
+    ]
+  },
+  {
+    "id": "alq_54",
+    "name": "Poção de Voz Divina",
+    "effect": "Bônus em perícias baseadas em Carisma.",
+    "category": "Pó",
+    "ingredients": [
+      "pena de bardo da paz",
+      "essencia de teatro elfico",
+      "nectar de flor celeste"
+    ],
+    "normalizedIngredients": [
+      "essencia de teatro elfico",
+      "nectar de flor celeste",
+      "pena de bardo da paz"
+    ]
+  },
+  {
+    "id": "alq_55",
+    "name": "Poção de Curar Ferimentos (4d8+4 PV)",
+    "effect": "Cura PV (versão intermediária).",
+    "category": "Pó",
+    "ingredients": [
+      "flor-da-vida",
+      "lagrima de druida",
+      "nectar protetor"
+    ],
+    "normalizedIngredients": [
+      "flor-da-vida",
+      "lagrima de druida",
+      "nectar protetor"
+    ]
+  },
+  {
+    "id": "alq_56",
+    "name": "Poção de Curar Ferimentos (4d8+4 PV) [alternativa]",
+    "effect": "Cura PV (versão intermediária).",
+    "category": "Pó",
+    "ingredients": [
+      "flor-da-vida",
+      "lagrima de druida",
+      "cristal de neve eterna"
+    ],
+    "normalizedIngredients": [
+      "cristal de neve eterna",
+      "flor-da-vida",
+      "lagrima de druida"
+    ]
+  },
+  {
+    "id": "alq_57",
+    "name": "Poção de Curar Ferimentos (7d8+7 PV)",
+    "effect": "Cura PV (versão maior).",
+    "category": "Pó",
+    "ingredients": [
+      "flor-da-vida",
+      "essencia de pureza",
+      "lagrima solar"
+    ],
+    "normalizedIngredients": [
+      "essencia de pureza",
+      "flor-da-vida",
+      "lagrima solar"
+    ]
+  },
+  {
+    "id": "alq_58",
+    "name": "Poção de Curar Ferimentos (7d8+7 PV) [alternativa]",
+    "effect": "Cura PV (versão maior).",
+    "category": "Pó",
+    "ingredients": [
+      "flor-da-vida",
+      "essencia de pureza",
+      "po de bencao"
+    ],
+    "normalizedIngredients": [
+      "essencia de pureza",
+      "flor-da-vida",
+      "po de bencao"
+    ]
+  },
+  {
+    "id": "alq_59",
+    "name": "Poção de Curar Ferimentos (11d8+11 PV)",
+    "effect": "Cura poderosa de PV.",
+    "category": "Pó",
+    "ingredients": [
+      "flor-da-vida",
+      "lagrima de clerigo",
+      "essencia sagrada"
+    ],
+    "normalizedIngredients": [
+      "essencia sagrada",
+      "flor-da-vida",
+      "lagrima de clerigo"
+    ]
+  },
+  {
+    "id": "alq_60",
+    "name": "Poção de Curar Ferimentos (11d8+11 PV) [alternativa]",
+    "effect": "Cura poderosa de PV.",
+    "category": "Pó",
+    "ingredients": [
+      "flor-da-vida",
+      "lagrima de clerigo",
+      "cristal de ressonancia"
+    ],
+    "normalizedIngredients": [
+      "cristal de ressonancia",
+      "flor-da-vida",
+      "lagrima de clerigo"
+    ]
+  },
+  {
+    "id": "alq_61",
+    "name": "Poção de Físico Divino (3 atributos)",
+    "effect": "Bônus em Força, Destreza e Constituição.",
+    "category": "Pó",
+    "ingredients": [
+      "medula de lobo-dourado",
+      "raiz da centelha",
+      "essencia de bravura"
+    ],
+    "normalizedIngredients": [
+      "essencia de bravura",
+      "medula de lobo-dourado",
+      "raiz da centelha"
+    ]
+  },
+  {
+    "id": "alq_62",
+    "name": "Poção de Físico Divino (3 atributos) [alternativa]",
+    "effect": "Bônus em Força, Destreza e Constituição.",
+    "category": "Pó",
+    "ingredients": [
+      "medula de lobo-dourado",
+      "raiz da centelha",
+      "vento cortante"
+    ],
+    "normalizedIngredients": [
+      "medula de lobo-dourado",
+      "raiz da centelha",
+      "vento cortante"
+    ]
+  },
+  {
+    "id": "alq_63",
+    "name": "Poção de Invisibilidade (cena inteira)",
+    "effect": "Fica invisível até o fim da cena ou até atacar.",
+    "category": "Pó",
+    "ingredients": [
+      "po de disfarce",
+      "seda ilusoria",
+      "nevoa eterea"
+    ],
+    "normalizedIngredients": [
+      "nevoa eterea",
+      "po de disfarce",
+      "seda ilusoria"
+    ]
+  },
+  {
+    "id": "alq_64",
+    "name": "Poção de Invisibilidade (cena inteira) [alternativa]",
+    "effect": "Fica invisível até o fim da cena ou até atacar.",
+    "category": "Pó",
+    "ingredients": [
+      "po de disfarce",
+      "seda ilusoria",
+      "essencia de fuga"
+    ],
+    "normalizedIngredients": [
+      "essencia de fuga",
+      "po de disfarce",
+      "seda ilusoria"
+    ]
+  },
+  {
+    "id": "alq_65",
+    "name": "Poção de Bola de Fogo (granada aprimorada)",
+    "effect": "Dano de fogo em área (versão forte).",
+    "category": "Pó",
+    "ingredients": [
+      "essencia de carvao vivo",
+      "sangue de salamandra flamejante",
+      "faisca capturada"
+    ],
+    "normalizedIngredients": [
+      "essencia de carvao vivo",
+      "faisca capturada",
+      "sangue de salamandra flamejante"
+    ]
+  },
+  {
+    "id": "alq_66",
+    "name": "Poção de Bola de Fogo (granada aprimorada) [alternativa]",
+    "effect": "Dano de fogo em área (versão forte).",
+    "category": "Pó",
+    "ingredients": [
+      "essencia de carvao vivo",
+      "sangue de salamandra flamejante",
+      "poeira de raio"
+    ],
+    "normalizedIngredients": [
+      "essencia de carvao vivo",
+      "poeira de raio",
+      "sangue de salamandra flamejante"
+    ]
+  },
+  {
+    "id": "alq_67",
+    "name": "Bálsamo Restaurador",
+    "effect": "Recupera PV com uso externo.",
+    "category": "Bálsamo",
+    "ingredients": [
+      "musgo sagrado",
+      "seiva grudenta",
+      "raiz-de-vigilante"
+    ],
+    "normalizedIngredients": [
+      "musgo sagrado",
+      "raiz-de-vigilante",
+      "seiva grudenta"
+    ]
+  },
+  {
+    "id": "alq_68",
+    "name": "Essência de Mana",
+    "effect": "Recupera pontos de mana.",
+    "category": "Poção",
+    "ingredients": [
+      "gota de eco cristalino",
+      "cristal mental",
+      "cha das ideias"
+    ],
+    "normalizedIngredients": [
+      "cha das ideias",
+      "cristal mental",
+      "gota de eco cristalino"
+    ]
+  },
+  {
+    "id": "alq_69",
+    "name": "Óleo de Baleia",
+    "effect": "Ignora penalidades de combate submerso.",
+    "category": "Óleo",
+    "ingredients": [
+      "gordura de peixe abissal",
+      "essencia de agua encantada",
+      "alga do sopro"
+    ],
+    "normalizedIngredients": [
+      "alga do sopro",
+      "essencia de agua encantada",
+      "gordura de peixe abissal"
+    ]
+  },
+  {
+    "id": "alq_70",
+    "name": "Poção da Pele de Pedra",
+    "effect": "RD contra dano físico por cena.",
+    "category": "Pó",
+    "ingredients": [
+      "po de granito magico",
+      "lagrima de elemental da terra",
+      "seiva endurecida"
+    ],
+    "normalizedIngredients": [
+      "lagrima de elemental da terra",
+      "po de granito magico",
+      "seiva endurecida"
+    ]
+  },
+  {
+    "id": "alq_71",
+    "name": "Poção da Fome de Batalha",
+    "effect": "Bônus em ataques e dano corpo a corpo; penalidade em Defesa.",
+    "category": "Pó",
+    "ingredients": [
+      "sangue de berserker",
+      "espinho selvagem",
+      "pimenta ignea"
+    ],
+    "normalizedIngredients": [
+      "espinho selvagem",
+      "pimenta ignea",
+      "sangue de berserker"
+    ]
+  },
+  {
+    "id": "alq_72",
+    "name": "Poção dos Vagalumes Fantasmas",
+    "effect": "Cria luzes ilusórias que distraem inimigos.",
+    "category": "Pó",
+    "ingredients": [
+      "poeira de fada",
+      "petala de flor eterea",
+      "tinta ilusoria"
+    ],
+    "normalizedIngredients": [
+      "petala de flor eterea",
+      "poeira de fada",
+      "tinta ilusoria"
+    ]
+  },
+  {
+    "id": "alq_73",
+    "name": "Poção do Grito Silencioso",
+    "effect": "Lançar magias verbais em silêncio.",
+    "category": "Pó",
+    "ingredients": [
+      "tinta de silencio",
+      "lingua de serpente muda",
+      "tinta do veredito"
+    ],
+    "normalizedIngredients": [
+      "lingua de serpente muda",
+      "tinta de silencio",
+      "tinta do veredito"
+    ]
+  },
+  {
+    "id": "alq_74",
+    "name": "Poção do Rastro Verde",
+    "effect": "Rastro visível apenas para o usuário por 1 hora.",
+    "category": "Pó",
+    "ingredients": [
+      "essencia de alma errante",
+      "nevoa espiritual",
+      "tinta de prata liquida"
+    ],
+    "normalizedIngredients": [
+      "essencia de alma errante",
+      "nevoa espiritual",
+      "tinta de prata liquida"
+    ]
+  },
+  {
+    "id": "alq_75",
+    "name": "Poção da Névoa Viva",
+    "effect": "Bônus em Furtividade e Defesa contra projéteis.",
+    "category": "Pó",
+    "ingredients": [
+      "nevoa destilada",
+      "essencia de nevoa",
+      "po de sombra"
+    ],
+    "normalizedIngredients": [
+      "essencia de nevoa",
+      "nevoa destilada",
+      "po de sombra"
+    ]
+  },
+  {
+    "id": "alq_76",
+    "name": "Poção do Fôlego Abissal",
+    "effect": "Respirar e enxergar debaixo d'água por 1 hora.",
+    "category": "Pó",
+    "ingredients": [
+      "alga do sopro",
+      "gema de agua encantada",
+      "lingua de morcego"
+    ],
+    "normalizedIngredients": [
+      "alga do sopro",
+      "gema de agua encantada",
+      "lingua de morcego"
+    ]
+  },
+  {
+    "id": "alq_77",
+    "name": "Poção do Passo Leve",
+    "effect": "Ignora armadilhas de pressão e anda sobre superfícies frágeis.",
+    "category": "Pó",
+    "ingredients": [
+      "pluma flutuante",
+      "seiva de planta-grude",
+      "vento engarrafado"
+    ],
+    "normalizedIngredients": [
+      "pluma flutuante",
+      "seiva de planta-grude",
+      "vento engarrafado"
+    ]
+  },
+  {
+    "id": "alq_78",
+    "name": "Poção da Sombra de Valkaria",
+    "effect": "Repetir uma rolagem por cena.",
+    "category": "Pó",
+    "ingredients": [
+      "essencia de sombra",
+      "gema dos veus",
+      "olhos de mimetizador"
+    ],
+    "normalizedIngredients": [
+      "essencia de sombra",
+      "gema dos veus",
+      "olhos de mimetizador"
+    ]
+  },
+  {
+    "id": "alq_79",
+    "name": "Poção da Recordação Proibida",
+    "effect": "Ver o passado recente de um local/objeto.",
+    "category": "Pó",
+    "ingredients": [
+      "essencia de memoria",
+      "poeira dimensional",
+      "cristal mental"
+    ],
+    "normalizedIngredients": [
+      "cristal mental",
+      "essencia de memoria",
+      "poeira dimensional"
+    ]
+  },
+  {
+    "id": "alq_80",
+    "name": "Ensopado do Viajante",
+    "effect": "Recupera 30% da energia e aumenta a velocidade de movimento por 5 minutos.",
+    "category": "Poção",
+    "ingredients": [
+      "raiz de batao",
+      "cenoura selvagem",
+      "agua cristalina",
+      "ervas de montanha"
+    ],
+    "normalizedIngredients": [
+      "agua cristalina",
+      "cenoura selvagem",
+      "ervas de montanha",
+      "raiz de batao"
+    ]
+  },
+  {
+    "id": "alq_81",
+    "name": "Pao Rustico de Campina",
+    "effect": "Restaura 20% de vida e aumenta regeneracao passiva.",
+    "category": "Poção",
+    "ingredients": [
+      "farinha de trigo dourado",
+      "mel silvestre",
+      "fermento seco"
+    ],
+    "normalizedIngredients": [
+      "farinha de trigo dourado",
+      "fermento seco",
+      "mel silvestre"
+    ]
+  },
+  {
+    "id": "alq_82",
+    "name": "Assado de Cogumelos Luminosos",
+    "effect": "Concede visao noturna e leve resistencia a magia por 3 minutos.",
+    "category": "Poção",
+    "ingredients": [
+      "cogumelo-luz",
+      "cebola das sombras",
+      "azeite do pantano"
+    ],
+    "normalizedIngredients": [
+      "azeite do pantano",
+      "cebola das sombras",
+      "cogumelo-luz"
+    ]
+  },
+  {
+    "id": "alq_83",
+    "name": "Peixe-Crispo na Brasa",
+    "effect": "+15% de resistencia a ataques fisicos por 5 minutos.",
+    "category": "Pó",
+    "ingredients": [
+      "peixe-crispo",
+      "limao das dunas",
+      "sal marinho"
+    ],
+    "normalizedIngredients": [
+      "limao das dunas",
+      "peixe-crispo",
+      "sal marinho"
+    ]
+  },
+  {
+    "id": "alq_84",
+    "name": "Sopa de Abobora do Bosque",
+    "effect": "Restaura 40% de mana e acalma efeitos negativos (veneno/frio).",
+    "category": "Poção",
+    "ingredients": [
+      "abobora-do-vento",
+      "cebola carmesim",
+      "leite de cabra"
+    ],
+    "normalizedIngredients": [
+      "abobora-do-vento",
+      "cebola carmesim",
+      "leite de cabra"
+    ]
+  },
+  {
+    "id": "alq_85",
+    "name": "Frutas Grelhadas do Oasis",
+    "effect": "Restaura energia e oferece imunidade a sede/calor por 10 minutos.",
+    "category": "Poção",
+    "ingredients": [
+      "figo-das-dunas",
+      "tamarindo solar",
+      "oleo leve"
+    ],
+    "normalizedIngredients": [
+      "figo-das-dunas",
+      "oleo leve",
+      "tamarindo solar"
+    ]
+  },
+  {
+    "id": "alq_86",
+    "name": "Risoto de Ervas do Entardecer",
+    "effect": "+10% em acerto critico por 4 minutos.",
+    "category": "Poção",
+    "ingredients": [
+      "arroz prateado",
+      "erva-do-crepusculo",
+      "caldo leve"
+    ],
+    "normalizedIngredients": [
+      "arroz prateado",
+      "caldo leve",
+      "erva-do-crepusculo"
+    ]
+  },
+  {
+    "id": "alq_87",
+    "name": "Torta de Maca Voadora",
+    "effect": "Reduz o tempo de queda e dano de queda por 15 minutos.",
+    "category": "Poção",
+    "ingredients": [
+      "maca flutuante",
+      "canela dos ceus",
+      "massa fina"
+    ],
+    "normalizedIngredients": [
+      "canela dos ceus",
+      "maca flutuante",
+      "massa fina"
+    ]
+  },
+  {
+    "id": "alq_88",
+    "name": "Caldo Refrescante de Gelo Eterno",
+    "effect": "Reduz dano de fogo e calor por 5 minutos.",
+    "category": "Poção",
+    "ingredients": [
+      "agua congelada",
+      "hortela-do-norte",
+      "raizes frias"
+    ],
+    "normalizedIngredients": [
+      "agua congelada",
+      "hortela-do-norte",
+      "raizes frias"
+    ]
+  },
+  {
+    "id": "alq_89",
+    "name": "Omelete de Galinha do Campo",
+    "effect": "Restaura parte da vida e concede +1 de inteligencia temporaria.",
+    "category": "Pó",
+    "ingredients": [
+      "ovos caipiras",
+      "queijo curado",
+      "ervas frescas"
+    ],
+    "normalizedIngredients": [
+      "ervas frescas",
+      "ovos caipiras",
+      "queijo curado"
+    ]
+  },
+  {
+    "id": "alq_90",
+    "name": "Sopa de Olho de Troll",
+    "effect": "Concede regeneracao acelerada de vida por 3 minutos.",
+    "category": "Poção",
+    "ingredients": [
+      "olho de troll",
+      "alho-fantasma",
+      "agua fervente"
+    ],
+    "normalizedIngredients": [
+      "agua fervente",
+      "alho-fantasma",
+      "olho de troll"
+    ]
+  },
+  {
+    "id": "alq_91",
+    "name": "Ragu de Tentaculos Abissais",
+    "effect": "Permite respirar debaixo d'agua por 10 minutos.",
+    "category": "Poção",
+    "ingredients": [
+      "tentaculo de polvo sombrio",
+      "especiarias do mar",
+      "vinho negro"
+    ],
+    "normalizedIngredients": [
+      "especiarias do mar",
+      "tentaculo de polvo sombrio",
+      "vinho negro"
+    ]
+  },
+  {
+    "id": "alq_92",
+    "name": "Linguica de Salamandra Flamejante",
+    "effect": "Imunidade a queimaduras e +10% de dano de fogo.",
+    "category": "Poção",
+    "ingredients": [
+      "carne de salamandra",
+      "pimenta-vulcao",
+      "gordura cristalina"
+    ],
+    "normalizedIngredients": [
+      "carne de salamandra",
+      "gordura cristalina",
+      "pimenta-vulcao"
+    ]
+  },
+  {
+    "id": "alq_93",
+    "name": "Estufado de Minotauro",
+    "effect": "+20% de forca fisica por 5 minutos.",
+    "category": "Poção",
+    "ingredients": [
+      "carne de minotauro",
+      "vinho tinto",
+      "cenoura dourada"
+    ],
+    "normalizedIngredients": [
+      "carne de minotauro",
+      "cenoura dourada",
+      "vinho tinto"
+    ]
+  },
+  {
+    "id": "alq_94",
+    "name": "Ensopado de Asa de Harpia",
+    "effect": "Diminui o custo de stamina em ataques aereos.",
+    "category": "Poção",
+    "ingredients": [
+      "asa de harpia",
+      "cogumelo-vento",
+      "limao dos ceus"
+    ],
+    "normalizedIngredients": [
+      "asa de harpia",
+      "cogumelo-vento",
+      "limao dos ceus"
+    ]
+  },
+  {
+    "id": "alq_95",
+    "name": "Carne Grelhada de Bicho-Pedra",
+    "effect": "+30% de defesa fisica por 3 minutos.",
+    "category": "Poção",
+    "ingredients": [
+      "lombo de bicho-pedra",
+      "sal de rocha",
+      "oleo mineral"
+    ],
+    "normalizedIngredients": [
+      "lombo de bicho-pedra",
+      "oleo mineral",
+      "sal de rocha"
+    ]
+  },
+  {
+    "id": "alq_96",
+    "name": "Guisado de Rato Gigante",
+    "effect": "Melhora a furtividade e percepcao por 5 minutos.",
+    "category": "Poção",
+    "ingredients": [
+      "carne de rato gigante",
+      "cebola amarga",
+      "vinho escuro"
+    ],
+    "normalizedIngredients": [
+      "carne de rato gigante",
+      "cebola amarga",
+      "vinho escuro"
+    ]
+  },
+  {
+    "id": "alq_97",
+    "name": "Tarte de Garras de Grifo",
+    "effect": "Aumenta o dano critico de ataques corpo-a-corpo.",
+    "category": "Poção",
+    "ingredients": [
+      "garras trituradas",
+      "mel selvagem",
+      "maca verde"
+    ],
+    "normalizedIngredients": [
+      "garras trituradas",
+      "maca verde",
+      "mel selvagem"
+    ]
+  },
+  {
+    "id": "alq_98",
+    "name": "Refogado de Casco de Caranguejo Titanico",
+    "effect": "+25% de resistencia magica por 4 minutos.",
+    "category": "Poção",
+    "ingredients": [
+      "casco macio",
+      "algas picantes",
+      "manteiga de coral"
+    ],
+    "normalizedIngredients": [
+      "algas picantes",
+      "casco macio",
+      "manteiga de coral"
+    ]
+  },
+  {
+    "id": "alq_99",
+    "name": "Gelatina de Gosma Acida",
+    "effect": "Imunidade a venenos e acido por 5 minutos.",
+    "category": "Poção",
+    "ingredients": [
+      "nucleo de gosma acida",
+      "limao acido",
+      "acucar cristal"
+    ],
+    "normalizedIngredients": [
+      "acucar cristal",
+      "limao acido",
+      "nucleo de gosma acida"
+    ]
+  },
+  {
+    "id": "alq_100",
+    "name": "Óleo Glacial da Serpente Polar",
+    "effect": "Ignora terreno difícil causado por neve/gelo, passar nos sapatos. Duração: 1 cena",
+    "category": "Óleo",
+    "ingredients": [
+      "oleo de serpente polar",
+      "cristal de neve eterna"
+    ],
+    "normalizedIngredients": [
+      "cristal de neve eterna",
+      "oleo de serpente polar"
+    ]
+  },
+  {
+    "id": "alq_101",
+    "name": "Óleo Glacial da Serpente Polar",
+    "effect": "Ignora terreno difícil causado por neve/gelo, passar nos sapatos. Duração: 1 cena",
+    "category": "Óleo",
+    "ingredients": [
+      "oleo de serpente polar",
+      "essencia de ventos do norte"
+    ],
+    "normalizedIngredients": [
+      "essencia de ventos do norte",
+      "oleo de serpente polar"
+    ]
+  },
+  {
+    "id": "alq_102",
+    "name": "Poção da Respiração Invernal",
+    "effect": "Permite um golpe &quot;sopro invernal&quot;. Ao usar a poção, você pode usar uma vez o &quot;sopro invernal&quot; que causa na área de um cone de 3m 2d6 de dano congelante (inimigos sofrem penalidade 2 para testes de ataque no proximo turno)",
+    "category": "Pó",
+    "ingredients": [
+      "cristal de neve eterna",
+      "agua congelada"
+    ],
+    "normalizedIngredients": [
+      "agua congelada",
+      "cristal de neve eterna"
+    ]
+  },
+  {
+    "id": "alq_103",
+    "name": "Poção da Respiração Invernal",
+    "effect": "Permite um golpe &quot;sopro invernal&quot;. Ao usar a poção, você pode usar uma vez o &quot;sopro invernal&quot; que causa na área de um cone de 3m 2d6 de dano congelante (inimigos sofrem penalidade 2 para testes de ataque no proximo turno)",
+    "category": "Pó",
+    "ingredients": [
+      "agua congelada",
+      "raizes frias"
+    ],
+    "normalizedIngredients": [
+      "agua congelada",
+      "raizes frias"
+    ]
+  },
+  {
+    "id": "alq_104",
+    "name": "Poção da Respiração Invernal",
+    "effect": "Permite um golpe &quot;sopro invernal&quot;. Ao usar a poção, você pode usar uma vez o &quot;sopro invernal&quot; que causa na área de um cone de 3m 2d6 de dano congelante (inimigos sofrem penalidade 2 para testes de ataque no proximo turno)",
+    "category": "Pó",
+    "ingredients": [
+      "agua congelada",
+      "hortela-do-norte"
+    ],
+    "normalizedIngredients": [
+      "agua congelada",
+      "hortela-do-norte"
+    ]
+  },
+  {
+    "id": "alq_105",
+    "name": "Óleo Aderente da Planta-Grude",
+    "effect": "5 em testes de atletismo. Passar nos pés(sapatos) ou mãos ou ambos.",
+    "category": "Óleo",
+    "ingredients": [
+      "seiva grudenta",
+      "seiva de planta-grude"
+    ],
+    "normalizedIngredients": [
+      "seiva de planta-grude",
+      "seiva grudenta"
+    ]
+  },
+  {
+    "id": "alq_106",
+    "name": "Óleo Aderente da Planta-Grude",
+    "effect": "5 em testes de atletismo. Passar nos pés(sapatos) ou mãos ou ambos.",
+    "category": "Óleo",
+    "ingredients": [
+      "seiva grudenta",
+      "po de aderencia"
+    ],
+    "normalizedIngredients": [
+      "po de aderencia",
+      "seiva grudenta"
+    ]
+  },
+  {
+    "id": "alq_107",
+    "name": "Frasco de Gosma Corrosiva Protetora",
+    "effect": "Explode em uma área quadraada de 3m, causando 2d6 de dano de ácido (Reflexos reduz à metade).\n\nEfeito (ingerido):\n\nVocê recebe RD 5/ácido e +2 em Fortitude contra venenos por uma cena.\n\nA cada ataque corpo a corpo que o acerte, o atacante sofre 1d4 de dano de ácido.\n\nDuração: 1 cena",
+    "category": "Poção",
+    "ingredients": [
+      "baba de limo forte",
+      "baba de gosma protetora"
+    ],
+    "normalizedIngredients": [
+      "baba de gosma protetora",
+      "baba de limo forte"
+    ]
+  },
+  {
+    "id": "alq_108",
+    "name": "Frasco de Gosma Corrosiva Protetora",
+    "effect": "Explode em uma área quadraada de 3m, causando 2d6 de dano de ácido (Reflexos reduz à metade).\n\nEfeito (ingerido):\n\nVocê recebe RD 5/ácido e +2 em Fortitude contra venenos por uma cena.\n\nA cada ataque corpo a corpo que o acerte, o atacante sofre 1d4 de dano de ácido.\n\nDuração: 1 cena",
+    "category": "Poção",
+    "ingredients": [
+      "nucleo de gosma acida",
+      "ovo de limao"
+    ],
+    "normalizedIngredients": [
+      "nucleo de gosma acida",
+      "ovo de limao"
+    ]
+  },
+  {
+    "id": "alq_109",
+    "name": "Elixir da Pele Mutável",
+    "effect": "+2 em Furtividade e +2 em Enganação (para disfarce). Duração: 1 cena",
+    "category": "Elixir",
+    "ingredients": [
+      "po de mimetismo",
+      "essencia de camaleao"
+    ],
+    "normalizedIngredients": [
+      "essencia de camaleao",
+      "po de mimetismo"
+    ]
+  },
+  {
+    "id": "alq_110",
+    "name": "Elixir da Pele Mutável",
+    "effect": "+2 em Furtividade e +2 em Enganação (para disfarce). Duração: 1 cena",
+    "category": "Elixir",
+    "ingredients": [
+      "po de disfarce",
+      "seda ilusoria"
+    ],
+    "normalizedIngredients": [
+      "po de disfarce",
+      "seda ilusoria"
+    ]
+  },
+  {
+    "id": "alq_111",
+    "name": "Elixir da Pele Mutável",
+    "effect": "+2 em Furtividade e +2 em Enganação (para disfarce). Duração: 1 cena",
+    "category": "Elixir",
+    "ingredients": [
+      "po de disfarce",
+      "essencia de fuga"
+    ],
+    "normalizedIngredients": [
+      "essencia de fuga",
+      "po de disfarce"
+    ]
+  },
+  {
+    "id": "alq_112",
+    "name": "Elixir da Pele Mutável",
+    "effect": "+2 em Furtividade e +2 em Enganação (para disfarce). Duração: 1 cena",
+    "category": "Elixir",
+    "ingredients": [
+      "olhos de mimetizador",
+      "essencia de sombra"
+    ],
+    "normalizedIngredients": [
+      "essencia de sombra",
+      "olhos de mimetizador"
+    ]
+  },
+  {
+    "id": "alq_113",
+    "name": "Poção dos Olhos do Falcão",
+    "effect": "Em um ataque à distância por cena, você pode rolar o ataque duas vezes e ficar com o melhor resultado. Uma vez por porção. +2 em teste de ataque a distância",
+    "category": "Pó",
+    "ingredients": [
+      "olho de falcao",
+      "pluma de falcao de ar"
+    ],
+    "normalizedIngredients": [
+      "olho de falcao",
+      "pluma de falcao de ar"
+    ]
+  },
+  {
+    "id": "alq_114",
+    "name": "Poção dos Olhos do Falcão",
+    "effect": "Em um ataque à distância por cena, você pode rolar o ataque duas vezes e ficar com o melhor resultado. Uma vez por porção. +2 em teste de ataque a distância",
+    "category": "Pó",
+    "ingredients": [
+      "olho de falcao",
+      "essencia de precisao"
+    ],
+    "normalizedIngredients": [
+      "essencia de precisao",
+      "olho de falcao"
+    ]
+  },
+  {
+    "id": "alq_115",
+    "name": "Poção dos Olhos do Falcão",
+    "effect": "Em um ataque à distância por cena, você pode rolar o ataque duas vezes e ficar com o melhor resultado. Uma vez por porção. +2 em teste de ataque a distância",
+    "category": "Pó",
+    "ingredients": [
+      "pena de coruja veloz",
+      "vento cortante"
+    ],
+    "normalizedIngredients": [
+      "pena de coruja veloz",
+      "vento cortante"
+    ]
+  },
+  {
+    "id": "alq_116",
+    "name": "Tônico da Bravura do Lobo Dourado",
+    "effect": "Se estiver com PV igual ou menor que metade do máximo, ganha +2 em defesa.\n\nDuração: 4 turnos.",
+    "category": "Poção",
+    "ingredients": [
+      "suor de duelista",
+      "essencia de bravura"
+    ],
+    "normalizedIngredients": [
+      "essencia de bravura",
+      "suor de duelista"
+    ]
+  },
+  {
+    "id": "alq_117",
+    "name": "Tônico da Bravura do Lobo Dourado",
+    "effect": "Se estiver com PV igual ou menor que metade do máximo, ganha +2 em defesa.\n\nDuração: 4 turnos.",
+    "category": "Poção",
+    "ingredients": [
+      "medula de lobo-dourado",
+      "raiz da centelha"
+    ],
+    "normalizedIngredients": [
+      "medula de lobo-dourado",
+      "raiz da centelha"
+    ]
+  },
+  {
+    "id": "alq_118",
+    "name": "Tônico da Bravura do Lobo Dourado",
+    "effect": "Se estiver com PV igual ou menor que metade do máximo, ganha +2 em defesa.\n\nDuração: 4 turnos.",
+    "category": "Poção",
+    "ingredients": [
+      "medula de lobo-dourado",
+      "vento cortante"
+    ],
+    "normalizedIngredients": [
+      "medula de lobo-dourado",
+      "vento cortante"
+    ]
+  },
+  {
+    "id": "alq_119",
+    "name": "Elixir do Coração da Floresta",
+    "effect": "Cura 2d8+2 PV ao ser ingerido se tiver em ambiente de floresta, caso contrário, cura 2d4.",
+    "category": "Elixir",
+    "ingredients": [
+      "coracao de carvalho anciao",
+      "musgo sagrado"
+    ],
+    "normalizedIngredients": [
+      "coracao de carvalho anciao",
+      "musgo sagrado"
+    ]
+  },
+  {
+    "id": "alq_120",
+    "name": "Elixir do Coração da Floresta",
+    "effect": "Cura 2d8+2 PV ao ser ingerido se tiver em ambiente de floresta, caso contrário, cura 2d4.",
+    "category": "Elixir",
+    "ingredients": [
+      "coracao de carvalho anciao",
+      "espinho selvagem"
+    ],
+    "normalizedIngredients": [
+      "coracao de carvalho anciao",
+      "espinho selvagem"
+    ]
+  },
+  {
+    "id": "alq_121",
+    "name": "Elixir do Coração da Floresta",
+    "effect": "Cura 2d8+2 PV ao ser ingerido se tiver em ambiente de floresta, caso contrário, cura 2d4.",
+    "category": "Elixir",
+    "ingredients": [
+      "flor-da-vida",
+      "nectar protetor"
+    ],
+    "normalizedIngredients": [
+      "flor-da-vida",
+      "nectar protetor"
+    ]
+  },
+  {
+    "id": "alq_122",
+    "name": "Elixir do Coração da Floresta",
+    "effect": "Efeito arcano misterioso.",
+    "category": "Elixir",
+    "ingredients": [
+      "flor-da-vida",
+      "lagrima de druida"
+    ],
+    "normalizedIngredients": [
+      "flor-da-vida",
+      "lagrima de druida"
+    ]
+  },
+  {
+    "id": "alq_123",
+    "name": "agua benta da pureza absoluta",
+    "effect": "cura 1d8+1 pv ao ser ingerida e concede um novo teste de fortitude com +2 contra veneno ou doenca. se usada contra mortos-vivos ou criaturas das trevas, causa 2d6 de dano de luz (fortitude reduz a metade) e impoe -1 em testes de ataque e de resistencia ate o fim da cena.",
+    "category": "Poção",
+    "ingredients": [
+      "lagrima de clerigo",
+      "essencia de pureza"
+    ],
+    "normalizedIngredients": [
+      "essencia de pureza",
+      "lagrima de clerigo"
+    ]
+  },
+  {
+    "id": "alq_124",
+    "name": "agua benta da pureza absoluta",
+    "effect": "cura 1d8+1 pv ao ser ingerida e concede um novo teste de fortitude com +2 contra veneno ou doenca. se usada contra mortos-vivos ou criaturas das trevas, causa 2d6 de dano de luz (fortitude reduz a metade) e impoe -1 em testes de ataque e de resistencia ate o fim da cena.",
+    "category": "Poção",
+    "ingredients": [
+      "lagrima de clerigo",
+      "agua benta espessa"
+    ],
+    "normalizedIngredients": [
+      "agua benta espessa",
+      "lagrima de clerigo"
+    ]
+  },
+  {
+    "id": "alq_125",
+    "name": "agua benta da pureza absoluta",
+    "effect": "cura 1d8+1 pv ao ser ingerida e concede um novo teste de fortitude com +2 contra veneno ou doenca. se usada contra mortos-vivos ou criaturas das trevas, causa 2d6 de dano de luz (fortitude reduz a metade) e impoe -1 em testes de ataque e de resistencia ate o fim da cena.",
+    "category": "Poção",
+    "ingredients": [
+      "agua benta espessa",
+      "essencia sagrada"
+    ],
+    "normalizedIngredients": [
+      "agua benta espessa",
+      "essencia sagrada"
+    ]
+  },
+  {
+    "id": "alq_126",
+    "name": "agua benta da pureza absoluta",
+    "effect": "cura 1d8+1 pv ao ser ingerida e concede um novo teste de fortitude com +2 contra veneno ou doenca. se usada contra mortos-vivos ou criaturas das trevas, causa 2d6 de dano de luz (fortitude reduz a metade) e impoe -1 em testes de ataque e de resistencia ate o fim da cena.",
+    "category": "Poção",
+    "ingredients": [
+      "essencia de clerigo",
+      "vela de templo antigo"
+    ],
+    "normalizedIngredients": [
+      "essencia de clerigo",
+      "vela de templo antigo"
+    ]
+  },
+  {
+    "id": "alq_127",
+    "name": "agua benta da pureza absoluta",
+    "effect": "cura 1d8+1 pv ao ser ingerida e concede um novo teste de fortitude com +2 contra veneno ou doenca. se usada contra mortos-vivos ou criaturas das trevas, causa 2d6 de dano de luz (fortitude reduz a metade) e impoe -1 em testes de ataque e de resistencia ate o fim da cena.",
+    "category": "Poção",
+    "ingredients": [
+      "essencia de clerigo",
+      "po de bencao"
+    ],
+    "normalizedIngredients": [
+      "essencia de clerigo",
+      "po de bencao"
+    ]
+  },
+  {
+    "id": "alq_128",
+    "name": "agua benta da pureza absoluta",
+    "effect": "cura 1d8+1 pv ao ser ingerida e concede um novo teste de fortitude com +2 contra veneno ou doenca. se usada contra mortos-vivos ou criaturas das trevas, causa 2d6 de dano de luz (fortitude reduz a metade) e impoe -1 em testes de ataque e de resistencia ate o fim da cena.",
+    "category": "Poção",
+    "ingredients": [
+      "flor-da-vida",
+      "essencia de pureza"
+    ],
+    "normalizedIngredients": [
+      "essencia de pureza",
+      "flor-da-vida"
+    ]
+  },
+  {
+    "id": "alq_129",
+    "name": "agua benta da pureza absoluta",
+    "effect": "cura 1d8+1 pv ao ser ingerida e concede um novo teste de fortitude com +2 contra veneno ou doenca. se usada contra mortos-vivos ou criaturas das trevas, causa 2d6 de dano de luz (fortitude reduz a metade) e impoe -1 em testes de ataque e de resistencia ate o fim da cena.",
+    "category": "Poção",
+    "ingredients": [
+      "flor-da-vida",
+      "po de bencao"
+    ],
+    "normalizedIngredients": [
+      "flor-da-vida",
+      "po de bencao"
+    ]
+  },
+  {
+    "id": "alq_130",
+    "name": "oleo solar prateado",
+    "effect": "arma alvo recebe descritores luz e prata, causa +1d6 de dano de luz contra mortos-vivos, demonios e criaturas das trevas e ignora rd baseada em prata. duracao: cena ou ate 10 ataques, o que vier primeiro.",
+    "category": "Poção",
+    "ingredients": [
+      "luz de sol engarrafada",
+      "fio solar"
+    ],
+    "normalizedIngredients": [
+      "fio solar",
+      "luz de sol engarrafada"
+    ]
+  },
+  {
+    "id": "alq_131",
+    "name": "oleo solar prateado",
+    "effect": "arma alvo recebe descritores luz e prata, causa +1d6 de dano de luz contra mortos-vivos, demonios e criaturas das trevas e ignora rd baseada em prata. duracao: cena ou ate 10 ataques, o que vier primeiro.",
+    "category": "Poção",
+    "ingredients": [
+      "luz de sol engarrafada",
+      "essencia sagrada"
+    ],
+    "normalizedIngredients": [
+      "essencia sagrada",
+      "luz de sol engarrafada"
+    ]
+  },
+  {
+    "id": "alq_132",
+    "name": "oleo solar prateado",
+    "effect": "arma alvo recebe descritores luz e prata, causa +1d6 de dano de luz contra mortos-vivos, demonios e criaturas das trevas e ignora rd baseada em prata. duracao: cena ou ate 10 ataques, o que vier primeiro.",
+    "category": "Poção",
+    "ingredients": [
+      "luz de sol engarrafada",
+      "po de prata"
+    ],
+    "normalizedIngredients": [
+      "luz de sol engarrafada",
+      "po de prata"
+    ]
+  },
+  {
+    "id": "alq_133",
+    "name": "veu das sombras noturnas",
+    "effect": "concede visao na penumbra, +5 em furtividade em escuridao e permite criar uma nuvem de sombras de raio 3 m por 1 rodada, concedendo camuflagem total dentro dela e impondo -2 em percepcao baseada em visao. duracao: cena.",
+    "category": "Poção",
+    "ingredients": [
+      "cinzas noturnas",
+      "fumaca solidificada"
+    ],
+    "normalizedIngredients": [
+      "cinzas noturnas",
+      "fumaca solidificada"
+    ]
+  },
+  {
+    "id": "alq_134",
+    "name": "veu das sombras noturnas",
+    "effect": "concede visao na penumbra, +5 em furtividade em escuridao e permite criar uma nuvem de sombras de raio 3 m por 1 rodada, concedendo camuflagem total dentro dela e impondo -2 em percepcao baseada em visao. duracao: cena.",
+    "category": "Poção",
+    "ingredients": [
+      "cinzas noturnas",
+      "essencia de sombra"
+    ],
+    "normalizedIngredients": [
+      "cinzas noturnas",
+      "essencia de sombra"
+    ]
+  },
+  {
+    "id": "alq_135",
+    "name": "veu das sombras noturnas",
+    "effect": "concede visao na penumbra, +5 em furtividade em escuridao e permite criar uma nuvem de sombras de raio 3 m por 1 rodada, concedendo camuflagem total dentro dela e impondo -2 em percepcao baseada em visao. duracao: cena.",
+    "category": "Poção",
+    "ingredients": [
+      "cinzas noturnas",
+      "lagrima de sombra"
+    ],
+    "normalizedIngredients": [
+      "cinzas noturnas",
+      "lagrima de sombra"
+    ]
+  },
+  {
+    "id": "alq_136",
+    "name": "veu das sombras noturnas",
+    "effect": "concede visao na penumbra, +5 em furtividade em escuridao e permite criar uma nuvem de sombras de raio 3 m por 1 rodada, concedendo camuflagem total dentro dela e impondo -2 em percepcao baseada em visao. duracao: cena.",
+    "category": "Poção",
+    "ingredients": [
+      "lagrima de sombra",
+      "tinta de pesadelo"
+    ],
+    "normalizedIngredients": [
+      "lagrima de sombra",
+      "tinta de pesadelo"
+    ]
+  },
+  {
+    "id": "alq_137",
+    "name": "licor ectoplasmico errante",
+    "effect": "permite ver criaturas etereas ou incorporeas em alcance curto, concede +2 em vontade contra efeitos de morte, medo e possessao e permite que um ataque seu trate alvos incorporeos como se seus ataques fossem magicos e incorporeos. duracao: cena.",
+    "category": "Poção",
+    "ingredients": [
+      "nevoa espiritual",
+      "essencia de alma errante"
+    ],
+    "normalizedIngredients": [
+      "essencia de alma errante",
+      "nevoa espiritual"
+    ]
+  },
+  {
+    "id": "alq_138",
+    "name": "licor ectoplasmico errante",
+    "effect": "permite ver criaturas etereas ou incorporeas em alcance curto, concede +2 em vontade contra efeitos de morte, medo e possessao e permite que um ataque seu trate alvos incorporeos como se seus ataques fossem magicos e incorporeos. duracao: cena.",
+    "category": "Poção",
+    "ingredients": [
+      "essencia de alma errante",
+      "fragmento de ectoplasma"
+    ],
+    "normalizedIngredients": [
+      "essencia de alma errante",
+      "fragmento de ectoplasma"
+    ]
+  },
+  {
+    "id": "alq_139",
+    "name": "licor ectoplasmico errante",
+    "effect": "permite ver criaturas etereas ou incorporeas em alcance curto, concede +2 em vontade contra efeitos de morte, medo e possessao e permite que um ataque seu trate alvos incorporeos como se seus ataques fossem magicos e incorporeos. duracao: cena.",
+    "category": "Poção",
+    "ingredients": [
+      "essencia de alma errante",
+      "cristal de ressonancia"
+    ],
+    "normalizedIngredients": [
+      "cristal de ressonancia",
+      "essencia de alma errante"
+    ]
+  },
+  {
+    "id": "alq_140",
+    "name": "cha das mil ideias",
+    "effect": "concede +2 em testes baseados em inteligencia (conhecimentos, investigacao, oficio, misticismo, guerra etc.), permite refazer um teste de pericia de inteligencia durante a duracao e concede +2 em vontade contra confusao e compulsao mental. duracao: dois turnos.",
+    "category": "Poção",
+    "ingredients": [
+      "cristal mental",
+      "gota de eco cristalino",
+      "cha das ideias"
+    ],
+    "normalizedIngredients": [
+      "cha das ideias",
+      "cristal mental",
+      "gota de eco cristalino"
+    ]
+  },
+  {
+    "id": "alq_141",
+    "name": "cha das mil ideias",
+    "effect": "concede +2 em testes baseados em inteligencia (conhecimentos, investigacao, oficio, misticismo, guerra etc.), permite refazer um teste de pericia de inteligencia durante a duracao e concede +2 em vontade contra confusao e compulsao mental. duracao: dois turnos.",
+    "category": "Poção",
+    "ingredients": [
+      "essencia de memoria",
+      "cristal mental"
+    ],
+    "normalizedIngredients": [
+      "cristal mental",
+      "essencia de memoria"
+    ]
+  },
+  {
+    "id": "alq_142",
+    "name": "cha das mil ideias",
+    "effect": "concede +2 em testes baseados em inteligencia (conhecimentos, investigacao, oficio, misticismo, guerra etc.), permite refazer um teste de pericia de inteligencia durante a duracao e concede +2 em vontade contra confusao e compulsao mental. duracao: dois turnos.",
+    "category": "Poção",
+    "ingredients": [
+      "cerebro de gnomo",
+      "cristal de ressonancia"
+    ],
+    "normalizedIngredients": [
+      "cerebro de gnomo",
+      "cristal de ressonancia"
+    ]
+  },
+  {
+    "id": "alq_143",
+    "name": "nevoa das passagens secretas",
+    "effect": "concede +2 em percepcao para encontrar portas secretas, passagens ocultas e armadilhas por 10 minutos, +1 em fortitude contra gases e sufocamento e permite atravessar uma parede fina ou porta (ate 30 cm) uma vez, como se fosse intangivel (reflexos cd 18 para nao ficar atordoado por 1 rodada).",
+    "category": "Poção",
+    "ingredients": [
+      "poeira dimensional",
+      "chave quebrada"
+    ],
+    "normalizedIngredients": [
+      "chave quebrada",
+      "poeira dimensional"
+    ]
+  },
+  {
+    "id": "alq_144",
+    "name": "nevoa das passagens secretas",
+    "effect": "concede +2 em percepcao para encontrar portas secretas, passagens ocultas e armadilhas por 10 minutos, +1 em fortitude contra gases e sufocamento e permite atravessar uma parede fina ou porta (ate 30 cm) uma vez, como se fosse intangivel (reflexos cd 18 para nao ficar atordoado por 1 rodada).",
+    "category": "Poção",
+    "ingredients": [
+      "poeira dimensional",
+      "ar de passagem secreta"
+    ],
+    "normalizedIngredients": [
+      "ar de passagem secreta",
+      "poeira dimensional"
+    ]
+  },
+  {
+    "id": "alq_145",
+    "name": "nevoa das passagens secretas",
+    "effect": "concede +2 em percepcao para encontrar portas secretas, passagens ocultas e armadilhas por 10 minutos, +1 em fortitude contra gases e sufocamento e permite atravessar uma parede fina ou porta (ate 30 cm) uma vez, como se fosse intangivel (reflexos cd 18 para nao ficar atordoado por 1 rodada).",
+    "category": "Poção",
+    "ingredients": [
+      "poeira dimensional",
+      "essencia de teatro elfico"
+    ],
+    "normalizedIngredients": [
+      "essencia de teatro elfico",
+      "poeira dimensional"
+    ]
+  },
+  {
+    "id": "alq_146",
+    "name": "nevoa das passagens secretas",
+    "effect": "concede +2 em percepcao para encontrar portas secretas, passagens ocultas e armadilhas por 10 minutos, +1 em fortitude contra gases e sufocamento e permite atravessar uma parede fina ou porta (ate 30 cm) uma vez, como se fosse intangivel (reflexos cd 18 para nao ficar atordoado por 1 rodada).",
+    "category": "Poção",
+    "ingredients": [
+      "ar de passagem secreta",
+      "vento engarrafado"
+    ],
+    "normalizedIngredients": [
+      "ar de passagem secreta",
+      "vento engarrafado"
+    ]
+  },
+  {
+    "id": "alq_147",
+    "name": "nevoa das passagens secretas",
+    "effect": "concede +2 em percepcao para encontrar portas secretas, passagens ocultas e armadilhas por 10 minutos, +1 em fortitude contra gases e sufocamento e permite atravessar uma parede fina ou porta (ate 30 cm) uma vez, como se fosse intangivel (reflexos cd 18 para nao ficar atordoado por 1 rodada).",
+    "category": "Poção",
+    "ingredients": [
+      "pluma flutuante",
+      "vento engarrafado"
+    ],
+    "normalizedIngredients": [
+      "pluma flutuante",
+      "vento engarrafado"
+    ]
+  },
+  {
+    "id": "alq_148",
+    "name": "nevoa das passagens secretas",
+    "effect": "concede +2 em percepcao para encontrar portas secretas, passagens ocultas e armadilhas por 10 minutos, +1 em fortitude contra gases e sufocamento e permite atravessar uma parede fina ou porta (ate 30 cm) uma vez, como se fosse intangivel (reflexos cd 18 para nao ficar atordoado por 1 rodada).",
+    "category": "Poção",
+    "ingredients": [
+      "essencia de eter",
+      "ar rarefeito de montanha"
+    ],
+    "normalizedIngredients": [
+      "ar rarefeito de montanha",
+      "essencia de eter"
+    ]
+  },
+  {
+    "id": "alq_149",
+    "name": "pocao dos ventos cortantes",
+    "effect": "aumenta seu deslocamento em 3 m, concede +2 em reflexos contra efeitos de area e permite usar uma acao padrao para lancar uma lamina de vento de medio alcance que causa 2d6 de dano cortante. duracao: cena.",
+    "category": "Pó",
+    "ingredients": [
+      "pluma de falcao de ar",
+      "vento cortante"
+    ],
+    "normalizedIngredients": [
+      "pluma de falcao de ar",
+      "vento cortante"
+    ]
+  },
+  {
+    "id": "alq_150",
+    "name": "pocao dos ventos cortantes",
+    "effect": "aumenta seu deslocamento em 3 m, concede +2 em reflexos contra efeitos de area e permite usar uma acao padrao para lancar uma lamina de vento de medio alcance que causa 2d6 de dano cortante. duracao: cena.",
+    "category": "Pó",
+    "ingredients": [
+      "essencia de ventos do norte",
+      "vento cortante"
+    ],
+    "normalizedIngredients": [
+      "essencia de ventos do norte",
+      "vento cortante"
+    ]
+  },
+  {
+    "id": "alq_151",
+    "name": "pocao da forja ignea",
+    "effect": "concede resistencia a fogo +2, +1 em testes de ataque corpo a corpo e +1d4 de dano de fogo em ataques corpo a corpo. se sofrer dano de frio, todos os bonus da pocao terminam. duracao: cena.",
+    "category": "Pó",
+    "ingredients": [
+      "essencia de carvao vivo",
+      "sangue de salamandra flamejante"
+    ],
+    "normalizedIngredients": [
+      "essencia de carvao vivo",
+      "sangue de salamandra flamejante"
+    ]
+  },
+  {
+    "id": "alq_152",
+    "name": "pocao da forja ignea",
+    "effect": "concede resistencia a fogo +2, +1 em testes de ataque corpo a corpo e +1d4 de dano de fogo em ataques corpo a corpo. se sofrer dano de frio, todos os bonus da pocao terminam. duracao: cena.",
+    "category": "Pó",
+    "ingredients": [
+      "essencia de carvao vivo",
+      "pimenta ignea"
+    ],
+    "normalizedIngredients": [
+      "essencia de carvao vivo",
+      "pimenta ignea"
+    ]
+  },
+  {
+    "id": "alq_153",
+    "name": "pocao da forja ignea",
+    "effect": "concede resistencia a fogo +2, +1 em testes de ataque corpo a corpo e +1d4 de dano de fogo em ataques corpo a corpo. se sofrer dano de frio, todos os bonus da pocao terminam. duracao: cena.",
+    "category": "Pó",
+    "ingredients": [
+      "essencia de carvao vivo",
+      "poeira de raio"
+    ],
+    "normalizedIngredients": [
+      "essencia de carvao vivo",
+      "poeira de raio"
+    ]
+  },
+  {
+    "id": "alq_154",
+    "name": "pocao da forja ignea",
+    "effect": "concede resistencia a fogo +2, +1 em testes de ataque corpo a corpo e +1d4 de dano de fogo em ataques corpo a corpo. se sofrer dano de frio, todos os bonus da pocao terminam. duracao: cena.",
+    "category": "Pó",
+    "ingredients": [
+      "sangue de salamandra flamejante",
+      "pimenta-vulcao"
+    ],
+    "normalizedIngredients": [
+      "pimenta-vulcao",
+      "sangue de salamandra flamejante"
+    ]
+  },
+  {
+    "id": "alq_155",
+    "name": "pocao da forja ignea",
+    "effect": "concede resistencia a fogo +2, +1 em testes de ataque corpo a corpo e +1d4 de dano de fogo em ataques corpo a corpo. se sofrer dano de frio, todos os bonus da pocao terminam. duracao: cena.",
+    "category": "Pó",
+    "ingredients": [
+      "sangue de berserker",
+      "espinho selvagem",
+      "pimenta ignea"
+    ],
+    "normalizedIngredients": [
+      "espinho selvagem",
+      "pimenta ignea",
+      "sangue de berserker"
+    ]
+  },
+  {
+    "id": "alq_156",
+    "name": "elixir da pele de pedra",
+    "effect": "concede rd 5 contra dano cortante, perfurante e de impacto nao magico, mas impoe -2 em acrobacia e furtividade. duracao: cena.",
+    "category": "Elixir",
+    "ingredients": [
+      "po de granito magico",
+      "lagrima de elemental da terra"
+    ],
+    "normalizedIngredients": [
+      "lagrima de elemental da terra",
+      "po de granito magico"
+    ]
+  },
+  {
+    "id": "alq_157",
+    "name": "elixir da pele de pedra",
+    "effect": "concede rd 5 contra dano cortante, perfurante e de impacto nao magico, mas impoe -2 em acrobacia e furtividade. duracao: cena.",
+    "category": "Elixir",
+    "ingredients": [
+      "po de granito magico",
+      "seiva endurecida"
+    ],
+    "normalizedIngredients": [
+      "po de granito magico",
+      "seiva endurecida"
+    ]
+  },
+  {
+    "id": "alq_158",
+    "name": "infusao de serenidade de lotus",
+    "effect": "remove a condicao abalado ao ser ingerida, concede +2 em vontade contra medo e encantamento e, enquanto durar, impede que o alvo entre em furia ou estados similares, mas concede +2 em diplomacia e intuicao fora de combate. duracao: 1 hora.",
+    "category": "Poção",
+    "ingredients": [
+      "oleo de lotus azul",
+      "cha de serenidade"
+    ],
+    "normalizedIngredients": [
+      "cha de serenidade",
+      "oleo de lotus azul"
+    ]
+  },
+  {
+    "id": "alq_159",
+    "name": "balsamo do guardiao vigilante",
+    "effect": "concede +5 em percepcao para evitar emboscadas, voce nao fica desprevenido enquanto acordado (exceto contra inimigos invisiveis ou similares), +2 em vontade contra sono magico e encantamentos de torpor e +2 em sobrevivencia em terrenos naturais. duracao: cena ou ate voce dormir.",
+    "category": "Bálsamo",
+    "ingredients": [
+      "musgo sagrado",
+      "seiva grudenta"
+    ],
+    "normalizedIngredients": [
+      "musgo sagrado",
+      "seiva grudenta"
+    ]
+  },
+  {
+    "id": "alq_160",
+    "name": "balsamo do guardiao vigilante",
+    "effect": "concede +5 em percepcao para evitar emboscadas, voce nao fica desprevenido enquanto acordado (exceto contra inimigos invisiveis ou similares), +2 em vontade contra sono magico e encantamentos de torpor e +2 em sobrevivencia em terrenos naturais. duracao: cena ou ate voce dormir.",
+    "category": "Bálsamo",
+    "ingredients": [
+      "musgo sagrado",
+      "raiz-de-vigilante"
+    ],
+    "normalizedIngredients": [
+      "musgo sagrado",
+      "raiz-de-vigilante"
+    ]
+  },
+  {
+    "id": "herb_alq_1",
+    "name": "Poção Botânica de Cura Maior",
+    "category": "Poção",
+    "effect": "Restaura 3d8+6 PV imediatamente e estanca qualquer condição de Sangramento em curso.",
+    "ingredients": [
+      "Casca de Salgueiro-Chorão",
+      "Milefólio (Erva-dos-Carpinteiros)",
+      "agua cristalina"
+    ],
+    "normalizedIngredients": [
+      "agua cristalina",
+      "casca de salgueiro-chorao",
+      "milefolio (erva-dos-carpinteiros)"
+    ]
+  },
+  {
+    "id": "herb_alq_2",
+    "name": "Pomada Alquímica da Mente Sã",
+    "category": "Bálsamo",
+    "effect": "Remove instantaneamente as condições Confuso, Abalado ou Fascinado e concede +2 em Vontade por 1 cena.",
+    "ingredients": [
+      "Artemísia (Erva-dos-Sonhos)",
+      "gordura cristalina",
+      "oleo leve"
+    ],
+    "normalizedIngredients": [
+      "artemisia (erva-dos-sonhos)",
+      "gordura cristalina",
+      "oleo leve"
+    ]
+  },
+  {
+    "id": "herb_alq_3",
+    "name": "Óleo do Repouso Tranquilo",
+    "category": "Óleo",
+    "effect": "Preserva um cadáver impedindo decomposição e impedindo que seja erguido como morto-vivo por 1 semana.",
+    "ingredients": [
+      "Rosa-dos-Ventos Silvestre",
+      "sal lunar",
+      "oleo leve"
+    ],
+    "normalizedIngredients": [
+      "oleo leve",
+      "rosa-dos-ventos silvestre",
+      "sal lunar"
+    ]
+  },
+  {
+    "id": "herb_alq_4",
+    "name": "Pomada do Voo das Bruxa",
+    "category": "Bálsamo",
+    "effect": "Concede deslocamento de voo 12m e +2 em testes de Reflexos por 1 cena.",
+    "ingredients": [
+      "Beladona (Cereja-do-Diabo)",
+      "Mandrágora Real",
+      "Acônito (Mata-Lobos)"
+    ],
+    "normalizedIngredients": [
+      "aconito (mata-lobos)",
+      "beladona (cereja-do-diabo)",
+      "mandragora real"
+    ]
+  },
+  {
+    "id": "herb_alq_5",
+    "name": "Veneno do Beijo da Beladona",
+    "category": "Veneno",
+    "effect": "Veneno de ingestão ou ferimento: o alvo sofre 3d12 de dano de veneno e fica Confuso por 1d4 rodadas (Fortitude CD 16 reduz à metade).",
+    "ingredients": [
+      "Beladona (Cereja-do-Diabo)",
+      "vinho negro"
+    ],
+    "normalizedIngredients": [
+      "beladona (cereja-do-diabo)",
+      "vinho negro"
+    ]
+  },
+  {
+    "id": "herb_alq_6",
+    "name": "Pasta Fototóxica dos Gigantes",
+    "category": "Veneno",
+    "effect": "Veneno de contato: o alvo sofre 2d8 de dano ácido, aumentado para 4d8 se exposto à luz solar direta.",
+    "ingredients": [
+      "Erva-dos-Gigantes",
+      "azeite do pantano"
+    ],
+    "normalizedIngredients": [
+      "azeite do pantano",
+      "erva-dos-gigantes"
+    ]
+  },
+  {
+    "id": "herb_alq_7",
+    "name": "Pó Explosivo de Amieiro",
+    "category": "Pó",
+    "effect": "Pó incendiário que explode ao impacto causando 4d6 de dano de fogo em raio de 3m (Reflexos CD 15 reduz à metade).",
+    "ingredients": [
+      "Amieiro Sagrado",
+      "carvao animado",
+      "pimenta-vulcao"
+    ],
+    "normalizedIngredients": [
+      "amieiro sagrado",
+      "carvao animado",
+      "pimenta-vulcao"
+    ]
+  },
+  {
+    "id": "herb_alq_8",
+    "name": "Elixir da Pele de Carvalho Ancestral",
+    "category": "Elixir",
+    "effect": "Concede Redução de Dano 5 (RD 5) contra armas de corte e impacto e +2 na Defesa por 1 cena.",
+    "ingredients": [
+      "Casca de Carvalho-Ancião",
+      "seiva endurecida",
+      "sal de rocha"
+    ],
+    "normalizedIngredients": [
+      "casca de carvalho-anciao",
+      "sal de rocha",
+      "seiva endurecida"
+    ]
+  },
+  {
+    "id": "herb_alq_9",
+    "name": "Elixir do Exorcismo de Aloé",
+    "category": "Elixir",
+    "effect": "Expele possessões espirituais e concede +4 em testes de Vontade contra demônios e mortos-vivos por 1 cena.",
+    "ingredients": [
+      "Babosa do Deserto (Aloé)",
+      "essencia de pureza",
+      "agua cristalina"
+    ],
+    "normalizedIngredients": [
+      "agua cristalina",
+      "babosa do deserto (aloe)",
+      "essencia de pureza"
+    ]
+  },
+  {
+    "id": "herb_alq_10",
+    "name": "Óleo Dracônico de Sangue-de-Dragão",
+    "category": "Óleo",
+    "effect": "Arma banhada causa +1d8 de dano de fogo adicional e adquire margem de ameaça +1 por 1 hora.",
+    "ingredients": [
+      "Dragoeiro (Sangue-de-Dragão)",
+      "pimenta-vulcao",
+      "oleo mineral"
+    ],
+    "normalizedIngredients": [
+      "dragoeiro (sangue-de-dragao)",
+      "oleo mineral",
+      "pimenta-vulcao"
+    ]
+  }
+]

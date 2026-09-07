@@ -1,0 +1,1554 @@
+[
+  {
+    "id": "gas_1",
+    "name": "Ensopado do Viajante",
+    "effect": "Recupera 4 de mana e aumenta a velocidade de movimento por 5 minutos (amplia a distância de movimento em 3m)",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "raiz de batao",
+      "cenoura selvagem",
+      "agua cristalina",
+      "ervas de montanha"
+    ],
+    "normalizedIngredients": [
+      "agua cristalina",
+      "cenoura selvagem",
+      "ervas de montanha",
+      "raiz de batao"
+    ]
+  },
+  {
+    "id": "gas_2",
+    "name": "Pão Rústico de Campina",
+    "effect": "Restaura 2d6 de vida e aumenta regeneração passiva (1d4 por 1d4 de turnos)",
+    "category": "Assado/Pão",
+    "ingredients": [
+      "farinha de trigo dourado",
+      "mel silvestre",
+      "fermento seco"
+    ],
+    "normalizedIngredients": [
+      "farinha de trigo dourado",
+      "fermento seco",
+      "mel silvestre"
+    ]
+  },
+  {
+    "id": "gas_3",
+    "name": "Assado de Cogumelos Luminosos",
+    "effect": "Concede visão noturna e leve resistência à magia em +4 por 1d4 de turnos",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "cogumelo-luz",
+      "cebola das sombras",
+      "azeite do pantano"
+    ],
+    "normalizedIngredients": [
+      "azeite do pantano",
+      "cebola das sombras",
+      "cogumelo-luz"
+    ]
+  },
+  {
+    "id": "gas_4",
+    "name": "Peixe-Crispo na Brasa",
+    "effect": "+2 de defesa por 1d4 turnos",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "peixe-crispo",
+      "limao das dunas",
+      "sal marinho"
+    ],
+    "normalizedIngredients": [
+      "limao das dunas",
+      "peixe-crispo",
+      "sal marinho"
+    ]
+  },
+  {
+    "id": "gas_5",
+    "name": "Sopa de Abóbora do Bosque",
+    "effect": "Restaura 5 de mana e retira efeitos negativos.",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "abobora-do-vento",
+      "cebola carmesim",
+      "leite de cabra"
+    ],
+    "normalizedIngredients": [
+      "abobora-do-vento",
+      "cebola carmesim",
+      "leite de cabra"
+    ]
+  },
+  {
+    "id": "gas_6",
+    "name": "Frutas Grelhadas do Oásis",
+    "effect": "Restaura 1d8 de vida e oferece imunidade a fogo por 1d4 turnos",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "figo-das-dunas",
+      "tamarindo solar",
+      "oleo leve"
+    ],
+    "normalizedIngredients": [
+      "figo-das-dunas",
+      "oleo leve",
+      "tamarindo solar"
+    ]
+  },
+  {
+    "id": "gas_7",
+    "name": "Risoto de Ervas do Entardecer",
+    "effect": "+2 ou x3 em acerto crítico por 1 turno",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "arroz prateado",
+      "erva-do-crepusculo",
+      "caldo leve"
+    ],
+    "normalizedIngredients": [
+      "arroz prateado",
+      "caldo leve",
+      "erva-do-crepusculo"
+    ]
+  },
+  {
+    "id": "gas_8",
+    "name": "Torta de Maçã Voadora",
+    "effect": "imune ao dano de queda por 15 minutos ou 15 turnos",
+    "category": "Assado/Pão",
+    "ingredients": [
+      "maca flutuante",
+      "canela dos ceus",
+      "massa fina"
+    ],
+    "normalizedIngredients": [
+      "canela dos ceus",
+      "maca flutuante",
+      "massa fina"
+    ]
+  },
+  {
+    "id": "gas_9",
+    "name": "Caldo Refrescante de Gelo Eterno",
+    "effect": "recebe metade de dano de fogo por 3 minutos ou 3 turnos",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "agua congelada",
+      "hortela-do-norte",
+      "raizes frias"
+    ],
+    "normalizedIngredients": [
+      "agua congelada",
+      "hortela-do-norte",
+      "raizes frias"
+    ]
+  },
+  {
+    "id": "gas_10",
+    "name": "Omelete de Galinha do Campo",
+    "effect": "Restaura 1d6 de vida e concede +1 de inteligência por 3 minutos ou 3 turnos",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "ovos caipiras",
+      "queijo curado",
+      "ervas frescas"
+    ],
+    "normalizedIngredients": [
+      "ervas frescas",
+      "ovos caipiras",
+      "queijo curado"
+    ]
+  },
+  {
+    "id": "gas_11",
+    "name": "Sopa de Olho de Troll",
+    "effect": "Concede regeneração de vida (1d6) por 3 turnos",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "olho de troll",
+      "alho-fantasma",
+      "agua fervente"
+    ],
+    "normalizedIngredients": [
+      "agua fervente",
+      "alho-fantasma",
+      "olho de troll"
+    ]
+  },
+  {
+    "id": "gas_12",
+    "name": "Ragú de Tentáculos Abissais",
+    "effect": "Permite respirar debaixo d’água por 10 minutos ou 10 turnos",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "tentaculo de polvo sombrio",
+      "especiarias do mar",
+      "vinho negro"
+    ],
+    "normalizedIngredients": [
+      "especiarias do mar",
+      "tentaculo de polvo sombrio",
+      "vinho negro"
+    ]
+  },
+  {
+    "id": "gas_13",
+    "name": "Linguiça de Salamandra Flamejante",
+    "effect": "Imunidade a dano de fogo por 2 turnos",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "carne de salamandra",
+      "pimenta-vulcao",
+      "gordura cristalina"
+    ],
+    "normalizedIngredients": [
+      "carne de salamandra",
+      "gordura cristalina",
+      "pimenta-vulcao"
+    ]
+  },
+  {
+    "id": "gas_14",
+    "name": "Estufado de Minotauro",
+    "effect": "+5 de defesa por 2 minutos ou 2 turnos",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "carne de minotauro",
+      "vinho tinto",
+      "cenoura dourada"
+    ],
+    "normalizedIngredients": [
+      "carne de minotauro",
+      "cenoura dourada",
+      "vinho tinto"
+    ]
+  },
+  {
+    "id": "gas_15",
+    "name": "Ensopado de Asa de Harpia",
+    "effect": "+3 em testes de atletismo",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "asa de harpia",
+      "cogumelo-vento",
+      "limao dos ceus"
+    ],
+    "normalizedIngredients": [
+      "asa de harpia",
+      "cogumelo-vento",
+      "limao dos ceus"
+    ]
+  },
+  {
+    "id": "gas_16",
+    "name": "Carne Grelhada de Bicho-Pedra",
+    "effect": "+3 de defesa por 3 minutos ou 3 turnos",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "lombo de bicho-pedra",
+      "sal de rocha",
+      "oleo mineral"
+    ],
+    "normalizedIngredients": [
+      "lombo de bicho-pedra",
+      "oleo mineral",
+      "sal de rocha"
+    ]
+  },
+  {
+    "id": "gas_17",
+    "name": "Guisado de Rato Gigante",
+    "effect": "Melhora a furtividade e a percepção em +2 por 5 minutos ou 5 turnos",
+    "category": "Ensopado",
+    "ingredients": [
+      "carne de rato gigante",
+      "cebola amarga",
+      "vinho escuro"
+    ],
+    "normalizedIngredients": [
+      "carne de rato gigante",
+      "cebola amarga",
+      "vinho escuro"
+    ]
+  },
+  {
+    "id": "gas_18",
+    "name": "Tarte de Garras de Grifo",
+    "effect": "Aumenta o dano crítico de ataques corpo-a-corpo em +1d6 (use-o caso tenha tirado crítico)",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "garras trituradas",
+      "mel selvagem",
+      "maca verde"
+    ],
+    "normalizedIngredients": [
+      "garras trituradas",
+      "maca verde",
+      "mel selvagem"
+    ]
+  },
+  {
+    "id": "gas_19",
+    "name": "Refogado de Casco de Caranguejo Titânico",
+    "effect": "+3 em testes de resistência mágica por 4 minutos ou 4 minutos",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "casco macio",
+      "algas picantes",
+      "manteiga de coral"
+    ],
+    "normalizedIngredients": [
+      "algas picantes",
+      "casco macio",
+      "manteiga de coral"
+    ]
+  },
+  {
+    "id": "gas_20",
+    "name": "Gelatina de Gosma Ácida",
+    "effect": "Imunidade a venenos e ácido por 5 minutos ou 5 turnos",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "nucleo de gosma acida",
+      "limao acido",
+      "acucar cristal"
+    ],
+    "normalizedIngredients": [
+      "acucar cristal",
+      "limao acido",
+      "nucleo de gosma acida"
+    ]
+  },
+  {
+    "id": "gas_21",
+    "name": "Cha de Alho Fantasma",
+    "effect": "Concede +2 em testes de ataque corpo a corpo contra mortos-vivos por 1 cena e +2 em testes de Fortitude contra efeitos criados por mortos-vivos",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "agua fervente",
+      "alho-fantasma"
+    ],
+    "normalizedIngredients": [
+      "agua fervente",
+      "alho-fantasma"
+    ]
+  },
+  {
+    "id": "gas_22",
+    "name": "Infusao Revigorante de Montanha",
+    "effect": "Cura 1d8 pontos de vida e concede +2 em testes de Fortitude contra cansaço por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "agua fervente",
+      "ervas de montanha"
+    ],
+    "normalizedIngredients": [
+      "agua fervente",
+      "ervas de montanha"
+    ]
+  },
+  {
+    "id": "gas_23",
+    "name": "Cha Refrescante do Norte",
+    "effect": "Concede resistencia 2 a dano de fogo e +2 em testes de Fortitude contra calor por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "agua cristalina",
+      "hortela-do-norte"
+    ],
+    "normalizedIngredients": [
+      "agua cristalina",
+      "hortela-do-norte"
+    ]
+  },
+  {
+    "id": "gas_24",
+    "name": "Decocao do Gelo Profundo",
+    "effect": "Concede resistencia 5 a dano de frio por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "agua congelada",
+      "raizes frias"
+    ],
+    "normalizedIngredients": [
+      "agua congelada",
+      "raizes frias"
+    ]
+  },
+  {
+    "id": "gas_25",
+    "name": "Agua Salgada de Purificacao",
+    "effect": "Concede +2 em testes de Fortitude contra venenos e doenças por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "agua cristalina",
+      "sal marinho"
+    ],
+    "normalizedIngredients": [
+      "agua cristalina",
+      "sal marinho"
+    ]
+  },
+  {
+    "id": "gas_26",
+    "name": "Tonica Verde do Curandeiro",
+    "effect": "O proximo efeito de cura que o alvo receber nesta cena cura 1d8 pontos de vida",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "agua cristalina",
+      "ervas frescas"
+    ],
+    "normalizedIngredients": [
+      "agua cristalina",
+      "ervas frescas"
+    ]
+  },
+  {
+    "id": "gas_27",
+    "name": "Infusao Luminescente",
+    "effect": "Concede visao no escuro com alcance de 18 metros por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "agua fervente",
+      "cogumelo-luz"
+    ],
+    "normalizedIngredients": [
+      "agua fervente",
+      "cogumelo-luz"
+    ]
+  },
+  {
+    "id": "gas_28",
+    "name": "Cha do Crepusculo Silencioso",
+    "effect": "Concede +2 em testes de Furtividade em penumbra ou escuridao por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "agua fervente",
+      "erva-do-crepusculo"
+    ],
+    "normalizedIngredients": [
+      "agua fervente",
+      "erva-do-crepusculo"
+    ]
+  },
+  {
+    "id": "gas_29",
+    "name": "Mel Especiado Celeste",
+    "effect": "Concede +1 em testes de ataque corpo a corpo e +2 em testes de Iniciativa por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "mel silvestre",
+      "canela dos ceus"
+    ],
+    "normalizedIngredients": [
+      "canela dos ceus",
+      "mel silvestre"
+    ]
+  },
+  {
+    "id": "gas_30",
+    "name": "Lanche da Maca Verde",
+    "effect": "Concede 5 pontos de vida temporarios por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "mel selvagem",
+      "maca verde"
+    ],
+    "normalizedIngredients": [
+      "maca verde",
+      "mel selvagem"
+    ]
+  },
+  {
+    "id": "gas_31",
+    "name": "Doce Solar do Oasis",
+    "effect": "O alvo ignora penalidades por sede e calor por 1 dia de viagem e recebe +2 em testes de Fortitude contra desidratacao",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "mel silvestre",
+      "figo-das-dunas"
+    ],
+    "normalizedIngredients": [
+      "figo-das-dunas",
+      "mel silvestre"
+    ]
+  },
+  {
+    "id": "gas_32",
+    "name": "Glaze das Garras Selvagens",
+    "effect": "Ataques corpo a corpo do alvo causam +1 de dano e recebem +2 em testes de confirmacao de critico por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "mel selvagem",
+      "garras trituradas"
+    ],
+    "normalizedIngredients": [
+      "garras trituradas",
+      "mel selvagem"
+    ]
+  },
+  {
+    "id": "gas_33",
+    "name": "Xarope Energetico Solar",
+    "effect": "Restaura 1 ponto de mana e concede +2 em testes de Fortitude contra efeitos de cansaço por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "acucar cristal",
+      "tamarindo solar"
+    ],
+    "normalizedIngredients": [
+      "acucar cristal",
+      "tamarindo solar"
+    ]
+  },
+  {
+    "id": "gas_34",
+    "name": "Docinho Levitante",
+    "effect": "Durante 1 cena o alvo reduz em 6 metros qualquer queda sofrida e recebe +2 em testes de Acrobacia",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "acucar cristal",
+      "maca flutuante"
+    ],
+    "normalizedIngredients": [
+      "acucar cristal",
+      "maca flutuante"
+    ]
+  },
+  {
+    "id": "gas_35",
+    "name": "Pao Rapido de Aventureiro",
+    "effect": "Se consumido em um descanso curto o alvo recupera 1d6 pontos de vida extras e recebe +1 em testes de Fortitude ate o fim do dia",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "farinha de trigo dourado",
+      "fermento seco"
+    ],
+    "normalizedIngredients": [
+      "farinha de trigo dourado",
+      "fermento seco"
+    ]
+  },
+  {
+    "id": "gas_36",
+    "name": "Risoto Prateado da Concentracao",
+    "effect": "Concede +2 em testes de Conjuracao e outras jogadas que exijam concentracao por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "arroz prateado",
+      "caldo leve"
+    ],
+    "normalizedIngredients": [
+      "arroz prateado",
+      "caldo leve"
+    ]
+  },
+  {
+    "id": "gas_37",
+    "name": "Omelete da Mente Afiada",
+    "effect": "Concede +2 em testes de pericia baseados em Inteligencia por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "ovos caipiras",
+      "queijo curado"
+    ],
+    "normalizedIngredients": [
+      "ovos caipiras",
+      "queijo curado"
+    ]
+  },
+  {
+    "id": "gas_38",
+    "name": "Omelete Herbal Fortificante",
+    "effect": "Concede +2 em testes de Fortitude por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "ovos caipiras",
+      "ervas frescas"
+    ],
+    "normalizedIngredients": [
+      "ervas frescas",
+      "ovos caipiras"
+    ]
+  },
+  {
+    "id": "gas_39",
+    "name": "Leite com Mel Tranquilo",
+    "effect": "Remove a condicao Amedrontado ou Receoso e concede +2 em testes de Vontade contra medo por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "leite de cabra",
+      "mel silvestre"
+    ],
+    "normalizedIngredients": [
+      "leite de cabra",
+      "mel silvestre"
+    ]
+  },
+  {
+    "id": "gas_40",
+    "name": "Manteiga Picante de Sereia",
+    "effect": "Concede resistencia 2 a dano de frio e permite respirar debaixo d agua por 10 minutos",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "manteiga de coral",
+      "algas picantes"
+    ],
+    "normalizedIngredients": [
+      "algas picantes",
+      "manteiga de coral"
+    ]
+  },
+  {
+    "id": "gas_41",
+    "name": "Unguento do Casco de Coral",
+    "effect": "Concede +1 na CA por 1 cena enquanto a pele do alvo fica endurecida",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "manteiga de coral",
+      "casco macio"
+    ],
+    "normalizedIngredients": [
+      "casco macio",
+      "manteiga de coral"
+    ]
+  },
+  {
+    "id": "gas_42",
+    "name": "Peixe Dourado das Dunas",
+    "effect": "Concede resistencia 2 a dano eletrico e +2 em testes de Atletismo para nadar por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "peixe-crispo",
+      "limao das dunas"
+    ],
+    "normalizedIngredients": [
+      "limao das dunas",
+      "peixe-crispo"
+    ]
+  },
+  {
+    "id": "gas_43",
+    "name": "Ensopado do Marinheiro Profundo",
+    "effect": "Concede deslocamento de nado igual ao deslocamento terrestre do alvo por 1 cena",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "peixe-crispo",
+      "especiarias do mar"
+    ],
+    "normalizedIngredients": [
+      "especiarias do mar",
+      "peixe-crispo"
+    ]
+  },
+  {
+    "id": "gas_44",
+    "name": "Carpaccio Abissal de Algas",
+    "effect": "Permite respirar debaixo d agua por 1 cena e concede +2 em testes de Furtividade em ambientes aquaticos",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "tentaculo de polvo sombrio",
+      "algas picantes"
+    ],
+    "normalizedIngredients": [
+      "algas picantes",
+      "tentaculo de polvo sombrio"
+    ]
+  },
+  {
+    "id": "gas_45",
+    "name": "Churrasco Ardente de Salamandra",
+    "effect": "Concede resistencia 5 a dano de fogo por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "carne de salamandra",
+      "pimenta-vulcao"
+    ],
+    "normalizedIngredients": [
+      "carne de salamandra",
+      "pimenta-vulcao"
+    ]
+  },
+  {
+    "id": "gas_46",
+    "name": "Gordura Viva Flamejante",
+    "effect": "Ataques corpo a corpo do alvo causam +1 de dano de fogo por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "carne de salamandra",
+      "gordura cristalina"
+    ],
+    "normalizedIngredients": [
+      "carne de salamandra",
+      "gordura cristalina"
+    ]
+  },
+  {
+    "id": "gas_47",
+    "name": "Guisado do Minotauro Furioso",
+    "effect": "Concede +2 em testes de ataque corpo a corpo e +2 em testes de Atletismo por 1 cena",
+    "category": "Ensopado",
+    "ingredients": [
+      "carne de minotauro",
+      "vinho tinto"
+    ],
+    "normalizedIngredients": [
+      "carne de minotauro",
+      "vinho tinto"
+    ]
+  },
+  {
+    "id": "gas_48",
+    "name": "Ensopado Nutridor de Minotauro",
+    "effect": "Concede 10 pontos de vida temporarios por 1 cena",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "carne de minotauro",
+      "cenoura dourada"
+    ],
+    "normalizedIngredients": [
+      "carne de minotauro",
+      "cenoura dourada"
+    ]
+  },
+  {
+    "id": "gas_49",
+    "name": "Ensopado Sombrio de Rato",
+    "effect": "Concede +2 em testes de Furtividade e Percepcao por 1 cena",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "carne de rato gigante",
+      "cebola amarga"
+    ],
+    "normalizedIngredients": [
+      "carne de rato gigante",
+      "cebola amarga"
+    ]
+  },
+  {
+    "id": "gas_50",
+    "name": "Assado Rochoso do Bicho-Pedra",
+    "effect": "Concede reducao de dano 2 contra ataques cortantes e perfurantes por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "lombo de bicho-pedra",
+      "sal de rocha"
+    ],
+    "normalizedIngredients": [
+      "lombo de bicho-pedra",
+      "sal de rocha"
+    ]
+  },
+  {
+    "id": "gas_51",
+    "name": "Elixir Antiacido Profundo",
+    "effect": "Concede resistencia 5 a dano de acido por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "nucleo de gosma acida",
+      "limao acido"
+    ],
+    "normalizedIngredients": [
+      "limao acido",
+      "nucleo de gosma acida"
+    ]
+  },
+  {
+    "id": "gas_52",
+    "name": "Elixir Corrosivo Controlado",
+    "effect": "Uma vez nesta cena o alvo pode adicionar +2 em um teste de ataque corpo a corpo e se acertar causa +2 de dano de acido",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "nucleo de gosma acida",
+      "agua fervente"
+    ],
+    "normalizedIngredients": [
+      "agua fervente",
+      "nucleo de gosma acida"
+    ]
+  },
+  {
+    "id": "gas_53",
+    "name": "Asa Grelhada da Corrente de Ar",
+    "effect": "Concede bonus de 3 metros no deslocamento e permite que saltos alcancem o dobro da distancia por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "asa de harpia",
+      "cogumelo-vento"
+    ],
+    "normalizedIngredients": [
+      "asa de harpia",
+      "cogumelo-vento"
+    ]
+  },
+  {
+    "id": "gas_54",
+    "name": "Citrico das Alturas",
+    "effect": "Concede +2 em testes de Acrobacia e Atletismo usados para escaladas e manobras em locais altos por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "asa de harpia",
+      "limao dos ceus"
+    ],
+    "normalizedIngredients": [
+      "asa de harpia",
+      "limao dos ceus"
+    ]
+  },
+  {
+    "id": "gas_55",
+    "name": "Caldo Regenerador de Troll",
+    "effect": "O alvo recebe regeneracao 1 ponto de vida por rodada ate recuperar 10 pontos de vida ou ate o fim da cena",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "olho de troll",
+      "agua fervente"
+    ],
+    "normalizedIngredients": [
+      "agua fervente",
+      "olho de troll"
+    ]
+  },
+  {
+    "id": "gas_56",
+    "name": "Vinho da Visao Horrenda",
+    "effect": "Concede visao no escuro com alcance de 18 metros e +2 em testes de Percepcao por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "olho de troll",
+      "vinho negro"
+    ],
+    "normalizedIngredients": [
+      "olho de troll",
+      "vinho negro"
+    ]
+  },
+  {
+    "id": "gas_57",
+    "name": "Infusao Crepuscular da Duplicidade",
+    "effect": "Concede visao no escuro com alcance de 18 metros e +2 em testes de Furtividade em sombras por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "cogumelo-luz",
+      "erva-do-crepusculo"
+    ],
+    "normalizedIngredients": [
+      "cogumelo-luz",
+      "erva-do-crepusculo"
+    ]
+  },
+  {
+    "id": "gas_58",
+    "name": "Cha Claro da Resistencia Mental",
+    "effect": "Concede +2 em testes de Vontade contra encantamentos e ilusoes por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "cogumelo-luz",
+      "hortela-do-norte"
+    ],
+    "normalizedIngredients": [
+      "cogumelo-luz",
+      "hortela-do-norte"
+    ]
+  },
+  {
+    "id": "gas_59",
+    "name": "Lanche do Caminho dos Ventos",
+    "effect": "Concede bonus de 3 metros no deslocamento e permite ignorar terreno dificil natural por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "cogumelo-vento",
+      "ervas de montanha"
+    ],
+    "normalizedIngredients": [
+      "cogumelo-vento",
+      "ervas de montanha"
+    ]
+  },
+  {
+    "id": "gas_60",
+    "name": "Doce de Oasis Refrescante",
+    "effect": "O alvo ignora penalidades por calor e sede por 24 horas e recebe +2 em testes de Fortitude contra desidratacao",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "figo-das-dunas",
+      "tamarindo solar"
+    ],
+    "normalizedIngredients": [
+      "figo-das-dunas",
+      "tamarindo solar"
+    ]
+  },
+  {
+    "id": "gas_61",
+    "name": "Pure de Abobora do Vento",
+    "effect": "Concede +1 na CD de magias de ar ou eletricidade conjuradas pelo alvo por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "abobora-do-vento",
+      "canela dos ceus"
+    ],
+    "normalizedIngredients": [
+      "abobora-do-vento",
+      "canela dos ceus"
+    ]
+  },
+  {
+    "id": "gas_62",
+    "name": "Creme de Abobora Confortante",
+    "effect": "Cura 1d8 pontos de vida e remove a condicao Ofegante",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "abobora-do-vento",
+      "leite de cabra"
+    ],
+    "normalizedIngredients": [
+      "abobora-do-vento",
+      "leite de cabra"
+    ]
+  },
+  {
+    "id": "gas_63",
+    "name": "Cha Glacial do Folego",
+    "effect": "Concede +2 em testes de Atletismo e Fortitude relacionados a corridas e longos esforcos por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "raizes frias",
+      "hortela-do-norte"
+    ],
+    "normalizedIngredients": [
+      "hortela-do-norte",
+      "raizes frias"
+    ]
+  },
+  {
+    "id": "gas_64",
+    "name": "Sal Consagrado das Profundezas",
+    "effect": "Concede +1 na CA e +2 em testes de Vontade contra medo por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "sal marinho",
+      "sal de rocha"
+    ],
+    "normalizedIngredients": [
+      "sal de rocha",
+      "sal marinho"
+    ]
+  },
+  {
+    "id": "gas_65",
+    "name": "Vinho das Mares",
+    "effect": "Concede +2 em testes de Diplomacia e Intimidacao com marinheiros e criaturas aquaticas e +2 em testes de Atletismo para nadar por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "vinho negro",
+      "especiarias do mar"
+    ],
+    "normalizedIngredients": [
+      "especiarias do mar",
+      "vinho negro"
+    ]
+  },
+  {
+    "id": "gas_66",
+    "name": "Vinho Amargo dos Becos",
+    "effect": "Concede +2 em testes de Intimidacao e Percepcao em ambientes urbanos por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "vinho escuro",
+      "cebola amarga"
+    ],
+    "normalizedIngredients": [
+      "cebola amarga",
+      "vinho escuro"
+    ]
+  },
+  {
+    "id": "gas_67",
+    "name": "Hidromel Encantador",
+    "effect": "Concede +2 em testes de Diplomacia e Atuacao por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "vinho tinto",
+      "mel selvagem"
+    ],
+    "normalizedIngredients": [
+      "mel selvagem",
+      "vinho tinto"
+    ]
+  },
+  {
+    "id": "gas_68",
+    "name": "Unguento Herbal de Primeiros Socorros",
+    "effect": "O proximo teste de Cura aplicado ao alvo nesta cena recupera 1d8 pontos de vida extras",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "oleo leve",
+      "ervas frescas"
+    ],
+    "normalizedIngredients": [
+      "ervas frescas",
+      "oleo leve"
+    ]
+  },
+  {
+    "id": "gas_69",
+    "name": "Unguento de Rocha Protetora",
+    "effect": "Concede +1 na CA e resistencia 2 a dano de impacto por 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "oleo mineral",
+      "sal de rocha"
+    ],
+    "normalizedIngredients": [
+      "oleo mineral",
+      "sal de rocha"
+    ]
+  },
+  {
+    "id": "gas_70",
+    "name": "Oleoresina Vulcanica",
+    "effect": "Uma arma untada com esta mistura causa +1 de dano de fogo por golpe durante 1 cena",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "oleo leve",
+      "pimenta-vulcao"
+    ],
+    "normalizedIngredients": [
+      "oleo leve",
+      "pimenta-vulcao"
+    ]
+  },
+  {
+    "id": "gas_71",
+    "name": "Caldeirada do Heroi Inabalavel",
+    "effect": "O alvo recebe +2 em testes de ataque corpo a corpo, +2 em testes de Fortitude e 10 PV temporarios por 1 cena.",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "carne de minotauro",
+      "cenoura dourada",
+      "arroz prateado",
+      "caldo leve"
+    ],
+    "normalizedIngredients": [
+      "arroz prateado",
+      "caldo leve",
+      "carne de minotauro",
+      "cenoura dourada"
+    ]
+  },
+  {
+    "id": "gas_72",
+    "name": "Ensopado Elemental de Salamandra",
+    "effect": "Concede resistencia 10 a dano de fogo e os ataques corpo a corpo do alvo causam +2 de dano de fogo por 1 cena.",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "carne de salamandra",
+      "pimenta-vulcao",
+      "gordura cristalina",
+      "agua fervente"
+    ],
+    "normalizedIngredients": [
+      "agua fervente",
+      "carne de salamandra",
+      "gordura cristalina",
+      "pimenta-vulcao"
+    ]
+  },
+  {
+    "id": "gas_73",
+    "name": "Guisado Glacial do Explorador",
+    "effect": "Concede resistencia 5 a dano de frio e 5 a dano de fogo, alem de ignorar penalidades de clima gelado ou muito quente por 24 horas.",
+    "category": "Ensopado",
+    "ingredients": [
+      "agua congelada",
+      "raizes frias",
+      "hortela-do-norte",
+      "sal marinho"
+    ],
+    "normalizedIngredients": [
+      "agua congelada",
+      "hortela-do-norte",
+      "raizes frias",
+      "sal marinho"
+    ]
+  },
+  {
+    "id": "gas_74",
+    "name": "Caldo Abissal dos Mares Profundos",
+    "effect": "O alvo recebe deslocamento de nado igual ao terrestre, pode respirar debaixo d agua por 1 hora e ganha +2 em testes de Furtividade em ambientes aquaticos por 1 cena.",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "tentaculo de polvo sombrio",
+      "algas picantes",
+      "especiarias do mar",
+      "vinho negro"
+    ],
+    "normalizedIngredients": [
+      "algas picantes",
+      "especiarias do mar",
+      "tentaculo de polvo sombrio",
+      "vinho negro"
+    ]
+  },
+  {
+    "id": "gas_75",
+    "name": "Torta Celeste do Acrobata",
+    "effect": "Reduz em 12 metros qualquer queda sofrida, concede +2 em testes de Acrobacia e Atletismo ligados a saltar e equilibrar por 1 cena.",
+    "category": "Assado/Pão",
+    "ingredients": [
+      "maca flutuante",
+      "massa fina",
+      "canela dos ceus",
+      "acucar cristal"
+    ],
+    "normalizedIngredients": [
+      "acucar cristal",
+      "canela dos ceus",
+      "maca flutuante",
+      "massa fina"
+    ]
+  },
+  {
+    "id": "gas_76",
+    "name": "Pao de Jornada do Viajante Incansavel",
+    "effect": "Se consumido durante um descanso, o alvo recupera +2d6 PV adicionais, ignora a primeira etapa de cansaco do dia e recebe +2 em testes de Fortitude contra fadiga por 24 horas.",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "farinha de trigo dourado",
+      "fermento seco",
+      "raiz de batao (tipo batata)",
+      "cenoura selvagem"
+    ],
+    "normalizedIngredients": [
+      "cenoura selvagem",
+      "farinha de trigo dourado",
+      "fermento seco",
+      "raiz de batao (tipo batata)"
+    ]
+  },
+  {
+    "id": "gas_77",
+    "name": "Sopa Solar do Oasis",
+    "effect": "O alvo ignora sede e calor por 24 horas, recebe +2 em testes de Fortitude contra desidratacao e ganha 5 PV temporarios por 1 cena.",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "figo-das-dunas",
+      "tamarindo solar",
+      "agua cristalina",
+      "ervas frescas"
+    ],
+    "normalizedIngredients": [
+      "agua cristalina",
+      "ervas frescas",
+      "figo-das-dunas",
+      "tamarindo solar"
+    ]
+  },
+  {
+    "id": "gas_78",
+    "name": "Creme Confortante da Taverna",
+    "effect": "Remove as condicoes Amedrontado, Ofegante ou Abalado do alvo e concede +2 em testes de Vontade contra medo e efeitos de emocao por 1 cena.",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "leite de cabra",
+      "mel silvestre",
+      "ervas de montanha",
+      "canela dos ceus"
+    ],
+    "normalizedIngredients": [
+      "canela dos ceus",
+      "ervas de montanha",
+      "leite de cabra",
+      "mel silvestre"
+    ]
+  },
+  {
+    "id": "gas_79",
+    "name": "Omelete Supremo da Mente Brilhante",
+    "effect": "O alvo recebe +2 em testes de pericias baseadas em Inteligencia e Sabedoria e recupera 1 PM por nivel de magia conjurada (maximo 3 PM) na proxima cena.",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "ovos caipiras",
+      "queijo curado",
+      "cebola carmesim",
+      "ervas frescas"
+    ],
+    "normalizedIngredients": [
+      "cebola carmesim",
+      "ervas frescas",
+      "ovos caipiras",
+      "queijo curado"
+    ]
+  },
+  {
+    "id": "gas_80",
+    "name": "Ragu Sombrio do Espreita-Becos",
+    "effect": "Concede visao no escuro (18 m), +2 em testes de Furtividade e Percepcao em ambientes urbanos ou subterraneos por 1 cena.",
+    "category": "Ensopado",
+    "ingredients": [
+      "carne de rato gigante",
+      "cebola amarga",
+      "vinho escuro",
+      "erva-do-crepusculo"
+    ],
+    "normalizedIngredients": [
+      "carne de rato gigante",
+      "cebola amarga",
+      "erva-do-crepusculo",
+      "vinho escuro"
+    ]
+  },
+  {
+    "id": "gas_81",
+    "name": "Assado Rochoso do Guardiao Imovel",
+    "effect": "Concede reducao de dano 3 contra ataques cortantes, perfurantes e impacto, alem de +1 na CA por 1 cena.",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "lombo de bicho-pedra",
+      "sal de rocha",
+      "manteiga de coral",
+      "casco macio"
+    ],
+    "normalizedIngredients": [
+      "casco macio",
+      "lombo de bicho-pedra",
+      "manteiga de coral",
+      "sal de rocha"
+    ]
+  },
+  {
+    "id": "gas_82",
+    "name": "Elixir Total Antiveneno",
+    "effect": "Cura 1 envenenamento em curso, concede imunidade a venenos e resistencia 10 a dano de acido por 1 cena.",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "nucleo de gosma acida",
+      "limao acido",
+      "agua cristalina",
+      "hortela-do-norte"
+    ],
+    "normalizedIngredients": [
+      "agua cristalina",
+      "hortela-do-norte",
+      "limao acido",
+      "nucleo de gosma acida"
+    ]
+  },
+  {
+    "id": "gas_83",
+    "name": "Cha do Heroi Imortal",
+    "effect": "O alvo recebe regeneracao 2 PV por rodada (ate 20 PV), +2 em testes de Vontade contra efeitos de morte ou medo e +2 em ataques corpo a corpo contra mortos-vivos por 1 cena.",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "agua fervente",
+      "alho-fantasma",
+      "olho de troll",
+      "mel selvagem"
+    ],
+    "normalizedIngredients": [
+      "agua fervente",
+      "alho-fantasma",
+      "mel selvagem",
+      "olho de troll"
+    ]
+  },
+  {
+    "id": "gas_84",
+    "name": "Prato das Asas Celestes",
+    "effect": "Concede bonus de 3 metros no deslocamento, vantagem em testes de Acrobacia para saltos e permite planar (reduz subida/queda como se tivesse quedas suaves) por 1 cena.",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "asa de harpia",
+      "cogumelo-vento",
+      "limao dos ceus",
+      "ervas de montanha"
+    ],
+    "normalizedIngredients": [
+      "asa de harpia",
+      "cogumelo-vento",
+      "ervas de montanha",
+      "limao dos ceus"
+    ]
+  },
+  {
+    "id": "gas_85",
+    "name": "Risoto das Sombras Luminosas",
+    "effect": "O alvo recebe visao no escuro (18 m), +1 na CD de magias de trevas ou luz que conjurar e +2 em testes de Conjuracao que exijam concentracao por 1 cena.",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "cogumelo-luz",
+      "cebola das sombras",
+      "arroz prateado",
+      "vinho tinto"
+    ],
+    "normalizedIngredients": [
+      "arroz prateado",
+      "cebola das sombras",
+      "cogumelo-luz",
+      "vinho tinto"
+    ]
+  },
+  {
+    "id": "gas_86",
+    "name": "Ensopado do Gelo e Fogo",
+    "effect": "Concede resistencia 10 a dano de frio e 10 a dano de fogo, alem de ignorar completamente penalidades de clima extremo (frio ou calor) por 24 horas.",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "carne de salamandra",
+      "agua congelada",
+      "pimenta-vulcao",
+      "raizes frias"
+    ],
+    "normalizedIngredients": [
+      "agua congelada",
+      "carne de salamandra",
+      "pimenta-vulcao",
+      "raizes frias"
+    ]
+  },
+  {
+    "id": "gas_87",
+    "name": "Banquete do Gladiador em Furia",
+    "effect": "O alvo recebe +3 em testes de ataque corpo a corpo, +3 de dano e 10 PV temporarios por 1 cena, mas fica Ofegante ao fim da cena.",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "carne de minotauro",
+      "carne de salamandra",
+      "pimenta-vulcao",
+      "mel selvagem"
+    ],
+    "normalizedIngredients": [
+      "carne de minotauro",
+      "carne de salamandra",
+      "mel selvagem",
+      "pimenta-vulcao"
+    ]
+  },
+  {
+    "id": "gas_88",
+    "name": "Sopa do Conjurador Sereno",
+    "effect": "Concede +2 em testes de Vontade, +2 em testes de Conjuracao para manter concentracao e reduz em 1 PM o custo da primeira magia conjurada na cena (minimo 1 PM).",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "erva-do-crepusculo",
+      "hortela-do-norte",
+      "agua cristalina",
+      "leite de cabra"
+    ],
+    "normalizedIngredients": [
+      "agua cristalina",
+      "erva-do-crepusculo",
+      "hortela-do-norte",
+      "leite de cabra"
+    ]
+  },
+  {
+    "id": "gas_89",
+    "name": "Banquete da Corte Marinha",
+    "effect": "O alvo ganha deslocamento de nado igual ao terrestre, +2 em testes de Diplomacia e Intimidacao com criaturas aquáticas e +2 em testes de Atletismo para nadar por 1 cena.",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "peixe-crispo",
+      "limao das dunas",
+      "sal marinho",
+      "vinho negro"
+    ],
+    "normalizedIngredients": [
+      "limao das dunas",
+      "peixe-crispo",
+      "sal marinho",
+      "vinho negro"
+    ]
+  },
+  {
+    "id": "gas_90",
+    "name": "Torta Verde da Fortuna",
+    "effect": "Uma vez nesta cena o alvo pode rolar novamente um teste de ataque, pericia ou resistencia e ficar com o melhor resultado. alem disso recebe +1 em todas as jogadas de salvacao por 1 cena.",
+    "category": "Assado/Pão",
+    "ingredients": [
+      "maca verde",
+      "mel silvestre",
+      "acucar cristal",
+      "canela dos ceus"
+    ],
+    "normalizedIngredients": [
+      "acucar cristal",
+      "canela dos ceus",
+      "maca verde",
+      "mel silvestre"
+    ]
+  },
+  {
+    "id": "gas_91",
+    "name": "Ensopado Dourado do Campeao",
+    "effect": "Concede +1 na CA, +1 em todos os testes de ataque e +2 em testes de Fortitude por 1 cena.",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "farinha de trigo dourado",
+      "cenoura dourada",
+      "mel selvagem",
+      "sal marinho"
+    ],
+    "normalizedIngredients": [
+      "cenoura dourada",
+      "farinha de trigo dourado",
+      "mel selvagem",
+      "sal marinho"
+    ]
+  },
+  {
+    "id": "gas_92",
+    "name": "Sopa do Ventos da Montanha",
+    "effect": "Concede bonus de 3 metros ao deslocamento terrestre, ignora terreno dificil natural e concede +2 em testes de Sobrevivencia para rastrear ou se orientar em montanhas por 1 cena.",
+    "category": "Sopa/Caldo",
+    "ingredients": [
+      "ervas de montanha",
+      "cogumelo-vento",
+      "raiz de batao (tipo batata)",
+      "agua cristalina"
+    ],
+    "normalizedIngredients": [
+      "agua cristalina",
+      "cogumelo-vento",
+      "ervas de montanha",
+      "raiz de batao (tipo batata)"
+    ]
+  },
+  {
+    "id": "gas_93",
+    "name": "Moqueca Encantada do Litoral Antigo",
+    "effect": "Concede resistencia 5 a dano eletrico, deslocamento de nado igual ao terrestre e +2 em testes de Percepcao para notar criaturas submersas por 1 cena.",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "peixe-crispo",
+      "azeite do pantano",
+      "sal marinho",
+      "limao das dunas"
+    ],
+    "normalizedIngredients": [
+      "azeite do pantano",
+      "limao das dunas",
+      "peixe-crispo",
+      "sal marinho"
+    ]
+  },
+  {
+    "id": "gas_94",
+    "name": "Doce de Estrelas do Crepusculo",
+    "effect": "O alvo ganha +2 em testes de Atuacao e Diplomacia em ambientes nobres ou religiosos e recebe 5 PV temporarios por 1 cena.",
+    "category": "Prato Mágico",
+    "ingredients": [
+      "acucar cristal",
+      "figo-das-dunas",
+      "vinho tinto",
+      "canela dos ceus"
+    ],
+    "normalizedIngredients": [
+      "acucar cristal",
+      "canela dos ceus",
+      "figo-das-dunas",
+      "vinho tinto"
+    ]
+  },
+  {
+    "id": "herb_gas_1",
+    "name": "Pão da Visão Interior (Loaf of Sight)",
+    "category": "Assado/Pão",
+    "effect": "O consumidor pode conjurar Clarividência (apenas Visão) uma vez dentro da próxima hora sem gastar PM.",
+    "ingredients": [
+      "Licopódio-da-Montanha",
+      "farinha de trigo dourado",
+      "fermento seco"
+    ],
+    "normalizedIngredients": [
+      "farinha de trigo dourado",
+      "fermento seco",
+      "licopodio-da-montanha"
+    ]
+  },
+  {
+    "id": "herb_gas_2",
+    "name": "Chá de Tomilho dos Bravos",
+    "category": "Bebida",
+    "effect": "Remove a condição Abalado ou Apavorado e concede +2 em testes de ataque e Fortitude na próxima cena.",
+    "ingredients": [
+      "Tomilho-da-Bravura",
+      "agua cristalina",
+      "mel silvestre"
+    ],
+    "normalizedIngredients": [
+      "agua cristalina",
+      "mel silvestre",
+      "tomilho-da-bravura"
+    ]
+  },
+  {
+    "id": "herb_gas_3",
+    "name": "Infusão da Clarividência de Tramazeira",
+    "category": "Bebida",
+    "effect": "Concede +3 em Percepção e Iniciativa e impede que o alvo seja pego Desprevenido na próxima cena.",
+    "ingredients": [
+      "Bagas de Tramazeira (Sorveira)",
+      "vinho tinto",
+      "cha de serenidade"
+    ],
+    "normalizedIngredients": [
+      "bagas de tramazeira (sorveira)",
+      "cha de serenidade",
+      "vinho tinto"
+    ]
+  },
+  {
+    "id": "herb_gas_4",
+    "name": "Geleia Dourada do Vigor Feérico",
+    "category": "Prato Mágico",
+    "effect": "Restaura 3d6 PV, remove a condição Fatigado e concede 5 PV temporários por 1 cena.",
+    "ingredients": [
+      "Geleia-Dourada (Tremella)",
+      "acucar cristal",
+      "leite de cabra"
+    ],
+    "normalizedIngredients": [
+      "acucar cristal",
+      "geleia-dourada (tremella)",
+      "leite de cabra"
+    ]
+  },
+  {
+    "id": "herb_gas_5",
+    "name": "Caldo de Algas e Peixe do Litoral",
+    "category": "Sopa/Caldo",
+    "effect": "O alvo ignora os efeitos de exaustão por natação e recebe +2 em testes de Fortitude por 24 horas.",
+    "ingredients": [
+      "Alga-Kelp Costeira",
+      "peixe-crispo",
+      "sal marinho",
+      "agua cristalina"
+    ],
+    "normalizedIngredients": [
+      "agua cristalina",
+      "alga-kelp costeira",
+      "peixe-crispo",
+      "sal marinho"
+    ]
+  },
+  {
+    "id": "herb_gas_6",
+    "name": "Assado de Shiitake e Alho-da-Montanha",
+    "category": "Prato Mágico",
+    "effect": "Concede visão no escuro (18m) e +2 em testes de Furtividade e Sobrevivência por 1 cena.",
+    "ingredients": [
+      "Shiitake Selvagem",
+      "Alho-da-Montanha",
+      "azeite do pantano"
+    ],
+    "normalizedIngredients": [
+      "alho-da-montanha",
+      "azeite do pantano",
+      "shiitake selvagem"
+    ]
+  }
+]
