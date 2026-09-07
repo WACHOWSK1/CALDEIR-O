@@ -72,19 +72,23 @@ export const WorkbenchHeader: React.FC<Props> = ({
         background: '#120f0d',
         padding: '4px',
         borderRadius: '8px',
-        border: '1px solid #3d2f23'
+        border: '1px solid #3d2f23',
+        width: '100%',
+        maxWidth: '440px'
       }}>
         <button
           onClick={() => onToggleMode('alquimia')}
           style={{
+            flex: 1,
             display: 'flex',
             alignItems: 'center',
+            justifyContent: 'center',
             gap: '8px',
-            padding: '8px 16px',
+            padding: '9px 12px',
             borderRadius: '6px',
             border: 'none',
             fontFamily: 'var(--font-display)',
-            fontSize: '0.88rem',
+            fontSize: '0.86rem',
             fontWeight: 700,
             cursor: 'pointer',
             transition: 'all 0.2s',
@@ -100,14 +104,16 @@ export const WorkbenchHeader: React.FC<Props> = ({
         <button
           onClick={() => onToggleMode('cozinha')}
           style={{
+            flex: 1,
             display: 'flex',
             alignItems: 'center',
+            justifyContent: 'center',
             gap: '8px',
-            padding: '8px 16px',
+            padding: '9px 12px',
             borderRadius: '6px',
             border: 'none',
             fontFamily: 'var(--font-display)',
-            fontSize: '0.88rem',
+            fontSize: '0.86rem',
             fontWeight: 700,
             cursor: 'pointer',
             transition: 'all 0.2s',
@@ -122,7 +128,13 @@ export const WorkbenchHeader: React.FC<Props> = ({
       </div>
 
       {/* Auxiliary Actions & Tracker */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '8px',
+        flexWrap: 'wrap',
+        justifyContent: 'flex-end'
+      }}>
         {/* Biome Collector Button */}
         <button
           onClick={onOpenCollector}
@@ -131,18 +143,20 @@ export const WorkbenchHeader: React.FC<Props> = ({
             display: 'flex',
             alignItems: 'center',
             gap: '6px',
-            padding: '8px 13px',
+            padding: '8px 12px',
             background: '#231b15',
             color: '#e5d7ba',
             border: '1px solid #5a4430',
             borderRadius: '6px',
-            fontSize: '0.82rem',
+            fontSize: '0.8rem',
             cursor: 'pointer',
-            transition: 'all 0.15s'
+            transition: 'all 0.15s',
+            flex: '1 1 auto',
+            justifyContent: 'center'
           }}
         >
-          <Compass size={16} color="#c59341" />
-          <span>Biomas / Coletor</span>
+          <Compass size={15} color="#c59341" />
+          <span>Biomas</span>
         </button>
 
         {/* Chest Recipe Roller Button */}
@@ -153,18 +167,20 @@ export const WorkbenchHeader: React.FC<Props> = ({
             display: 'flex',
             alignItems: 'center',
             gap: '6px',
-            padding: '8px 13px',
+            padding: '8px 12px',
             background: 'linear-gradient(180deg, #38281a 0%, #21160e 100%)',
             color: '#fef08a',
             border: '1px solid #c59341',
             borderRadius: '6px',
-            fontSize: '0.82rem',
+            fontSize: '0.8rem',
             cursor: 'pointer',
             transition: 'all 0.15s',
-            boxShadow: '0 2px 8px rgba(0,0,0,0.4)'
+            boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
+            flex: '1 1 auto',
+            justifyContent: 'center'
           }}
         >
-          <PackageOpen size={16} color="#facc15" />
+          <PackageOpen size={15} color="#facc15" />
           <span>Baú de Fórmulas</span>
         </button>
 
@@ -172,17 +188,19 @@ export const WorkbenchHeader: React.FC<Props> = ({
         <div style={{
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'flex-end',
-          padding: '4px 10px',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '4px 8px',
           background: 'rgba(0,0,0,0.3)',
           borderRadius: '6px',
-          border: '1px solid #38291e'
+          border: '1px solid #38291e',
+          minWidth: '60px'
         }}>
-          <span style={{ fontSize: '0.68rem', color: '#a39281', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+          <span style={{ fontSize: '0.62rem', color: '#a39281', textTransform: 'uppercase' }}>
             Descobertas
           </span>
-          <span style={{ fontSize: '0.92rem', color: '#c59341', fontWeight: 700, fontFamily: 'var(--font-display)' }}>
-            {discoveredCount} / {totalRecipes}
+          <span style={{ fontSize: '0.86rem', color: '#c59341', fontWeight: 700, fontFamily: 'var(--font-display)' }}>
+            {discoveredCount}/{totalRecipes}
           </span>
         </div>
 

@@ -393,6 +393,52 @@ export const App: React.FC = () => {
           showNotification(`Pergaminho de "${recipe.name}" aprendido com sucesso e registrado no Grimório!`);
         }}
       />
+
+      {/* Mobile Fixed Bottom Navigation Bar */}
+      <nav className="mobile-bottom-nav" aria-label="Navegação móvel da bancada">
+        <button
+          className={`mobile-bottom-nav-item ${mobileTab === 'prateleira' ? 'active' : ''}`}
+          onClick={() => {
+            setMobileTab('prateleira');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+        >
+          <span className="nav-icon-box">🎒</span>
+          <span>Prateleira</span>
+        </button>
+
+        <button
+          className={`mobile-bottom-nav-item ${mobileTab === 'caldeirao' ? 'active' : ''}`}
+          onClick={() => {
+            setMobileTab('caldeirao');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+        >
+          <span className="nav-icon-box">
+            🧙‍♂️
+            {slottedIngredients.length > 0 && (
+              <span className="nav-badge">{slottedIngredients.length}</span>
+            )}
+          </span>
+          <span>Caldeirão</span>
+        </button>
+
+        <button
+          className={`mobile-bottom-nav-item ${mobileTab === 'grimorio' ? 'active' : ''}`}
+          onClick={() => {
+            setMobileTab('grimorio');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+        >
+          <span className="nav-icon-box">
+            📜
+            {discoveredInCurrentMode.length > 0 && (
+              <span className="nav-badge" style={{ background: '#c59341' }}>{discoveredInCurrentMode.length}</span>
+            )}
+          </span>
+          <span>Grimório</span>
+        </button>
+      </nav>
     </div>
   );
 };

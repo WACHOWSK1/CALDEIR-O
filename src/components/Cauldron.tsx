@@ -520,23 +520,24 @@ export const Cauldron: React.FC<Props> = ({
                       title={`Remover ${item.name}`}
                       style={{
                         position: 'absolute',
-                        top: '2px',
-                        right: '2px',
-                        background: 'rgba(0,0,0,0.6)',
-                        border: 'none',
+                        top: '1px',
+                        right: '1px',
+                        background: 'rgba(0,0,0,0.75)',
+                        border: '1px solid rgba(248, 113, 113, 0.4)',
                         color: '#f87171',
                         borderRadius: '50%',
-                        width: '16px',
-                        height: '16px',
+                        width: '24px',
+                        height: '24px',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        cursor: 'pointer'
+                        cursor: 'pointer',
+                        zIndex: 2
                       }}
                     >
-                      <X size={11} />
+                      <X size={13} />
                     </button>
-                    <span style={{ fontSize: '18px' }}>
+                    <span style={{ fontSize: '20px' }}>
                       {item.category.includes('Criatura') ? '🦴' :
                        item.category.includes('Erva') ? '🌿' :
                        item.category.includes('Fungo') ? '🍄' :
@@ -571,14 +572,17 @@ export const Cauldron: React.FC<Props> = ({
       {/* ========================================================
           PHYSICAL WORKBENCH ACTION CONTROLS
          ======================================================== */}
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        width: '100%',
-        marginTop: '12px',
-        gap: '12px'
-      }}>
+      <div 
+        className="cauldron-action-row"
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          width: '100%',
+          marginTop: '12px',
+          gap: '12px'
+        }}
+      >
         {/* Stir Button */}
         <button
           onClick={handleStir}
