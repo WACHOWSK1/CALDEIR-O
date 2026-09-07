@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Ingredient, Recipe, CraftMode, CauldronState, ExperimentLog } from './types';
 import alchemyData from './data/alchemyRecipes.json';
 import gastronomyData from './data/gastronomyRecipes.json';
@@ -9,14 +9,29 @@ import { IngredientShelf } from './components/IngredientShelf';
 import { RecipeBook } from './components/RecipeBook';
 import { DiscoveryModal } from './components/DiscoveryModal';
 import { BiomeCollectorModal } from './components/BiomeCollectorModal';
+import { RecipeChestModal } from './components/RecipeChestModal';
 
 export const App: React.FC = () => {
   const [mode, setMode] = useState<CraftMode>('alquimia');
   const [cauldronState, setCauldronState] = useState<CauldronState>('idle');
   const [slottedIngredients, setSlottedIngredients] = useState<Ingredient[]>([]);
+
+  // Initialize ingredients guaranteeing all 287 items from master catalog are present
   const [ingredients, setIngredients] = useState<Ingredient[]>(() => {
-    const saved = localStorage.getItem('caldeiro_ingredients');
-    return saved ? JSON.parse(saved) : (initialIngredientsData as Ingredient[]);
+    const masterList = initialIngredientsData as Ingredient[];
+    const savedStr = localStorage.getItem('caldeiro_ingredients_v3');
+    if (savedStr) {
+      try {
+        const savedMap = new Map<string, number>(JSON.parse(savedStr));
+        return masterList.map(item => ({
+          ...item,
+          quantity: savedMap.has(item.normName) ? savedMap.get(item.normName)! : item.quantity
+        }));
+      } catch (e) {
+        console.error('Erro ao restaurar inventario salvo:', e);
+      }
+    }
+    return masterList;
   });
 
   const [discoveredRecipes, setDiscoveredRecipes] = useState<Recipe[]>(() => {
@@ -31,17 +46,21 @@ export const App: React.FC = () => {
 
   const [newDiscovery, setNewDiscovery] = useState<Recipe | null>(null);
   const [isCollectorOpen, setIsCollectorOpen] = useState(false);
+  const [isChestRollerOpen, setIsChestRollerOpen] = useState(false);
   const [feedbackNotice, setFeedbackNotice] = useState<string | null>(null);
+  const [mobileTab, setMobileTab] = useState<'prateleira' | 'caldeirao' | 'grimorio'>('caldeirao');
 
   // Active recipes list based on mode
   const currentModeRecipes = mode === 'alquimia' ? (alchemyData as Recipe[]) : (gastronomyData as Recipe[]);
   const discoveredInCurrentMode = discoveredRecipes.filter(r => 
-    mode === 'alquimia' ? r.id.startsWith('alq') : r.id.startsWith('gas')
+    mode === 'alquimia' ? (r.id.startsWith('alq') || r.id.startsWith('herb_alq') || r.id.startsWith('exp_alq')) 
+                        : (r.id.startsWith('gas') || r.id.startsWith('herb_gas') || r.id.startsWith('exp_gas'))
   );
 
   // Persistence
   useEffect(() => {
-    localStorage.setItem('caldeiro_ingredients', JSON.stringify(ingredients));
+    const qtyMap = ingredients.map(i => [i.normName, i.quantity]);
+    localStorage.setItem('caldeiro_ingredients_v3', JSON.stringify(qtyMap));
   }, [ingredients]);
 
   useEffect(() => {
@@ -57,15 +76,39 @@ export const App: React.FC = () => {
     setTimeout(() => setFeedbackNotice(null), 4000);
   };
 
+  // Helper for consistent diacritics and casing normalization
+  const getNorm = (str: string) => str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+
+  // Pre-emptive check: has this exact slotted combination already failed in history?
+  const isKnownFailure = useMemo(() => {
+    if (slottedIngredients.length < 2) return false;
+    const slottedNorms = slottedIngredients.map(i => i.normName || getNorm(i.name)).sort();
+
+    return experimentHistory.some(exp => {
+      if (exp.isSuccess) return false;
+      const expNorms = exp.ingredients.map(getNorm).sort();
+      if (expNorms.length !== slottedNorms.length) return false;
+      return expNorms.every((n, idx) => n === slottedNorms[idx]);
+    });
+  }, [slottedIngredients, experimentHistory]);
+
   // Add ingredient to cauldron (max 4)
   const handleAddIngredient = (ingredient: Ingredient) => {
     if (slottedIngredients.length >= 4) {
       showNotification('O caldeirão já está com a capacidade máxima de 4 reagentes.');
       return;
     }
+
+    // Check stock availability
+    const countInCauldron = slottedIngredients.filter(s => s.normName === ingredient.normName).length;
+    if (countInCauldron >= ingredient.quantity) {
+      showNotification(`Você já colocou todas as suas ${ingredient.quantity} unidades de "${ingredient.name}" no caldeirão.`);
+      return;
+    }
+
     setSlottedIngredients(prev => [...prev, ingredient]);
     setCauldronState('receiving');
-    setTimeout(() => setCauldronState('idle'), 400);
+    setTimeout(() => setCauldronState('idle'), 350);
   };
 
   // Remove single ingredient from cauldron
@@ -88,7 +131,7 @@ export const App: React.FC = () => {
 
     // Normalize selected ingredients
     const selectedNorms = slottedIngredients
-      .map(i => i.normName || i.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim())
+      .map(i => i.normName || getNorm(i.name))
       .sort();
 
     setTimeout(() => {
@@ -100,6 +143,15 @@ export const App: React.FC = () => {
 
       const now = new Date();
       const timeStr = `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
+
+      // Deduct consumed ingredients from stock
+      setIngredients(prev => prev.map(item => {
+        const used = slottedIngredients.filter(s => s.normName === item.normName).length;
+        if (used > 0) {
+          return { ...item, quantity: Math.max(0, item.quantity - used) };
+        }
+        return item;
+      }));
 
       if (matched) {
         // Success
@@ -129,7 +181,7 @@ export const App: React.FC = () => {
       } else {
         // Unstable Mixture
         setCauldronState('unstable');
-        showNotification('A mistura ferveu violentamente e se tornou cinzas instáveis. Nenhuma fórmula foi gerada.');
+        showNotification('A mistura ferveu e virou cinzas instáveis. A combinação foi registrada em seu histórico para evitar repetições.');
 
         setExperimentHistory(prev => [
           {
@@ -141,8 +193,10 @@ export const App: React.FC = () => {
           },
           ...prev
         ]);
+
+        setSlottedIngredients([]);
       }
-    }, 700);
+    }, 650);
   };
 
   // Autofill recipe from Grimoire
@@ -192,11 +246,9 @@ export const App: React.FC = () => {
     showNotification(`${itemNames.length} itens coletados guardados na prateleira.`);
   };
 
-  const [mobileTab, setMobileTab] = useState<'prateleira' | 'caldeirao' | 'grimorio'>('caldeirao');
-
   return (
     <div className="app-container">
-      {/* Top Bar with Mode Switcher & Biome Collector */}
+      {/* Top Bar with Mode Switcher, Chest Roller & Biome Collector */}
       <WorkbenchHeader
         mode={mode}
         onToggleMode={newMode => {
@@ -206,6 +258,7 @@ export const App: React.FC = () => {
         discoveredCount={discoveredInCurrentMode.length}
         totalRecipes={currentModeRecipes.length}
         onOpenCollector={() => setIsCollectorOpen(true)}
+        onOpenChestRoller={() => setIsChestRollerOpen(true)}
         onResetCauldron={handleResetCauldron}
       />
 
@@ -269,6 +322,7 @@ export const App: React.FC = () => {
             mode={mode}
             cauldronState={cauldronState}
             slottedIngredients={slottedIngredients}
+            isKnownFailure={isKnownFailure}
             onRemoveIngredient={handleRemoveIngredient}
             onCombine={handleCombine}
             onReset={handleResetCauldron}
@@ -299,6 +353,21 @@ export const App: React.FC = () => {
         isOpen={isCollectorOpen}
         onClose={() => setIsCollectorOpen(false)}
         onAddGatheredItems={handleAddGatheredItems}
+      />
+
+      {/* Treasure Chest Recipe Roller Modal */}
+      <RecipeChestModal
+        isOpen={isChestRollerOpen}
+        onClose={() => setIsChestRollerOpen(false)}
+        allAlchemyRecipes={alchemyData as Recipe[]}
+        allGastroRecipes={gastronomyData as Recipe[]}
+        discoveredRecipeIds={new Set(discoveredRecipes.map(r => r.id))}
+        onUnlockRecipe={recipe => {
+          if (!discoveredRecipes.some(r => r.id === recipe.id)) {
+            setDiscoveredRecipes(prev => [recipe, ...prev]);
+          }
+          showNotification(`Pergaminho de "${recipe.name}" aprendido com sucesso e registrado no Grimório!`);
+        }}
       />
     </div>
   );

@@ -2598,5 +2598,485 @@
       "oleo mineral",
       "pimenta-vulcao"
     ]
+  },
+  {
+    "id": "exp_alq_1",
+    "name": "Óleo do Fogo Dracônico de Salamandra",
+    "category": "Óleo",
+    "effect": "Arma untada causa +2d6 de dano de fogo e o usuário pode expirar uma baforada cônica de fogo (6d6 dano, CD 17 Reflexos reduz à metade) uma vez por combate.",
+    "ingredients": [
+      "sangue de salamandra",
+      "cinzas de vulcao",
+      "pimenta-vulcao"
+    ],
+    "normalizedIngredients": [
+      "cinzas de vulcao",
+      "pimenta-vulcao",
+      "sangue de salamandra"
+    ]
+  },
+  {
+    "id": "exp_alq_2",
+    "name": "Elixir do Vento Gélido de Ieti",
+    "category": "Elixir",
+    "effect": "Concede imunidade a dano de frio e os ataques desarmados ou com armas causam +1d8 de dano de frio, deixando alvos lentos por 1 rodada (CD 16 Fortitude).",
+    "ingredients": [
+      "essencia de ieti",
+      "cristal de neve eterna",
+      "oleo de serpente polar"
+    ],
+    "normalizedIngredients": [
+      "cristal de neve eterna",
+      "essencia de ieti",
+      "oleo de serpente polar"
+    ]
+  },
+  {
+    "id": "exp_alq_3",
+    "name": "Poção da Plenitude da Lua Cheia",
+    "category": "Poção",
+    "effect": "Concede Faro, Visão na Penumbra e +2 em testes de Força, Atletismo e Percepção por 1 hora.",
+    "ingredients": [
+      "essencia de lua cheia",
+      "orvalho de aurora",
+      "raiz-nevoa"
+    ],
+    "normalizedIngredients": [
+      "essencia de lua cheia",
+      "orvalho de aurora",
+      "raiz-nevoa"
+    ]
+  },
+  {
+    "id": "exp_alq_4",
+    "name": "Granada da Centelha Voltaica",
+    "category": "Pó",
+    "effect": "Frasco arremessável que explode em raio de 4,5m causando 4d10 de dano elétrico e atordoando alvos por 1 rodada (Reflexos CD 16 reduz à metade e evita atordoamento).",
+    "ingredients": [
+      "espinho de relampago",
+      "poeira de raio",
+      "sal da profundeza"
+    ],
+    "normalizedIngredients": [
+      "espinho de relampago",
+      "poeira de raio",
+      "sal da profundeza"
+    ]
+  },
+  {
+    "id": "exp_alq_5",
+    "name": "Óleo do Predador Noturno",
+    "category": "Óleo",
+    "effect": "Concede +5 em testes de Furtividade, deslocamento silencioso absoluto e ignora penalidades por escuridão natural por 1 cena.",
+    "ingredients": [
+      "bigode de felino noturno",
+      "essencia de sombra",
+      "oleo leve"
+    ],
+    "normalizedIngredients": [
+      "bigode de felino noturno",
+      "essencia de sombra",
+      "oleo leve"
+    ]
+  },
+  {
+    "id": "exp_alq_6",
+    "name": "Frasco do Lamento de Banshee",
+    "category": "Veneno",
+    "effect": "Quando arremessado ou inalado, liberta um uivo aterrorizante. Criaturas num raio de 9m ficam Apavoradas por 1d4 rodadas (Vontade CD 17 evita).",
+    "ingredients": [
+      "garganta de banshee",
+      "tinta de medo",
+      "osso de fantasma"
+    ],
+    "normalizedIngredients": [
+      "garganta de banshee",
+      "osso de fantasma",
+      "tinta de medo"
+    ]
+  },
+  {
+    "id": "exp_alq_7",
+    "name": "Elixir da Aceleração Temporal",
+    "category": "Elixir",
+    "effect": "O usuário recebe uma ação padrão adicional por turno durante 3 rodadas sem sofrer fadiga e ganha +3 na Defesa.",
+    "ingredients": [
+      "relogio de pulso arcano",
+      "poeira dimensional",
+      "cristal de ressonancia"
+    ],
+    "normalizedIngredients": [
+      "cristal de ressonancia",
+      "poeira dimensional",
+      "relogio de pulso arcano"
+    ]
+  },
+  {
+    "id": "exp_alq_8",
+    "name": "Pomada da Pele de Bronze Forjado",
+    "category": "Bálsamo",
+    "effect": "Concede +3 na Defesa e Redução de Dano 5 (RD 5) contra armas cortantes e perfurantes por 1 cena.",
+    "ingredients": [
+      "lagrima de bronze",
+      "po de granito magico",
+      "oleo mineral"
+    ],
+    "normalizedIngredients": [
+      "lagrima de bronze",
+      "oleo mineral",
+      "po de granito magico"
+    ]
+  },
+  {
+    "id": "exp_alq_9",
+    "name": "Bálsamo Silencioso de Silfídeo",
+    "category": "Bálsamo",
+    "effect": "Concede peso pluma permanente por 1 hora, anula 100% do dano de qualquer queda e permite levitar até 3 metros do solo.",
+    "ingredients": [
+      "saliva de silfideo",
+      "pluma de falcao de ar",
+      "nectar protetor"
+    ],
+    "normalizedIngredients": [
+      "nectar protetor",
+      "pluma de falcao de ar",
+      "saliva de silfideo"
+    ]
+  },
+  {
+    "id": "exp_alq_10",
+    "name": "Tinta Rúnica de Contenção Mágica",
+    "category": "Pó",
+    "effect": "Usada para desenhar runas de aprisionamento: qualquer criatura que pisar no círculo fica imóvel e incapaz de teleportar por 1 cena (Reflexos CD 18).",
+    "ingredients": [
+      "fio de contencao",
+      "tinta de escarlate",
+      "runa da compreensao"
+    ],
+    "normalizedIngredients": [
+      "fio de contencao",
+      "runa da compreensao",
+      "tinta de escarlate"
+    ]
+  },
+  {
+    "id": "exp_alq_11",
+    "name": "Poção da Fúria Bárbara Destrutiva",
+    "category": "Poção",
+    "effect": "Concede +4 em testes de ataque e rolagens de dano corpo a corpo e 15 PV temporários por 1 cena, mas impede conjuração de magias.",
+    "ingredients": [
+      "pocao de raiva",
+      "coracao de gnoll",
+      "sangue de quimera"
+    ],
+    "normalizedIngredients": [
+      "coracao de gnoll",
+      "pocao de raiva",
+      "sangue de quimera"
+    ]
+  },
+  {
+    "id": "exp_alq_12",
+    "name": "Elixir da Canção dos Elfos Anciões",
+    "category": "Elixir",
+    "effect": "Restaura 3d6 PM a conjuradores bárdicos ou arcanos e concede +3 em testes de perícias baseadas em Carisma por 1 cena.",
+    "ingredients": [
+      "melodia encantada",
+      "essencia de teatro elfico",
+      "orvalho de aurora"
+    ],
+    "normalizedIngredients": [
+      "essencia de teatro elfico",
+      "melodia encantada",
+      "orvalho de aurora"
+    ]
+  },
+  {
+    "id": "exp_alq_13",
+    "name": "Veneno da Agonia de Pesadelo",
+    "category": "Veneno",
+    "effect": "Veneno de ferimento: causa 3d8 de dano psíquico por rodada durante 3 rodadas e impõe a condição Vulnerável (Vontade CD 16 reduz à metade).",
+    "ingredients": [
+      "tinta de pesadelo",
+      "tinta de medo",
+      "seiva de mutante"
+    ],
+    "normalizedIngredients": [
+      "seiva de mutante",
+      "tinta de medo",
+      "tinta de pesadelo"
+    ]
+  },
+  {
+    "id": "exp_alq_14",
+    "name": "Óleo Vorpal da Centelha Viva",
+    "category": "Óleo",
+    "effect": "Concede +2 no ataque e +1d6 de dano de fogo e eletricidade a lâminas por 1 hora.",
+    "ingredients": [
+      "raiz da centelha",
+      "faisca capturada",
+      "lamina de prata runica moida"
+    ],
+    "normalizedIngredients": [
+      "faisca capturada",
+      "lamina de prata runica moida",
+      "raiz da centelha"
+    ]
+  },
+  {
+    "id": "exp_alq_15",
+    "name": "Poção do Voo Etéreo Espectral",
+    "category": "Poção",
+    "effect": "O usuário torna-se incorpóreo e adquire deslocamento de voo de 9m por 3 rodadas, atravessando paredes de até 1 metro.",
+    "ingredients": [
+      "areia eterea",
+      "nevoa eterea",
+      "fragmento de ectoplasma"
+    ],
+    "normalizedIngredients": [
+      "areia eterea",
+      "fragmento de ectoplasma",
+      "nevoa eterea"
+    ]
+  },
+  {
+    "id": "exp_alq_16",
+    "name": "Bálsamo da Bravura Inquebrantável",
+    "category": "Bálsamo",
+    "effect": "Concede imunidade a efeitos de medo, paralisia e sono mágico, e +2 em todos os testes de resistência por 1 cena.",
+    "ingredients": [
+      "essencia de bravura",
+      "rocha de determinacao",
+      "nectar protetor"
+    ],
+    "normalizedIngredients": [
+      "essencia de bravura",
+      "nectar protetor",
+      "rocha de determinacao"
+    ]
+  },
+  {
+    "id": "exp_alq_17",
+    "name": "Pó da Ilusão Labiríntica",
+    "category": "Pó",
+    "effect": "Nuvem de pó cintilante que cega e confunde inimigos em raio de 6m (Vontade CD 17 anula).",
+    "ingredients": [
+      "po de ilusao",
+      "tecido ilusorio",
+      "gema dos veus"
+    ],
+    "normalizedIngredients": [
+      "gema dos veus",
+      "po de ilusao",
+      "tecido ilusorio"
+    ]
+  },
+  {
+    "id": "exp_alq_18",
+    "name": "Elixir da Purificação da Aurora",
+    "category": "Elixir",
+    "effect": "Neutraliza qualquer veneno ou doença (mágica ou comum) e regenera 2 PV por rodada por 10 rodadas.",
+    "ingredients": [
+      "essencia de pureza",
+      "essencia de antidoto puro",
+      "orvalho de aurora"
+    ],
+    "normalizedIngredients": [
+      "essencia de antidoto puro",
+      "essencia de pureza",
+      "orvalho de aurora"
+    ]
+  },
+  {
+    "id": "exp_alq_19",
+    "name": "Óleo da Aderência Aracnídea",
+    "category": "Óleo",
+    "effect": "Permite andar por tetos e paredes lisas como se estivesse no chão e concede +4 em manobras de agarrar.",
+    "ingredients": [
+      "po de aderencia",
+      "seiva de planta-grude",
+      "baba de aracnideo"
+    ],
+    "normalizedIngredients": [
+      "baba de aracnideo",
+      "po de aderencia",
+      "seiva de planta-grude"
+    ]
+  },
+  {
+    "id": "exp_alq_20",
+    "name": "Poção da Memória Arcana Perfeita",
+    "category": "Poção",
+    "effect": "O conjurador recupera o uso de uma magia conjurada na cena anterior sem gastar PM.",
+    "ingredients": [
+      "essencia de memoria",
+      "cristal mental",
+      "runa da compreensao"
+    ],
+    "normalizedIngredients": [
+      "cristal mental",
+      "essencia de memoria",
+      "runa da compreensao"
+    ]
+  },
+  {
+    "id": "exp_alq_21",
+    "name": "Bálsamo Solar do Vigor Divino",
+    "category": "Bálsamo",
+    "effect": "Cura 4d8+4 PV em criaturas vivas e causa o mesmo valor como dano de luz em mortos-vivos (Reflexos CD 16 reduz à metade).",
+    "ingredients": [
+      "lagrima solar",
+      "luz de sol engarrafada",
+      "fio solar"
+    ],
+    "normalizedIngredients": [
+      "fio solar",
+      "lagrima solar",
+      "luz de sol engarrafada"
+    ]
+  },
+  {
+    "id": "exp_alq_22",
+    "name": "Vapor Entorpecente de Elemental do Ar",
+    "category": "Veneno",
+    "effect": "Nuvem asfixiante que remove o ar dos pulmões: criaturas na área ficam Asfixiadas e Sofrendo Sufocamento (Fortitude CD 16).",
+    "ingredients": [
+      "vapor de elemental do ar",
+      "ar rarefeito de montanha",
+      "nevoa destilada"
+    ],
+    "normalizedIngredients": [
+      "ar rarefeito de montanha",
+      "nevoa destilada",
+      "vapor de elemental do ar"
+    ]
+  },
+  {
+    "id": "exp_alq_23",
+    "name": "Óleo da Couraça de Dragão de Ferro",
+    "category": "Óleo",
+    "effect": "Armadura banhada recebe +4 na Defesa e imunidade a dano de ácido e fogo por 1 cena.",
+    "ingredients": [
+      "escama de dragao de ferro",
+      "po de obsidiana",
+      "unguento de pedra do corte"
+    ],
+    "normalizedIngredients": [
+      "escama de dragao de ferro",
+      "po de obsidiana",
+      "unguento de pedra do corte"
+    ]
+  },
+  {
+    "id": "exp_alq_24",
+    "name": "Extrato Glacial de Draco do Norte",
+    "category": "Poção",
+    "effect": "Concede sopro de gelo de 30m em linha causando 6d8 de dano de frio (Reflexos CD 17 reduz à metade).",
+    "ingredients": [
+      "sangue de draco",
+      "fragmento glacial",
+      "essencia de ventos do norte"
+    ],
+    "normalizedIngredients": [
+      "essencia de ventos do norte",
+      "fragmento glacial",
+      "sangue de draco"
+    ]
+  },
+  {
+    "id": "exp_alq_25",
+    "name": "Pó Metálico da Espada Espinhosa",
+    "category": "Pó",
+    "effect": "Quando espalhado numa arma, ela cria espinhos afiados causando dano perfurante e sangramento (+1d6 dano contínuo).",
+    "ingredients": [
+      "espinho metalico",
+      "espinho selvagem",
+      "chifre moido"
+    ],
+    "normalizedIngredients": [
+      "chifre moido",
+      "espinho metalico",
+      "espinho selvagem"
+    ]
+  },
+  {
+    "id": "exp_alq_26",
+    "name": "Poção da Mimetização Espectral",
+    "category": "Poção",
+    "effect": "O usuário se mescla perfeitamente ao ambiente, tornando-se Invisível até realizar um ataque ou conjurar magia.",
+    "ingredients": [
+      "olhos de mimetizador",
+      "po de mimetismo",
+      "essencia de camaleao"
+    ],
+    "normalizedIngredients": [
+      "essencia de camaleao",
+      "olhos de mimetizador",
+      "po de mimetismo"
+    ]
+  },
+  {
+    "id": "exp_alq_27",
+    "name": "Elixir da Precisão Cirúrgica",
+    "category": "Elixir",
+    "effect": "Aumenta a margem de ameaça de ataques à distância em +2 e concede +3 em testes de Pontaria por 1 cena.",
+    "ingredients": [
+      "essencia de precisao",
+      "olho de falcao",
+      "pena de coruja veloz"
+    ],
+    "normalizedIngredients": [
+      "essencia de precisao",
+      "olho de falcao",
+      "pena de coruja veloz"
+    ]
+  },
+  {
+    "id": "exp_alq_28",
+    "name": "Frasco do Silêncio Mortal",
+    "category": "Veneno",
+    "effect": "Impede o alvo de falar, gritar ou pronunciar palavras mágicas de conjuração por 1d4 rodadas (Fortitude CD 16).",
+    "ingredients": [
+      "tinta de silencio",
+      "lingua de serpente muda",
+      "lingua de morcego"
+    ],
+    "normalizedIngredients": [
+      "lingua de morcego",
+      "lingua de serpente muda",
+      "tinta de silencio"
+    ]
+  },
+  {
+    "id": "exp_alq_29",
+    "name": "Bálsamo da Reversão Arcana",
+    "category": "Bálsamo",
+    "effect": "Reflete a próxima magia hostil de 1º a 3º círculo conjurada contra o usuário de volta ao conjurador original.",
+    "ingredients": [
+      "folha de reversa",
+      "gema de agua encantada",
+      "cristal de ressonancia"
+    ],
+    "normalizedIngredients": [
+      "cristal de ressonancia",
+      "folha de reversa",
+      "gema de agua encantada"
+    ]
+  },
+  {
+    "id": "exp_alq_30",
+    "name": "Unguento do Caracol Couraçado",
+    "category": "Bálsamo",
+    "effect": "Aumenta a CA em +3 e concede imunidade a acertos críticos por 1 cena.",
+    "ingredients": [
+      "cera de caracol blindado",
+      "casco macio de caranguejo",
+      "unguento de pedra do corte"
+    ],
+    "normalizedIngredients": [
+      "casco macio de caranguejo",
+      "cera de caracol blindado",
+      "unguento de pedra do corte"
+    ]
   }
 ]

@@ -1550,5 +1550,183 @@
       "azeite do pantano",
       "shiitake selvagem"
     ]
+  },
+  {
+    "id": "exp_gas_1",
+    "name": "Estufado Picante de Minotauro ao Vinho Negro",
+    "category": "Ensopado",
+    "effect": "Concede +4 em testes de Força e Atletismo, +2 em ataques corpo a corpo e 12 PV temporários por 1 cena.",
+    "ingredients": [
+      "lingua de minotauro",
+      "vinho negro",
+      "cebola carmesim",
+      "sal de rocha"
+    ],
+    "normalizedIngredients": [
+      "cebola carmesim",
+      "lingua de minotauro",
+      "sal de rocha",
+      "vinho negro"
+    ]
+  },
+  {
+    "id": "exp_gas_2",
+    "name": "Caldeirada Flamejante de Salamandra",
+    "category": "Sopa/Caldo",
+    "effect": "Concede resistência a fogo 15 e faz com que armas brancas causem +1d6 de dano de fogo por 1 cena.",
+    "ingredients": [
+      "carne de salamandra",
+      "pimenta-vulcao",
+      "caldo leve",
+      "alho-fantasma"
+    ],
+    "normalizedIngredients": [
+      "alho-fantasma",
+      "caldo leve",
+      "carne de salamandra",
+      "pimenta-vulcao"
+    ]
+  },
+  {
+    "id": "exp_gas_3",
+    "name": "Chá das Estrelas e Serenidade",
+    "category": "Bebida",
+    "effect": "Recupera 2d4 PM, remove todas as condições mentais negativas e concede +2 em Vontade por 1 cena.",
+    "ingredients": [
+      "cha de serenidade",
+      "orvalho de aurora",
+      "mel selvagem"
+    ],
+    "normalizedIngredients": [
+      "cha de serenidade",
+      "mel selvagem",
+      "orvalho de aurora"
+    ]
+  },
+  {
+    "id": "exp_gas_4",
+    "name": "Moqueca das Profundezas Abissais",
+    "category": "Prato Mágico",
+    "effect": "Concede deslocamento de nado igual ao dobro do terrestre e visão na escuridão aquática por 1 dia.",
+    "ingredients": [
+      "gordura de peixe abissal",
+      "peixe-crispo",
+      "especiarias do mar",
+      "algas picantes"
+    ],
+    "normalizedIngredients": [
+      "algas picantes",
+      "especiarias do mar",
+      "gordura de peixe abissal",
+      "peixe-crispo"
+    ]
+  },
+  {
+    "id": "exp_gas_5",
+    "name": "Assado de Lombo de Bicho-Pedra ao Limão",
+    "category": "Prato Mágico",
+    "effect": "Concede Redução de Dano 4 (RD 4) e +2 em testes de Fortitude por 1 cena.",
+    "ingredients": [
+      "lombo de bicho-pedra",
+      "limao acido",
+      "sal de rocha",
+      "azeite do pantano"
+    ],
+    "normalizedIngredients": [
+      "azeite do pantano",
+      "limao acido",
+      "lombo de bicho-pedra",
+      "sal de rocha"
+    ]
+  },
+  {
+    "id": "exp_gas_6",
+    "name": "Torta de Frutas Solares do Oásis",
+    "category": "Assado/Pão",
+    "effect": "Restaura 4d6 PV, remove qualquer nível de exaustão e concede imunidade a calor por 24 horas.",
+    "ingredients": [
+      "figo-das-dunas",
+      "tamarindo solar",
+      "massa fina",
+      "acucar cristal"
+    ],
+    "normalizedIngredients": [
+      "acucar cristal",
+      "figo-das-dunas",
+      "massa fina",
+      "tamarindo solar"
+    ]
+  },
+  {
+    "id": "exp_gas_7",
+    "name": "Ensopado Rústico de Raiz e Cenoura Dourada",
+    "category": "Ensopado",
+    "effect": "Recupera 3d8 PV e concede +2 em testes de Sobrevivência e Percepção por 1 dia.",
+    "ingredients": [
+      "raiz de batao",
+      "cenoura dourada",
+      "caldo leve",
+      "ervas de montanha"
+    ],
+    "normalizedIngredients": [
+      "caldo leve",
+      "cenoura dourada",
+      "ervas de montanha",
+      "raiz de batao"
+    ]
+  },
+  {
+    "id": "exp_gas_8",
+    "name": "Pão de Maçã Flutuante com Canela",
+    "category": "Assado/Pão",
+    "effect": "Reduz qualquer velocidade de queda para 3m/rodada (queda suave) e concede +2 em Acrobacia por 1 cena.",
+    "ingredients": [
+      "maca flutuante",
+      "canela dos ceus",
+      "massa fina",
+      "mel selvagem"
+    ],
+    "normalizedIngredients": [
+      "canela dos ceus",
+      "maca flutuante",
+      "massa fina",
+      "mel selvagem"
+    ]
+  },
+  {
+    "id": "exp_gas_9",
+    "name": "Risoto Alquímico de Arroz Prateado e Cogumelos",
+    "category": "Prato Mágico",
+    "effect": "Recupera 2d6 PV e 2 PM e concede resistência à magia (+2 em testes de resistência contra magias).",
+    "ingredients": [
+      "arroz prateado",
+      "cogumelo-luz",
+      "manteiga de coral",
+      "vinho tinto"
+    ],
+    "normalizedIngredients": [
+      "arroz prateado",
+      "cogumelo-luz",
+      "manteiga de coral",
+      "vinho tinto"
+    ]
+  },
+  {
+    "id": "exp_gas_10",
+    "name": "Caldo de Ovos e Queijo do Guardião",
+    "category": "Sopa/Caldo",
+    "effect": "Concede +2 em Fortitude e Vontade e 8 PV temporários por 1 cena.",
+    "ingredients": [
+      "ovos caipiras",
+      "queijo curado",
+      "caldo leve",
+      "cebola amarga"
+    ],
+    "normalizedIngredients": [
+      "caldo leve",
+      "cebola amarga",
+      "ovos caipiras",
+      "queijo curado"
+    ]
   }
 ]

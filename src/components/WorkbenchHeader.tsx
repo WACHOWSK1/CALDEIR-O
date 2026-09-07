@@ -1,6 +1,6 @@
 import React from 'react';
 import { CraftMode } from '../types';
-import { Sparkles, Utensils, Compass, RotateCcw } from 'lucide-react';
+import { Sparkles, Utensils, Compass, RotateCcw, PackageOpen } from 'lucide-react';
 
 interface Props {
   mode: CraftMode;
@@ -8,6 +8,7 @@ interface Props {
   discoveredCount: number;
   totalRecipes: number;
   onOpenCollector: () => void;
+  onOpenChestRoller: () => void;
   onResetCauldron: () => void;
 }
 
@@ -17,6 +18,7 @@ export const WorkbenchHeader: React.FC<Props> = ({
   discoveredCount,
   totalRecipes,
   onOpenCollector,
+  onOpenChestRoller,
   onResetCauldron
 }) => {
   return (
@@ -141,6 +143,29 @@ export const WorkbenchHeader: React.FC<Props> = ({
         >
           <Compass size={16} color="#c59341" />
           <span>Biomas / Coletor</span>
+        </button>
+
+        {/* Chest Recipe Roller Button */}
+        <button
+          onClick={onOpenChestRoller}
+          title="Sortear pergaminho de receita encontrado em baú de masmorra"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            padding: '8px 13px',
+            background: 'linear-gradient(180deg, #38281a 0%, #21160e 100%)',
+            color: '#fef08a',
+            border: '1px solid #c59341',
+            borderRadius: '6px',
+            fontSize: '0.82rem',
+            cursor: 'pointer',
+            transition: 'all 0.15s',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.4)'
+          }}
+        >
+          <PackageOpen size={16} color="#facc15" />
+          <span>Baú de Fórmulas</span>
         </button>
 
         {/* Discovery Counter Badge */}

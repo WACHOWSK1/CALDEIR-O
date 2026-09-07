@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { Ingredient, CauldronState, CraftMode } from '../types';
-import { Flame, Sparkles, X, RotateCcw } from 'lucide-react';
+import { Flame, Sparkles, X, RotateCcw, AlertTriangle } from 'lucide-react';
 
 interface Props {
   mode: CraftMode;
   cauldronState: CauldronState;
   slottedIngredients: Ingredient[];
+  isKnownFailure?: boolean;
   onRemoveIngredient: (index: number) => void;
   onCombine: () => void;
   onReset: () => void;
@@ -16,6 +17,7 @@ export const Cauldron: React.FC<Props> = ({
   mode,
   cauldronState,
   slottedIngredients,
+  isKnownFailure = false,
   onRemoveIngredient,
   onCombine,
   onReset,
@@ -439,6 +441,29 @@ export const Cauldron: React.FC<Props> = ({
             </button>
           )}
         </div>
+
+        {/* Pre-emptive Failure Warning if recipe previously failed */}
+        {isKnownFailure && slottedIngredients.length >= 2 && (
+          <div style={{
+            background: 'rgba(239, 68, 68, 0.18)',
+            border: '1px solid #ef4444',
+            borderRadius: '6px',
+            padding: '8px 10px',
+            marginBottom: '10px',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            color: '#fca5a5',
+            fontSize: '0.74rem',
+            lineHeight: '1.3',
+            animation: 'fadeIn 0.2s ease-out'
+          }}>
+            <AlertTriangle size={18} color="#ef4444" style={{ flexShrink: 0 }} />
+            <span>
+              <b>Aviso de Memória Alquímica:</b> Você já testou essa combinação antes e ela gerou <b>Mistura Instável</b>! Esvazie para não perder ingredientes à toa.
+            </span>
+          </div>
+        )}
 
         {/* 4 Slots */}
         <div style={{

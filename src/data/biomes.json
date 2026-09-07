@@ -117,7 +117,13 @@
       "Fruto de Árvore-da-Dinamite",
       "Shiitake Selvagem",
       "Seiva da Árvore-Upas",
-      "Madeira de Teixo-dos-Cemitérios"
+      "Madeira de Teixo-dos-Cemitérios",
+      "lingua de minotauro",
+      "asa de passaro elemental",
+      "sangue de berserker",
+      "pena de bardo da paz",
+      "olho de troll",
+      "garras trituradas"
     ],
     "Montanhas": [
       "Cristal mental",
@@ -158,7 +164,9 @@
       "Boca-de-Leão Mágica",
       "Verbena dos Encantamentos",
       "Milefólio (Erva-dos-Carpinteiros)",
-      "Líquen-Dourado das Rochas"
+      "Líquen-Dourado das Rochas",
+      "agua cristalina",
+      "acucar cristal"
     ],
     "Terrenos rochosos": [
       "Chifre moído",
@@ -448,7 +456,18 @@
       "Cipó de Rotim",
       "Musgo Esfagno dos Brejos",
       "Verbena dos Encantamentos",
-      "Casca de Salgueiro-Chorão"
+      "Casca de Salgueiro-Chorão",
+      "agua benta espessa",
+      "essencia sagrada",
+      "po de bencao",
+      "oleo de baleia",
+      "essencia de agua encantada",
+      "leite de cabra",
+      "oleo leve",
+      "caldo leve",
+      "agua fervente",
+      "vinho tinto",
+      "vinho escuro"
     ],
     "Campos altos": [
       "Ar rarefeito de montanha",
@@ -538,7 +557,26 @@
       "Casca de Carvalho-Ancião",
       "Cipó de Rotim",
       "Taça-Escarlate-das-Fadas",
-      "Shiitake Selvagem"
+      "Shiitake Selvagem",
+      "pocao de raiva",
+      "medula de lobo-dourado",
+      "coracao de gnoll",
+      "lagrima de elemental da terra",
+      "tinta de prata liquida",
+      "mel silvestre",
+      "fermento seco",
+      "cebola carmesim",
+      "massa fina",
+      "raizes frias",
+      "ovos caipiras",
+      "queijo curado",
+      "cebola amarga",
+      "maca verde",
+      "casco macio",
+      "manteiga de coral",
+      "limao acido",
+      "ovo de limao",
+      "raiz de batao (tipo batata)"
     ],
     "Árvores mágicas": [
       "Seiva de mutante",
