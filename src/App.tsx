@@ -11,6 +11,7 @@ import { DiscoveryModal } from './components/DiscoveryModal';
 import { BiomeCollectorModal } from './components/BiomeCollectorModal';
 import { RecipeChestModal } from './components/RecipeChestModal';
 import { ShopModal, ShopType } from './components/ShopModal';
+import { BackupModal } from './components/BackupModal';
 import { X } from 'lucide-react';
 
 export const App: React.FC = () => {
@@ -51,6 +52,7 @@ export const App: React.FC = () => {
   const [isCollectorOpen, setIsCollectorOpen] = useState(false);
   const [isChestRollerOpen, setIsChestRollerOpen] = useState(false);
   const [isShopOpen, setIsShopOpen] = useState(false);
+  const [isBackupOpen, setIsBackupOpen] = useState(false);
   const [shopType, setShopType] = useState<ShopType>('cozinha');
   const [feedbackNotice, setFeedbackNotice] = useState<string | null>(null);
   const [mobileTab, setMobileTab] = useState<'prateleira' | 'caldeirao' | 'grimorio'>('caldeirao');
@@ -346,9 +348,21 @@ export const App: React.FC = () => {
     showNotification(`${itemNames.length} itens coletados guardados na sua mochila.`);
   };
 
+  // Restore game progress from backup
+  const handleRestoreBackup = (backup: {
+    playerInventory: Ingredient[];
+    discoveredRecipes: Recipe[];
+    experimentHistory: ExperimentLog[];
+  }) => {
+    setPlayerInventory(backup.playerInventory);
+    setDiscoveredRecipes(backup.discoveredRecipes);
+    setExperimentHistory(backup.experimentHistory);
+    showNotification('Progresso restaurado com sucesso a partir do backup!');
+  };
+
   return (
     <div className="app-container">
-      {/* Top Bar with Mode Switcher, Chest Roller & Biome Collector */}
+      {/* Top Bar with Mode Switcher, Chest Roller, Backup & Biome Collector */}
       <WorkbenchHeader
         mode={mode}
         onToggleMode={newMode => {
@@ -359,6 +373,7 @@ export const App: React.FC = () => {
         totalRecipes={currentModeRecipes.length}
         onOpenCollector={() => setIsCollectorOpen(true)}
         onOpenChestRoller={() => setIsChestRollerOpen(true)}
+        onOpenBackup={() => setIsBackupOpen(true)}
         onResetCauldron={handleResetCauldron}
       />
 
@@ -545,6 +560,16 @@ export const App: React.FC = () => {
         masterIngredients={masterIngredients}
         allAlchemyRecipes={alchemyData as Recipe[]}
         allGastroRecipes={gastronomyData as Recipe[]}
+      />
+
+      {/* Backup & Progress Transfer Modal */}
+      <BackupModal
+        isOpen={isBackupOpen}
+        onClose={() => setIsBackupOpen(false)}
+        playerInventory={playerInventory}
+        discoveredRecipes={discoveredRecipes}
+        experimentHistory={experimentHistory}
+        onRestoreBackup={handleRestoreBackup}
       />
 
       {/* Mobile Fixed Bottom Navigation Bar */}

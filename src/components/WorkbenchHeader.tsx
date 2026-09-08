@@ -1,6 +1,6 @@
 import React from 'react';
 import { CraftMode } from '../types';
-import { Sparkles, Utensils, Compass, RotateCcw, PackageOpen } from 'lucide-react';
+import { Sparkles, Utensils, Compass, RotateCcw, PackageOpen, Save } from 'lucide-react';
 
 interface Props {
   mode: CraftMode;
@@ -10,6 +10,7 @@ interface Props {
   onOpenCollector: () => void;
   onOpenChestRoller: () => void;
   onResetCauldron: () => void;
+  onOpenBackup?: () => void;
 }
 
 export const WorkbenchHeader: React.FC<Props> = ({
@@ -19,7 +20,8 @@ export const WorkbenchHeader: React.FC<Props> = ({
   totalRecipes,
   onOpenCollector,
   onOpenChestRoller,
-  onResetCauldron
+  onResetCauldron,
+  onOpenBackup
 }) => {
   return (
     <header style={{
@@ -183,6 +185,33 @@ export const WorkbenchHeader: React.FC<Props> = ({
           <PackageOpen size={15} color="#facc15" />
           <span>Baú de Fórmulas</span>
         </button>
+
+        {/* Backup / Export / Import Save Button */}
+        {onOpenBackup && (
+          <button
+            onClick={onOpenBackup}
+            title="Salvar ou restaurar backup do progresso (fórmulas, inventário e histórico)"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              padding: '8px 12px',
+              background: 'linear-gradient(180deg, #2b2016 0%, #1a130c 100%)',
+              color: '#fef08a',
+              border: '1px solid #785a28',
+              borderRadius: '6px',
+              fontSize: '0.8rem',
+              cursor: 'pointer',
+              transition: 'all 0.15s',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
+              flex: '1 1 auto',
+              justifyContent: 'center'
+            }}
+          >
+            <Save size={15} color="#38bdf8" />
+            <span>Backup</span>
+          </button>
+        )}
 
         {/* Discovery Counter Badge */}
         <div style={{
