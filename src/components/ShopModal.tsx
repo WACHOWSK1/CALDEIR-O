@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import { Ingredient, Recipe, Rarity } from '../types';
 import { 
   X, 
@@ -63,6 +64,30 @@ export const ShopModal: React.FC<Props> = ({
   // Feedback message / toast inside shop
   const [shopNotice, setShopNotice] = useState<string | null>(null);
   const [isRestocking, setIsRestocking] = useState(false);
+
+  // Hovered recipe item for floating box portal (to overlap everything and avoid clipping)
+  const [hoveredRecipeItem, setHoveredRecipeItem] = useState<{
+    ingredient: Ingredient;
+    matchingRecipes: Recipe[];
+    rect: DOMRect;
+  } | null>(null);
+
+  // Clear hovered recipe tooltip on shop change, modal close or restocking
+  useEffect(() => {
+    setHoveredRecipeItem(null);
+  }, [shopType, isOpen, isRestocking]);
+
+  // Dismiss floating box on window scroll or resize
+  useEffect(() => {
+    if (!hoveredRecipeItem) return;
+    const handleDismiss = () => setHoveredRecipeItem(null);
+    window.addEventListener('resize', handleDismiss);
+    window.addEventListener('scroll', handleDismiss, true);
+    return () => {
+      window.removeEventListener('resize', handleDismiss);
+      window.removeEventListener('scroll', handleDismiss, true);
+    };
+  }, [hoveredRecipeItem]);
 
 
   const normalize = (s: string) =>
@@ -677,7 +702,11 @@ export const ShopModal: React.FC<Props> = ({
         {/* ========================================================
             MODAL SCROLLABLE CONTENT (12 INGREDIENTS + 4 RECIPES)
            ======================================================== */}
-        <div style={{
+        <div
+          onScroll={() => {
+            if (hoveredRecipeItem) setHoveredRecipeItem(null);
+          }}
+          style={{
           flex: 1,
           overflowY: 'auto',
           paddingRight: '6px',
@@ -732,6 +761,18 @@ export const ShopModal: React.FC<Props> = ({
                   <div
                     key={ingredient.id}
                     className={isPartOfPlayerRecipe && !isOutOfStock ? 'shop-item-card-recipe-match' : ''}
+                    onMouseEnter={(e) => {
+                      if (isPartOfPlayerRecipe && !isOutOfStock) {
+                        setHoveredRecipeItem({
+                          ingredient,
+                          matchingRecipes,
+                          rect: e.currentTarget.getBoundingClientRect()
+                        });
+                      }
+                    }}
+                    onMouseLeave={() => {
+                      setHoveredRecipeItem(null);
+                    }}
                     style={{
                       background: isOutOfStock ? '#15110e' : '#1c1511',
                       border: isOutOfStock
@@ -804,7 +845,6 @@ export const ShopModal: React.FC<Props> = ({
                           {isPartOfPlayerRecipe && !isOutOfStock && (
                             <div
                               className="shop-item-recipe-indicator"
-                              title="Item de receita"
                               aria-label="Item de receita"
                             >
                               <BookOpen size={13} color="#86efac" />
@@ -950,43 +990,7 @@ export const ShopModal: React.FC<Props> = ({
                       </button>
                     </div>
 
-                    {/* Floating Tooltip Box (Appears on Hover) */}
-                    {isPartOfPlayerRecipe && (
-                      <div
-                        className="shop-recipe-floating-box"
-                        role="tooltip"
-                      >
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                          <span style={{ fontSize: '15px', filter: 'drop-shadow(0 0 5px #22c55e)' }}>📜</span>
-                          <span style={{
-                            fontFamily: 'var(--font-display)',
-                            fontSize: '0.84rem',
-                            fontWeight: 700,
-                            color: '#86efac',
-                            letterSpacing: '0.3px',
-                            whiteSpace: 'nowrap'
-                          }}>
-                            item de receita
-                          </span>
-                        </div>
-                        {matchingRecipes.length > 0 && (
-                          <div style={{
-                            marginTop: '6px',
-                            paddingTop: '5px',
-                            borderTop: '1px solid rgba(34, 197, 94, 0.3)',
-                            fontSize: '0.72rem',
-                            color: '#d4c8b8',
-                            lineHeight: 1.35,
-                            whiteSpace: 'normal',
-                            textAlign: 'left'
-                          }}>
-                            <span style={{ color: '#4ade80', fontWeight: 600 }}>Receita(s): </span>
-                            {matchingRecipes.slice(0, 3).map(r => r.name).join(', ')}
-                            {matchingRecipes.length > 3 ? ` (+${matchingRecipes.length - 3})` : ''}
-                          </div>
-                        )}
-                      </div>
-                    )}
+                    {/* Floating box is rendered globally via portal below to overlap everything without clipping */}
                   </div>
                 );
               })}
@@ -1176,6 +1180,75 @@ export const ShopModal: React.FC<Props> = ({
           </section>
         </div>
       </div>
+
+      {/* Recipe Item Floating Box Portal - overlaps everything on the page */}
+      {hoveredRecipeItem && typeof document !== 'undefined' && createPortal(
+        (() => {
+          const { rect, matchingRecipes } = hoveredRecipeItem;
+          const spaceAbove = rect.top;
+          const placeAbove = spaceAbove >= 85;
+          const centerX = rect.left + rect.width / 2;
+          const clampedLeft = Math.max(160, Math.min(window.innerWidth - 160, centerX));
+
+          return (
+            <div
+              className={`shop-recipe-floating-portal ${placeAbove ? 'place-above' : 'place-below'}`}
+              role="tooltip"
+              style={{
+                position: 'fixed',
+                left: `${clampedLeft}px`,
+                top: placeAbove ? `${rect.top - 8}px` : `${rect.bottom + 8}px`,
+                transform: placeAbove ? 'translate(-50%, -100%)' : 'translate(-50%, 0)',
+                pointerEvents: 'none',
+                zIndex: 9999999,
+                width: 'max-content',
+                maxWidth: 'min(320px, calc(100vw - 32px))',
+                background: 'rgba(14, 20, 14, 0.98)',
+                backdropFilter: 'blur(12px)',
+                WebkitBackdropFilter: 'blur(12px)',
+                border: '1.5px solid #22c55e',
+                borderRadius: '8px',
+                padding: '10px 14px',
+                boxShadow: '0 12px 36px rgba(0, 0, 0, 0.95), 0 0 22px rgba(34, 197, 94, 0.5)',
+                color: '#f5edd6',
+                lineHeight: 1.35,
+                userSelect: 'none'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <span style={{ fontSize: '15px', filter: 'drop-shadow(0 0 6px #22c55e)' }}>📜</span>
+                <span style={{
+                  fontFamily: 'var(--font-display)',
+                  fontSize: '0.84rem',
+                  fontWeight: 700,
+                  color: '#86efac',
+                  letterSpacing: '0.3px',
+                  whiteSpace: 'nowrap'
+                }}>
+                  item de receita
+                </span>
+              </div>
+              {matchingRecipes.length > 0 && (
+                <div style={{
+                  marginTop: '6px',
+                  paddingTop: '5px',
+                  borderTop: '1px solid rgba(34, 197, 94, 0.3)',
+                  fontSize: '0.74rem',
+                  color: '#d4c8b8',
+                  lineHeight: 1.35,
+                  whiteSpace: 'normal',
+                  textAlign: 'left'
+                }}>
+                  <span style={{ color: '#4ade80', fontWeight: 600 }}>Receita(s): </span>
+                  {matchingRecipes.slice(0, 3).map(r => r.name).join(', ')}
+                  {matchingRecipes.length > 3 ? ` (+${matchingRecipes.length - 3})` : ''}
+                </div>
+              )}
+            </div>
+          );
+        })(),
+        document.body
+      )}
     </div>
   );
 };

@@ -674,34 +674,39 @@ body {
   box-shadow: 0 0 16px rgba(74, 222, 128, 0.9);
 }
 
-.shop-item-card-recipe-match .shop-recipe-floating-box {
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%) translateY(4px);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 0.18s cubic-bezier(0.16, 1, 0.3, 1), transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.18s ease;
-  z-index: 99999;
-  width: max-content;
-  max-width: 290px;
-  background: rgba(18, 24, 18, 0.97);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid #22c55e;
-  border-radius: 8px;
-  padding: 9px 14px;
-  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.9), 0 0 16px rgba(34, 197, 94, 0.4);
-  color: #f5edd6;
-  line-height: 1.35;
-  user-select: none;
+.shop-recipe-floating-portal {
+  animation: recipePortalFade 0.15s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.shop-item-card-recipe-match:hover .shop-recipe-floating-box {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
+@keyframes recipePortalFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.shop-recipe-floating-portal.place-above::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #22c55e transparent transparent transparent;
+}
+
+.shop-recipe-floating-portal.place-below::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 6px 6px 6px;
+  border-style: solid;
+  border-color: transparent transparent #22c55e transparent;
 }
 
 
