@@ -203,7 +203,7 @@ body {
   box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.85);
   z-index: 990;
   padding: 0 8px env(safe-area-inset-bottom, 4px);
-  align-items: center;
+  align-items: stretch;
   justify-content: space-around;
 }
 
@@ -219,12 +219,13 @@ body {
   font-family: var(--font-ui);
   font-size: 0.68rem;
   font-weight: 600;
-  padding: 6px 4px;
+  padding: 4px 2px;
   border-radius: 8px;
   cursor: pointer;
   position: relative;
   transition: all 0.15s ease;
-  min-height: 48px;
+  height: 100%;
+  width: 100%;
 }
 
 .mobile-bottom-nav-item.active {
@@ -259,20 +260,24 @@ body {
   flex: 1;
   align-items: stretch;
   position: relative;
+  min-height: 0;
 }
 
 .workbench-panel {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 105px);
-  min-height: 520px;
-  max-height: 800px;
+  min-height: 440px;
+  height: max(440px, calc(100vh - 200px));
+  max-height: 740px;
+  position: relative;
 }
 
 .workbench-panel > aside,
 .workbench-panel > section {
   height: 100% !important;
   max-height: 100% !important;
+  min-height: 0;
+  box-sizing: border-box;
 }
 
 /* Modal Dialog Card responsive scrolling */
@@ -290,7 +295,7 @@ body {
 
 @media (max-width: 1024px) {
   .app-container {
-    padding: 8px 8px 84px; /* Extra bottom padding for bottom nav */
+    padding: 8px 8px 90px; /* Ample clearance for fixed bottom nav */
   }
 
   .mobile-bottom-nav {
@@ -303,6 +308,7 @@ body {
 
   .workbench-main {
     display: block;
+    min-height: auto;
   }
 
   .workbench-panel {
@@ -316,7 +322,7 @@ body {
   .workbench-panel > section {
     height: auto !important;
     max-height: none !important;
-    min-height: calc(100vh - 180px);
+    min-height: auto !important;
   }
 
   .workbench-panel.mobile-active {
@@ -333,7 +339,7 @@ body {
 
 @media (max-width: 640px) {
   .app-container {
-    padding: 6px 6px 86px;
+    padding: 6px 6px 96px;
   }
 
   /* Full width stack on modal dropdowns */
@@ -349,9 +355,265 @@ body {
 
   .cauldron-action-row button {
     width: 100% !important;
-    min-height: 46px !important;
+    min-height: 44px !important;
   }
 }
+
+/* ========================================================
+   MARKET & MERCHANTS BAR (LOGO ABAIXO DE TUDO)
+   ======================================================== */
+.workbench-market-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 10;
+  clear: both;
+}
+
+.market-store-card {
+  border-radius: 10px;
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+.market-store-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+/* Kitchen card styling */
+.kitchen-card {
+  background: linear-gradient(135deg, #2b1a10 0%, #17110c 100%);
+  border: 1px solid #7c4d28;
+}
+
+.kitchen-card:hover {
+  border-color: #f97316;
+  box-shadow: 0 8px 28px rgba(234, 88, 12, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Alchemy card styling */
+.alchemy-card {
+  background: linear-gradient(135deg, #221430 0%, #120c1a 100%);
+  border: 1px solid #6b358e;
+}
+
+.alchemy-card:hover {
+  border-color: #a855f7;
+  box-shadow: 0 8px 28px rgba(168, 85, 247, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.market-store-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.market-store-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.kitchen-badge {
+  background: rgba(234, 88, 12, 0.18);
+  color: #fb923c;
+  border: 1px solid #c2410c;
+}
+
+.alchemy-badge {
+  background: rgba(147, 51, 234, 0.18);
+  color: #c084fc;
+  border: 1px solid #7e22ce;
+}
+
+.market-store-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.market-store-icon {
+  font-size: 26px;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.kitchen-icon {
+  background: #1b1109;
+  border: 1px solid #54331a;
+  filter: drop-shadow(0 2px 8px rgba(234, 88, 12, 0.3));
+}
+
+.alchemy-icon {
+  background: #150c1e;
+  border: 1px solid #4a2166;
+  filter: drop-shadow(0 2px 8px rgba(168, 85, 247, 0.3));
+}
+
+.market-store-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.market-store-text h3 {
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+  color: #f5edd6;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.market-store-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.kitchen-btn {
+  background: linear-gradient(180deg, #ea580c 0%, #c2410c 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(234, 88, 12, 0.4);
+}
+
+.alchemy-btn {
+  background: linear-gradient(180deg, #9333ea 0%, #7e22ce 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(147, 51, 234, 0.4);
+}
+
+.market-store-card:hover .market-store-btn {
+  transform: translateX(3px);
+}
+
+@media (max-width: 1024px) {
+  .workbench-market-bar {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .market-store-content {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .market-store-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 8px 14px;
+  }
+}
+
+/* ========================================================
+   FLOATING TOAST NOTIFICATION (ZERO LAYOUT SHIFT)
+   ======================================================== */
+.floating-toast-alert {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  max-width: 660px;
+  width: calc(100% - 32px);
+  background: rgba(26, 19, 14, 0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid #c59341;
+  border-radius: 10px;
+  padding: 10px 16px;
+  color: #f5edd6;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.88), 0 0 20px rgba(197, 147, 65, 0.3);
+  cursor: pointer;
+  animation: toastEntrance 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.floating-toast-alert:hover {
+  box-shadow: 0 12px 42px rgba(0, 0, 0, 0.95), 0 0 24px rgba(197, 147, 65, 0.4);
+}
+
+@keyframes toastEntrance {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -18px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+
+.floating-toast-alert .toast-icon {
+  font-size: 1.15rem;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 6px rgba(234, 179, 8, 0.6));
+}
+
+.floating-toast-alert .toast-text {
+  font-size: 0.84rem;
+  line-height: 1.4;
+  flex: 1;
+  color: #f5edd6;
+  font-family: var(--font-ui);
+}
+
+.floating-toast-alert .toast-close-btn {
+  background: transparent;
+  border: none;
+  color: #a89885;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+.floating-toast-alert .toast-close-btn:hover {
+  color: #fef08a;
+  background: rgba(255, 255, 255, 0.08);
+}
+
 
 
 

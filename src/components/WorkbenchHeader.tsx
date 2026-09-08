@@ -50,7 +50,7 @@ export const WorkbenchHeader: React.FC<Props> = ({
             textShadow: '0 2px 4px rgba(0,0,0,0.8)',
             whiteSpace: 'nowrap'
           }}>
-            CALDEIR-O <span style={{ fontSize: '0.8rem', color: '#c59341', fontWeight: 'normal', fontFamily: 'var(--font-ui)' }}>| Bancada de RPG</span>
+            CALDEIRÃO <span style={{ fontSize: '0.8rem', color: '#c59341', fontWeight: 'normal', fontFamily: 'var(--font-ui)' }}>| Bancada de RPG</span>
           </h1>
           <p style={{
             fontSize: '0.74rem',

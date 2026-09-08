@@ -4,9 +4,9 @@ import { Search, Plus, Minus, X, Trash2, Backpack, Check, Info } from 'lucide-re
 
 interface Props {
   playerInventory: Ingredient[];
-  masterIngredients: Ingredient[];
+  masterIngredients?: Ingredient[];
   slottedIngredients: Ingredient[];
-  onAddToInventory: (ingredient: Ingredient, quantity: number) => void;
+  onAddToInventory?: (ingredient: Ingredient, quantity: number) => void;
   onUpdateInventoryQuantity: (ingredientId: string, newQty: number) => void;
   onAddIngredientToCauldron: (ingredient: Ingredient) => void;
   disabledSlots: boolean;
@@ -14,23 +14,12 @@ interface Props {
 
 export const IngredientShelf: React.FC<Props> = ({
   playerInventory,
-  masterIngredients,
   slottedIngredients,
-  onAddToInventory,
   onUpdateInventoryQuantity,
   onAddIngredientToCauldron,
   disabledSlots
 }) => {
-  // Search state
-  const [searchInput, setSearchInput] = useState('');
-  const [searchExecuted, setSearchExecuted] = useState(false);
-  const [lastSearchedTerm, setLastSearchedTerm] = useState('');
-  const [foundIngredients, setFoundIngredients] = useState<Ingredient[]>([]);
-  const [quantityToAdd, setQuantityToAdd] = useState<{ [id: string]: number }>({});
-  const [recentlyAddedId, setRecentlyAddedId] = useState<string | null>(null);
-  const [searchFocused, setSearchFocused] = useState(false);
-
-  // Backpack state
+  // Backpack filter & inspection state
   const [inventoryFilter, setInventoryFilter] = useState('');
   const [inspectedItem, setInspectedItem] = useState<Ingredient | null>(null);
 
@@ -43,67 +32,6 @@ export const IngredientShelf: React.FC<Props> = ({
       .replace(/[-_]/g, ' ')
       .replace(/\s+/g, ' ')
       .trim();
-
-  // Handle Search Trigger (Click button or Enter)
-  const handlePerformSearch = (e?: React.FormEvent) => {
-    if (e) e.preventDefault();
-    const term = normalize(searchInput);
-    setLastSearchedTerm(searchInput.trim());
-    setSearchExecuted(true);
-
-    if (!term || term.length < 2) {
-      setFoundIngredients([]);
-      return;
-    }
-
-    // Match against master catalog (all 287 items)
-    const matches = masterIngredients.filter(item => {
-      const itemNorm = normalize(item.name);
-      const altNorm = normalize(item.normName || '');
-      return itemNorm === term || itemNorm.includes(term) || altNorm === term || altNorm.includes(term);
-    });
-
-    // Sort by best match (exact matches first, then shortest names)
-    matches.sort((a, b) => {
-      const aNorm = normalize(a.name);
-      const bNorm = normalize(b.name);
-      if (aNorm === term && bNorm !== term) return -1;
-      if (bNorm === term && aNorm !== term) return 1;
-      return aNorm.length - bNorm.length;
-    });
-
-    setFoundIngredients(matches.slice(0, 5));
-  };
-
-  // Quantity helpers for found search results
-  const getSelectedQty = (id: string) => quantityToAdd[id] ?? 1;
-
-  const handleSetQty = (id: string, delta: number) => {
-    setQuantityToAdd(prev => {
-      const current = prev[id] ?? 1;
-      const next = Math.max(1, Math.min(99, current + delta));
-      return { ...prev, [id]: next };
-    });
-  };
-
-  const handleDirectInputQty = (id: string, valStr: string) => {
-    if (valStr === '') {
-      setQuantityToAdd(prev => ({ ...prev, [id]: 1 }));
-      return;
-    }
-    const parsed = parseInt(valStr, 10);
-    if (!isNaN(parsed)) {
-      setQuantityToAdd(prev => ({ ...prev, [id]: Math.max(1, Math.min(99, parsed)) }));
-    }
-  };
-
-  const handleConfirmAdd = (item: Ingredient) => {
-    const qty = getSelectedQty(item.id);
-    onAddToInventory(item, qty);
-    setRecentlyAddedId(item.id);
-    setTimeout(() => setRecentlyAddedId(null), 2000);
-    setQuantityToAdd(prev => ({ ...prev, [item.id]: 1 }));
-  };
 
   const getItemEmoji = (cat: string) => {
     if (cat.includes('Criatura') || cat.includes('Osso')) return '🦴';
@@ -163,295 +91,7 @@ export const IngredientShelf: React.FC<Props> = ({
       }}
     >
       {/* ========================================================
-          1. TOP AREA: INGREDIENT SEARCH & REQUISITION (HIDDEN CATALOG)
-         ======================================================== */}
-      <section style={{
-        background: 'rgba(18, 14, 11, 0.92)',
-        border: '1px solid #3d2c20',
-        borderRadius: '8px',
-        padding: '10px 12px',
-        flexShrink: 0
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
-          <h2 style={{
-            fontFamily: 'var(--font-display)',
-            fontSize: '0.94rem',
-            color: '#f5edd6',
-            letterSpacing: '0.5px',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '6px'
-          }}>
-            <span>🔍</span> Requisitar Ingrediente
-          </h2>
-          <span style={{ fontSize: '0.68rem', color: '#a89885' }}>
-            Digite o nome obtido em jogo
-          </span>
-        </div>
-
-        {/* Search Input + Action Button Form */}
-        <form onSubmit={handlePerformSearch} style={{ display: 'flex', gap: '6px' }}>
-          <div style={{
-            flex: 1,
-            display: 'flex',
-            alignItems: 'center',
-            background: '#14100d',
-            border: searchFocused ? '1px solid #c59341' : '1px solid #4a382a',
-            borderRadius: '6px',
-            padding: '5px 8px',
-            gap: '6px',
-            boxShadow: searchFocused ? '0 0 8px rgba(197, 147, 65, 0.25)' : 'none',
-            transition: 'all 0.15s ease'
-          }}>
-            <Search size={14} color={searchFocused ? '#c59341' : '#a39281'} />
-            <input
-              type="text"
-              autoComplete="off"
-              spellCheck="false"
-              placeholder="Ex: Flor-da-vida, Sangue de dragão..."
-              value={searchInput}
-              onFocus={() => setSearchFocused(true)}
-              onBlur={() => setSearchFocused(false)}
-              onChange={e => setSearchInput(e.target.value)}
-              style={{
-                background: 'transparent',
-                border: 'none',
-                color: '#f3ede2',
-                fontSize: '0.8rem',
-                width: '100%',
-                outline: 'none'
-              }}
-            />
-            {searchInput && (
-              <button
-                type="button"
-                onClick={() => {
-                  setSearchInput('');
-                  setFoundIngredients([]);
-                  setSearchExecuted(false);
-                }}
-                style={{ background: 'transparent', border: 'none', color: '#9ca3af', cursor: 'pointer', padding: '2px' }}
-                title="Limpar busca"
-              >
-                <X size={13} />
-              </button>
-            )}
-          </div>
-
-          <button
-            type="submit"
-            style={{
-              padding: '6px 12px',
-              background: 'linear-gradient(180deg, #c59341 0%, #8c5d1b 100%)',
-              border: '1px solid #eab308',
-              borderRadius: '6px',
-              color: '#ffffff',
-              fontFamily: 'var(--font-display)',
-              fontSize: '0.78rem',
-              fontWeight: 700,
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '4px',
-              boxShadow: '0 2px 6px rgba(0,0,0,0.5)',
-              whiteSpace: 'nowrap',
-              transition: 'transform 0.1s ease'
-            }}
-          >
-            <Search size={13} /> Buscar
-          </button>
-        </form>
-
-        {/* Found Search Results (Only shown when player searches) */}
-        {searchExecuted && (
-          <div style={{ marginTop: '10px' }}>
-            {lastSearchedTerm.length < 2 ? (
-              <div style={{
-                background: 'rgba(234, 179, 8, 0.08)',
-                border: '1px dashed #ca8a04',
-                borderRadius: '6px',
-                padding: '7px 10px',
-                color: '#fde047',
-                fontSize: '0.74rem',
-                textAlign: 'center'
-              }}>
-                Digite ao menos 2 letras do nome do ingrediente para buscar.
-              </div>
-            ) : foundIngredients.length > 0 ? (
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                <span style={{ fontSize: '0.68rem', color: '#c59341', fontWeight: 600, textTransform: 'uppercase' }}>
-                  Resultado da Busca ({foundIngredients.length})
-                </span>
-
-                {foundIngredients.map(item => {
-                  const rarity = getRarityBadge(item.rarity);
-                  const qty = getSelectedQty(item.id);
-                  const isRecentlyAdded = recentlyAddedId === item.id;
-
-                  return (
-                    <div
-                      key={item.id}
-                      onClick={() => setInspectedItem(item)}
-                      title="Clique para ver descrição do reagente"
-                      style={{
-                        background: '#1d1612',
-                        border: '1px solid #5a4230',
-                        borderRadius: '6px',
-                        padding: '6px 8px',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'space-between',
-                        gap: '8px',
-                        cursor: 'pointer',
-                        transition: 'border-color 0.15s'
-                      }}
-                    >
-                      {/* Left: Item Info */}
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', minWidth: 0 }}>
-                        <span style={{ fontSize: '18px' }}>{getItemEmoji(item.category)}</span>
-                        <div style={{ minWidth: 0 }}>
-                          <p style={{
-                            fontSize: '0.8rem',
-                            fontWeight: 700,
-                            color: '#ede3d1',
-                            whiteSpace: 'nowrap',
-                            overflow: 'hidden',
-                            textOverflow: 'ellipsis'
-                          }}>
-                            {item.name}
-                          </p>
-                          <span style={{
-                            fontSize: '0.62rem',
-                            color: rarity.color,
-                            background: rarity.bg,
-                            padding: '1px 4px',
-                            borderRadius: '3px',
-                            fontWeight: 600,
-                            textTransform: 'uppercase'
-                          }}>
-                            {rarity.text} • {item.category}
-                          </span>
-                        </div>
-                      </div>
-
-                      {/* Right: Quantity Stepper & Add Button */}
-                      <div
-                        onClick={e => e.stopPropagation()}
-                        style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}
-                      >
-                        {/* Stepper */}
-                        <div style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          background: '#120e0b',
-                          border: '1px solid #3d2c20',
-                          borderRadius: '4px',
-                          overflow: 'hidden'
-                        }}>
-                          <button
-                            type="button"
-                            onClick={() => handleSetQty(item.id, -1)}
-                            style={{
-                              background: 'transparent',
-                              border: 'none',
-                              color: '#a89885',
-                              width: '20px',
-                              height: '24px',
-                              cursor: 'pointer',
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'center'
-                            }}
-                          >
-                            <Minus size={11} />
-                          </button>
-                          <input
-                            type="text"
-                            inputMode="numeric"
-                            value={qty}
-                            onChange={e => handleDirectInputQty(item.id, e.target.value)}
-                            style={{
-                              width: '26px',
-                              height: '24px',
-                              background: 'transparent',
-                              border: 'none',
-                              color: '#f5edd6',
-                              fontSize: '0.74rem',
-                              textAlign: 'center',
-                              fontWeight: 700,
-                              outline: 'none'
-                            }}
-                          />
-                          <button
-                            type="button"
-                            onClick={() => handleSetQty(item.id, 1)}
-                            style={{
-                              background: 'transparent',
-                              border: 'none',
-                              color: '#a89885',
-                              width: '20px',
-                              height: '24px',
-                              cursor: 'pointer',
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'center'
-                            }}
-                          >
-                            <Plus size={11} />
-                          </button>
-                        </div>
-
-                        {/* Add to backpack button */}
-                        <button
-                          type="button"
-                          onClick={() => handleConfirmAdd(item)}
-                          style={{
-                            padding: '5px 9px',
-                            background: isRecentlyAdded ? '#15803d' : '#2b2118',
-                            color: isRecentlyAdded ? '#ffffff' : '#f5edd6',
-                            border: isRecentlyAdded ? '1px solid #22c55e' : '1px solid #5a4430',
-                            borderRadius: '5px',
-                            fontSize: '0.72rem',
-                            fontWeight: 700,
-                            cursor: 'pointer',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '4px',
-                            transition: 'all 0.15s'
-                          }}
-                          title="Adicionar à sua mochila com a quantidade indicada"
-                        >
-                          {isRecentlyAdded ? <Check size={12} /> : <Plus size={12} />}
-                          {isRecentlyAdded ? 'Guardado!' : 'Pegar'}
-                        </button>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            ) : (
-              <div style={{
-                background: 'rgba(239, 68, 68, 0.08)',
-                border: '1px dashed #ef4444',
-                borderRadius: '6px',
-                padding: '8px 10px',
-                color: '#fca5a5',
-                fontSize: '0.74rem',
-                lineHeight: '1.35',
-                textAlign: 'center'
-              }}>
-                Nenhum ingrediente encontrado com o termo "{lastSearchedTerm}".<br />
-                <span style={{ fontSize: '0.68rem', color: '#a89885' }}>
-                  Verifique a grafia informada pelo Mestre da sua mesa.
-                </span>
-              </div>
-            )}
-          </div>
-        )}
-      </section>
-
-      {/* ========================================================
-          2. BOTTOM AREA: PLAYER INVENTORY / BACKPACK (ACTUAL ITEMS)
+          PLAYER INVENTORY / BACKPACK (ACQUIRED ITEMS ONLY)
          ======================================================== */}
       <section style={{
         flex: 1,
@@ -670,7 +310,7 @@ export const IngredientShelf: React.FC<Props> = ({
                 Sua mochila está vazia
               </p>
               <p style={{ fontSize: '0.74rem', lineHeight: '1.4', color: '#a89885' }}>
-                Requisite os itens que seu personagem coletou digitando o nome no campo de busca acima, ou role uma <b>Coleta nos Biomas</b> no topo da bancada.
+                Obtenha novos ingredientes explorando os <b>Biomas de Arton</b> no topo da bancada ou compre reagentes nas <b>Lojas de Culinária e Alquimia</b> logo abaixo.
               </p>
             </div>
           )}
@@ -757,7 +397,7 @@ export const IngredientShelf: React.FC<Props> = ({
 
           <div style={{ display: 'flex', gap: '6px' }}>
             {/* Direct Add button (only if player has item in backpack) */}
-            {playerInventory.some(i => i.id === inspectedItem.id) ? (
+            {playerInventory.some(i => i.id === inspectedItem.id) && (
               <>
                 <button
                   disabled={disabledSlots}
@@ -816,27 +456,6 @@ export const IngredientShelf: React.FC<Props> = ({
                   <Trash2 size={12} /> Descartar 1
                 </button>
               </>
-            ) : (
-              <button
-                onClick={() => handleConfirmAdd(inspectedItem)}
-                style={{
-                  width: '100%',
-                  padding: '7px 10px',
-                  background: '#166534',
-                  color: '#ffffff',
-                  border: '1px solid #22c55e',
-                  borderRadius: '5px',
-                  fontSize: '0.78rem',
-                  fontWeight: 700,
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  gap: '6px'
-                }}
-              >
-                <Plus size={14} /> Guardar 1x na Mochila
-              </button>
             )}
           </div>
         </div>

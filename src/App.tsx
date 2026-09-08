@@ -10,6 +10,8 @@ import { RecipeBook } from './components/RecipeBook';
 import { DiscoveryModal } from './components/DiscoveryModal';
 import { BiomeCollectorModal } from './components/BiomeCollectorModal';
 import { RecipeChestModal } from './components/RecipeChestModal';
+import { ShopModal, ShopType } from './components/ShopModal';
+import { X } from 'lucide-react';
 
 export const App: React.FC = () => {
   const [mode, setMode] = useState<CraftMode>('alquimia');
@@ -48,6 +50,8 @@ export const App: React.FC = () => {
   const [newDiscovery, setNewDiscovery] = useState<Recipe | null>(null);
   const [isCollectorOpen, setIsCollectorOpen] = useState(false);
   const [isChestRollerOpen, setIsChestRollerOpen] = useState(false);
+  const [isShopOpen, setIsShopOpen] = useState(false);
+  const [shopType, setShopType] = useState<ShopType>('cozinha');
   const [feedbackNotice, setFeedbackNotice] = useState<string | null>(null);
   const [mobileTab, setMobileTab] = useState<'prateleira' | 'caldeirao' | 'grimorio'>('caldeirao');
 
@@ -84,6 +88,33 @@ export const App: React.FC = () => {
   const showNotification = (msg: string) => {
     setFeedbackNotice(msg);
     setTimeout(() => setFeedbackNotice(null), 4000);
+  };
+
+  // Buy ingredient handler from shop (adds to inventory and notifies)
+  const handleBuyIngredient = (ingredient: Ingredient, quantity: number, totalCost: number) => {
+    setPlayerInventory(prev => {
+      const norm = ingredient.normName || getNorm(ingredient.name);
+      const existingIndex = prev.findIndex(i => (i.normName || getNorm(i.name)) === norm);
+      if (existingIndex >= 0) {
+        const next = [...prev];
+        next[existingIndex] = {
+          ...next[existingIndex],
+          quantity: next[existingIndex].quantity + quantity
+        };
+        return next;
+      } else {
+        return [{ ...ingredient, quantity }, ...prev];
+      }
+    });
+    showNotification(`+${quantity}x "${ingredient.name}" comprado(s) por T$ ${totalCost} e guardados na mochila.`);
+  };
+
+  // Buy recipe handler from shop (adds to grimoire and notifies)
+  const handleBuyRecipe = (recipe: Recipe, cost: number) => {
+    if (!discoveredRecipes.some(r => r.id === recipe.id)) {
+      setDiscoveredRecipes(prev => [recipe, ...prev]);
+    }
+    showNotification(`Pergaminho de "${recipe.name}" aprendido por T$ ${cost} e anotado no Grimório!`);
   };
 
   // Pre-emptive check: has this exact slotted combination already failed in history?
@@ -331,24 +362,27 @@ export const App: React.FC = () => {
         onResetCauldron={handleResetCauldron}
       />
 
-      {/* Ephemeral Feedback Notice */}
+      {/* Floating Toast Notification (Zero Layout Shift!) */}
       {feedbackNotice && (
         <div 
           role="alert"
-          style={{
-            background: 'rgba(28, 21, 17, 0.95)',
-            border: '1px solid #c59341',
-            color: '#f5edd6',
-            padding: '8px 16px',
-            borderRadius: '6px',
-            fontSize: '0.84rem',
-            textAlign: 'center',
-            marginBottom: '10px',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.6)',
-            animation: 'fadeIn 0.2s ease-out'
-          }}
+          className="floating-toast-alert"
+          onClick={() => setFeedbackNotice(null)}
+          title="Clique para dispensar"
         >
-          {feedbackNotice}
+          <span className="toast-icon">✨</span>
+          <span className="toast-text">{feedbackNotice}</span>
+          <button 
+            type="button" 
+            className="toast-close-btn"
+            onClick={(e) => {
+              e.stopPropagation();
+              setFeedbackNotice(null);
+            }}
+            aria-label="Fechar notificação"
+          >
+            <X size={14} />
+          </button>
         </div>
       )}
 
@@ -376,13 +410,11 @@ export const App: React.FC = () => {
 
       {/* Main 3-Flank Physical Workbench */}
       <main className="workbench-main">
-        {/* Left Flank: Apothecary Backpack & Hidden Requisition */}
+        {/* Left Flank: Apothecary Backpack (Inventory only) */}
         <div className={`workbench-panel panel-shelf ${mobileTab === 'prateleira' ? 'mobile-active' : ''}`}>
           <IngredientShelf
             playerInventory={playerInventory}
-            masterIngredients={masterIngredients}
             slottedIngredients={slottedIngredients}
-            onAddToInventory={handleAddToInventory}
             onUpdateInventoryQuantity={handleUpdateInventoryQuantity}
             onAddIngredientToCauldron={handleAddIngredient}
             disabledSlots={slottedIngredients.length >= 4}
@@ -415,6 +447,63 @@ export const App: React.FC = () => {
         </div>
       </main>
 
+      {/* ========================================================
+          MERCADO & COMÉRCIO DE ARTON (LOJAS LOGO ABAIXO DE TUDO)
+         ======================================================== */}
+      <section className="workbench-market-bar" aria-label="Lojas e Comércio de Arton">
+        {/* Loja de Cozinha Button */}
+        <div
+          className="market-store-card kitchen-card"
+          onClick={() => {
+            setShopType('cozinha');
+            setIsShopOpen(true);
+          }}
+          role="button"
+          tabIndex={0}
+          title="Abrir Loja de Cozinha"
+        >
+          <div className="market-store-header">
+            <span className="market-store-badge kitchen-badge">Taverna & Culinária</span>
+          </div>
+          <div className="market-store-content">
+            <div className="market-store-icon kitchen-icon">🍳</div>
+            <div className="market-store-text">
+              <h3>Loja de Cozinha</h3>
+            </div>
+            <button className="market-store-btn kitchen-btn" type="button">
+              <span>Visitar Loja</span>
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Loja de Alquimia Button */}
+        <div
+          className="market-store-card alchemy-card"
+          onClick={() => {
+            setShopType('alquimia');
+            setIsShopOpen(true);
+          }}
+          role="button"
+          tabIndex={0}
+          title="Abrir Loja de Alquimia"
+        >
+          <div className="market-store-header">
+            <span className="market-store-badge alchemy-badge">Guilda dos Boticários</span>
+          </div>
+          <div className="market-store-content">
+            <div className="market-store-icon alchemy-icon">⚗️</div>
+            <div className="market-store-text">
+              <h3>Loja de Alquimia</h3>
+            </div>
+            <button className="market-store-btn alchemy-btn" type="button">
+              <span>Visitar Loja</span>
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Celebration Modal on New Discovery */}
       <DiscoveryModal
         recipe={newDiscovery}
@@ -441,6 +530,21 @@ export const App: React.FC = () => {
           }
           showNotification(`Pergaminho de "${recipe.name}" aprendido com sucesso e registrado no Grimório!`);
         }}
+      />
+
+      {/* Tormenta 20 Shop Modal (Kitchen & Alchemy) */}
+      <ShopModal
+        isOpen={isShopOpen}
+        shopType={shopType}
+        onClose={() => setIsShopOpen(false)}
+        onSwitchShop={type => setShopType(type)}
+        playerInventory={playerInventory}
+        discoveredRecipeIds={new Set(discoveredRecipes.map(r => r.id))}
+        onBuyIngredient={handleBuyIngredient}
+        onBuyRecipe={handleBuyRecipe}
+        masterIngredients={masterIngredients}
+        allAlchemyRecipes={alchemyData as Recipe[]}
+        allGastroRecipes={gastronomyData as Recipe[]}
       />
 
       {/* Mobile Fixed Bottom Navigation Bar */}
@@ -486,6 +590,17 @@ export const App: React.FC = () => {
             )}
           </span>
           <span>Grimório</span>
+        </button>
+
+        <button
+          className="mobile-bottom-nav-item"
+          onClick={() => {
+            setShopType(mode === 'alquimia' ? 'alquimia' : 'cozinha');
+            setIsShopOpen(true);
+          }}
+        >
+          <span className="nav-icon-box">🏪</span>
+          <span>Lojas</span>
         </button>
       </nav>
     </div>

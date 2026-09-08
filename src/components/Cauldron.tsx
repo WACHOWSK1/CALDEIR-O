@@ -62,14 +62,20 @@ export const Cauldron: React.FC<Props> = ({
       return {
         surface: 'radial-gradient(ellipse at 50% 40%, #451a03 0%, #1c0a00 80%)',
         glow: 'rgba(180, 83, 9, 0.4)',
-        bubbles: '#78350f'
+        bubbles: '#78350f',
+        startColor: '#78350f',
+        midColor: '#451a03',
+        endColor: '#1c0a00'
       };
     }
     if (cauldronState === 'reacting') {
       return {
         surface: 'radial-gradient(ellipse at 50% 40%, #eab308 0%, #7e22ce 60%, #1e1b4b 100%)',
         glow: 'rgba(234, 179, 8, 0.7)',
-        bubbles: '#fef08a'
+        bubbles: '#fef08a',
+        startColor: '#facc15',
+        midColor: '#9333ea',
+        endColor: '#1e1b4b'
       };
     }
     if (mode === 'alquimia') {
@@ -77,26 +83,38 @@ export const Cauldron: React.FC<Props> = ({
         return {
           surface: 'radial-gradient(ellipse at 50% 40%, #312e81 0%, #1e1b4b 55%, #0f172a 100%)',
           glow: 'rgba(99, 102, 241, 0.35)',
-          bubbles: '#818cf8'
+          bubbles: '#818cf8',
+          startColor: '#4338ca',
+          midColor: '#1e1b4b',
+          endColor: '#0f172a'
         };
       }
       return {
         surface: 'radial-gradient(ellipse at 50% 40%, #7e22ce 0%, #3b0764 60%, #180327 100%)',
         glow: 'rgba(168, 85, 247, 0.5)',
-        bubbles: '#c084fc'
+        bubbles: '#c084fc',
+        startColor: '#9333ea',
+        midColor: '#581c87',
+        endColor: '#180327'
       };
     } else {
       if (slottedIngredients.length === 0) {
         return {
           surface: 'radial-gradient(ellipse at 50% 40%, #78350f 0%, #451a03 60%, #1c0a00 100%)',
           glow: 'rgba(217, 119, 6, 0.35)',
-          bubbles: '#fbbf24'
+          bubbles: '#fbbf24',
+          startColor: '#b45309',
+          midColor: '#451a03',
+          endColor: '#1c0a00'
         };
       }
       return {
         surface: 'radial-gradient(ellipse at 50% 40%, #c2410c 0%, #7c2d12 60%, #270b03 100%)',
         glow: 'rgba(234, 88, 12, 0.55)',
-        bubbles: '#fdba74'
+        bubbles: '#fdba74',
+        startColor: '#ea580c',
+        midColor: '#7c2d12',
+        endColor: '#270b03'
       };
     }
   };
@@ -127,10 +145,9 @@ export const Cauldron: React.FC<Props> = ({
         background: 'radial-gradient(circle at 50% 50%, #221a15 0%, #14100d 85%)',
         border: '1px solid #3d2c20',
         borderRadius: '12px',
-        padding: '16px 14px 14px',
+        padding: '12px 14px 10px',
         boxShadow: 'inset 0 0 60px rgba(0,0,0,0.8), 0 8px 24px rgba(0,0,0,0.6)',
-        position: 'relative',
-        minHeight: '520px'
+        position: 'relative'
       }}
     >
       {/* Tabletop Atmosphere Ambient Indicators */}
@@ -140,7 +157,7 @@ export const Cauldron: React.FC<Props> = ({
         justifyContent: 'space-between',
         width: '100%',
         padding: '0 8px',
-        marginBottom: '6px'
+        marginBottom: '4px'
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span style={{
@@ -151,18 +168,19 @@ export const Cauldron: React.FC<Props> = ({
             backgroundColor: cauldronState === 'reacting' ? '#eab308' : cauldronState === 'unstable' ? '#ef4444' : '#22c55e',
             boxShadow: `0 0 8px ${cauldronState === 'reacting' ? '#eab308' : '#22c55e'}`
           }} />
-          <span style={{ fontSize: '0.78rem', color: '#c5b59e', fontFamily: 'var(--font-flavor)' }}>
-            {cauldronState === 'idle' && (
+          <span style={{ fontSize: '0.76rem', color: '#c5b59e', fontFamily: 'var(--font-flavor)' }}>
+            {isStirring && '🌀 Mexendo a infusão mística...'}
+            {!isStirring && cauldronState === 'idle' && (
               slottedIngredients.length === 0 
                 ? (mode === 'alquimia' ? 'Bancada pronta • Adicione ao menos 2 reagentes' : 'Fogão pronto • Adicione mantimentos ou ingredientes')
                 : mode === 'cozinha' && slottedIngredients.length === 1
                   ? '1 mantimento na panela • Pronto para refeição simples'
                   : `${slottedIngredients.length}/4 ingredientes no caldeirão`
             )}
-            {cauldronState === 'receiving' && 'Recebendo ingrediente...'}
-            {cauldronState === 'reacting' && (mode === 'alquimia' ? 'Reação alquímica em andamento!' : 'Cozinhando no caldeirão...')}
-            {cauldronState === 'unstable' && 'Mistura instável / Incomestível!'}
-            {cauldronState === 'success' && (mode === 'alquimia' ? 'Transmutação concluída!' : 'Prato preparado com sucesso!')}
+            {!isStirring && cauldronState === 'receiving' && 'Recebendo ingrediente...'}
+            {!isStirring && cauldronState === 'reacting' && '✨ Transmutação alquímica em andamento!'}
+            {!isStirring && cauldronState === 'success' && '🌟 Sucesso! Uma nova criação reluz!'}
+            {!isStirring && cauldronState === 'unstable' && '⚠️ Reação falhou! Mistura instável!'}
           </span>
         </div>
 
@@ -178,8 +196,8 @@ export const Cauldron: React.FC<Props> = ({
       {/* Steam Effect rising from cauldron */}
       <div style={{
         position: 'relative',
-        width: '280px',
-        height: '45px',
+        width: '260px',
+        height: '24px',
         pointerEvents: 'none',
         overflow: 'hidden'
       }}>
@@ -187,8 +205,8 @@ export const Cauldron: React.FC<Props> = ({
           position: 'absolute',
           left: '25%',
           bottom: '0',
-          width: '50px',
-          height: '40px',
+          width: '45px',
+          height: '24px',
           borderRadius: '50%',
           background: 'radial-gradient(circle, rgba(235, 220, 200, 0.35) 0%, transparent 70%)',
           animation: 'steamDrift 3.4s infinite ease-in-out'
@@ -197,8 +215,8 @@ export const Cauldron: React.FC<Props> = ({
           position: 'absolute',
           left: '50%',
           bottom: '0',
-          width: '65px',
-          height: '50px',
+          width: '55px',
+          height: '24px',
           borderRadius: '50%',
           background: 'radial-gradient(circle, rgba(220, 210, 240, 0.4) 0%, transparent 70%)',
           animation: 'steamDrift 2.8s infinite 0.9s ease-in-out'
@@ -207,8 +225,8 @@ export const Cauldron: React.FC<Props> = ({
           position: 'absolute',
           left: '70%',
           bottom: '0',
-          width: '45px',
-          height: '35px',
+          width: '40px',
+          height: '20px',
           borderRadius: '50%',
           background: 'radial-gradient(circle, rgba(240, 230, 210, 0.3) 0%, transparent 70%)',
           animation: 'steamDrift 3.8s infinite 1.8s ease-in-out'
@@ -224,8 +242,8 @@ export const Cauldron: React.FC<Props> = ({
         onDrop={handleDrop}
         style={{
           position: 'relative',
-          width: '340px',
-          height: '290px',
+          width: '270px',
+          height: '195px',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -273,6 +291,18 @@ export const Cauldron: React.FC<Props> = ({
               <stop offset="50%" stopColor="#ea580c" stopOpacity="0.4" />
               <stop offset="100%" stopColor="transparent" stopOpacity="0" />
             </radialGradient>
+
+            {/* Liquid Surface Radial Gradient */}
+            <radialGradient id="cauldronLiquidGrad" cx="50%" cy="40%" r="60%">
+              <stop offset="0%" stopColor={liquid.startColor} />
+              <stop offset="55%" stopColor={liquid.midColor} />
+              <stop offset="100%" stopColor={liquid.endColor} />
+            </radialGradient>
+
+            {/* Liquid Surface Clip Path inside Mouth */}
+            <clipPath id="cauldronLiquidClip">
+              <ellipse cx="170" cy="85" rx="113" ry="27" />
+            </clipPath>
           </defs>
 
           {/* Under-Cauldron Fire Stones */}
@@ -318,83 +348,43 @@ export const Cauldron: React.FC<Props> = ({
           <text x="205" y="172" fill="#261705" fontSize="11" fontFamily="sans-serif">ᛟ</text>
           <text x="240" y="165" fill="#261705" fontSize="11" fontFamily="sans-serif">ᚦ</text>
 
-          {/* Heavy Cast Iron Rim (Mouth of Cauldron) */}
+          {/* Heavy Cast Iron Rim (Outer Rim of Mouth) */}
           <ellipse cx="170" cy="85" rx="122" ry="34" fill="#252220" stroke="url(#bronzeTrim)" strokeWidth="4" />
           <ellipse cx="170" cy="85" rx="114" ry="28" fill="#141211" stroke="#4a423a" strokeWidth="2" />
+
+          {/* Volumetric Liquid Surface (100% Mathematically Locked to Mouth) */}
+          <g clipPath="url(#cauldronLiquidClip)" onClick={handleStir} style={{ cursor: 'pointer' }}>
+            {/* Liquid Radial Glow Background */}
+            <ellipse cx="170" cy="85" rx="113" ry="27" fill="url(#cauldronLiquidGrad)" />
+
+            {/* Swirling ripples */}
+            <ellipse
+              cx="170"
+              cy="85"
+              rx="88"
+              ry="20"
+              fill="none"
+              stroke={liquid.bubbles}
+              strokeWidth="1.5"
+              strokeDasharray="6 6"
+              opacity="0.45"
+              style={{
+                transformOrigin: '170px 85px',
+                animation: isStirring ? 'spin 1s infinite linear' : 'spin 18s infinite linear'
+              }}
+            />
+
+            {/* Animated Bubbles */}
+            <circle cx="125" cy="89" r="4.5" fill={liquid.bubbles} opacity="0.8" style={{ animation: 'bubbleFloat 2.1s infinite ease-in' }} />
+            <circle cx="165" cy="93" r="6" fill={liquid.bubbles} opacity="0.75" style={{ animation: 'bubbleFloat 2.7s infinite 0.7s ease-in' }} />
+            <circle cx="210" cy="88" r="3.5" fill={liquid.bubbles} opacity="0.8" style={{ animation: 'bubbleFloat 1.8s infinite 1.2s ease-in' }} />
+            <circle cx="145" cy="83" r="5" fill={liquid.bubbles} opacity="0.85" style={{ animation: 'bubbleFloat 2.4s infinite 0.4s ease-in' }} />
+            <circle cx="185" cy="86" r="4.5" fill={liquid.bubbles} opacity="0.7" style={{ animation: 'bubbleFloat 2.2s infinite 1.5s ease-in' }} />
+          </g>
+
+          {/* Heavy Cast Iron Rim Inner Overlay (Bronze Trim Highlight on Front Lip) */}
+          <ellipse cx="170" cy="85" rx="114" ry="28" fill="none" stroke="url(#bronzeTrim)" strokeWidth="1.5" opacity="0.6" style={{ pointerEvents: 'none' }} />
         </svg>
-
-        {/* The Bubbling Interactive Liquid Surface (Inside the Mouth) */}
-        <div 
-          onClick={handleStir}
-          title="Clique para mexer a mistura"
-          style={{
-            position: 'absolute',
-            top: '59px',
-            left: '60px',
-            width: '220px',
-            height: '52px',
-            borderRadius: '50%',
-            background: liquid.surface,
-            boxShadow: `inset 0 0 16px ${liquid.glow}, 0 0 20px ${liquid.glow}`,
-            overflow: 'hidden',
-            cursor: 'pointer',
-            zIndex: 10,
-            transition: 'all 0.4s ease',
-            transform: isStirring ? 'rotate(12deg) scale(1.02)' : 'none'
-          }}
-        >
-          {/* Swirling ripples */}
-          <div style={{
-            position: 'absolute',
-            inset: '4px',
-            borderRadius: '50%',
-            border: `1px dashed ${liquid.bubbles}`,
-            opacity: 0.4,
-            animation: isStirring ? 'spin 1s infinite linear' : 'spin 18s infinite linear'
-          }} />
-
-          {/* Animated Bubbles */}
-          <div style={{
-            position: 'absolute',
-            left: '30%',
-            bottom: '6px',
-            width: '10px',
-            height: '10px',
-            borderRadius: '50%',
-            backgroundColor: liquid.bubbles,
-            animation: 'bubbleFloat 2.1s infinite ease-in'
-          }} />
-          <div style={{
-            position: 'absolute',
-            left: '60%',
-            bottom: '4px',
-            width: '14px',
-            height: '14px',
-            borderRadius: '50%',
-            backgroundColor: liquid.bubbles,
-            animation: 'bubbleFloat 2.7s infinite 0.7s ease-in'
-          }} />
-          <div style={{
-            position: 'absolute',
-            left: '75%',
-            bottom: '8px',
-            width: '8px',
-            height: '8px',
-            borderRadius: '50%',
-            backgroundColor: liquid.bubbles,
-            animation: 'bubbleFloat 1.8s infinite 1.2s ease-in'
-          }} />
-          <div style={{
-            position: 'absolute',
-            left: '45%',
-            bottom: '10px',
-            width: '12px',
-            height: '12px',
-            borderRadius: '50%',
-            backgroundColor: liquid.bubbles,
-            animation: 'bubbleFloat 2.4s infinite 0.4s ease-in'
-          }} />
-        </div>
 
         {/* Drop Invitation Label when drag-over */}
         {isDragOver && (
@@ -426,20 +416,20 @@ export const Cauldron: React.FC<Props> = ({
          ======================================================== */}
       <div style={{
         width: '100%',
-        marginTop: '8px',
+        marginTop: '6px',
         background: 'rgba(16, 12, 10, 0.75)',
         border: '1px solid #3d2c20',
         borderRadius: '8px',
-        padding: '10px 14px',
+        padding: '8px 12px',
         boxShadow: 'inset 0 2px 6px rgba(0,0,0,0.6)'
       }}>
         <div style={{
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          marginBottom: '8px'
+          marginBottom: '6px'
         }}>
-          <span style={{ fontSize: '0.75rem', color: '#c59341', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 600 }}>
+          <span style={{ fontSize: '0.74rem', color: '#c59341', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 600 }}>
             Reagentes no Caldeirão ({slottedIngredients.length}/4)
           </span>
           {slottedIngredients.length > 0 && (
@@ -449,35 +439,37 @@ export const Cauldron: React.FC<Props> = ({
                 background: 'transparent',
                 border: 'none',
                 color: '#9ca3af',
-                fontSize: '0.72rem',
+                fontSize: '0.7rem',
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '4px'
+                gap: '4px',
+                padding: '2px 6px',
+                borderRadius: '4px'
               }}
+              title="Esvaziar todos os slots"
             >
-              <RotateCcw size={12} /> Esvaziar
+              <RotateCcw size={12} />
+              Limpar Tudo
             </button>
           )}
         </div>
 
-        {/* Pre-emptive Failure Warning if recipe previously failed */}
-        {isKnownFailure && ((mode === 'cozinha' && slottedIngredients.length >= 1) || (mode === 'alquimia' && slottedIngredients.length >= 2)) && (
+        {/* Instability Warning Indicator */}
+        {isKnownFailure && slottedIngredients.length >= 2 && (
           <div style={{
-            background: 'rgba(239, 68, 68, 0.18)',
+            background: 'rgba(239, 68, 68, 0.15)',
             border: '1px solid #ef4444',
             borderRadius: '6px',
-            padding: '8px 10px',
-            marginBottom: '10px',
+            padding: '6px 10px',
+            marginBottom: '6px',
             display: 'flex',
             alignItems: 'center',
             gap: '8px',
             color: '#fca5a5',
-            fontSize: '0.74rem',
-            lineHeight: '1.3',
-            animation: 'fadeIn 0.2s ease-out'
+            fontSize: '0.74rem'
           }}>
-            <AlertTriangle size={18} color="#ef4444" style={{ flexShrink: 0 }} />
+            <AlertTriangle size={15} color="#ef4444" style={{ flexShrink: 0 }} />
             <span>
               <b>Aviso de Memória {mode === 'alquimia' ? 'Alquímica' : 'Culinária'}:</b> Você já testou essa combinação antes e ela gerou <b>{mode === 'alquimia' ? 'Mistura Instável' : 'Prato Incomestível'}</b>! Esvazie para não perder ingredientes à toa.
             </span>
@@ -491,7 +483,7 @@ export const Cauldron: React.FC<Props> = ({
             border: '1px dashed #6366f1',
             borderRadius: '6px',
             padding: '6px 10px',
-            marginBottom: '8px',
+            marginBottom: '6px',
             color: '#c7d2fe',
             fontSize: '0.72rem',
             textAlign: 'center'
@@ -512,7 +504,7 @@ export const Cauldron: React.FC<Props> = ({
               <div
                 key={slotIndex}
                 style={{
-                  height: '62px',
+                  height: '52px',
                   background: item ? '#221913' : '#14100d',
                   border: item ? '1px solid #c59341' : '1px dashed #3a2a1e',
                   borderRadius: '6px',
@@ -539,8 +531,8 @@ export const Cauldron: React.FC<Props> = ({
                         border: '1px solid rgba(248, 113, 113, 0.4)',
                         color: '#f87171',
                         borderRadius: '50%',
-                        width: '24px',
-                        height: '24px',
+                        width: '22px',
+                        height: '22px',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -548,20 +540,20 @@ export const Cauldron: React.FC<Props> = ({
                         zIndex: 2
                       }}
                     >
-                      <X size={13} />
+                      <X size={12} />
                     </button>
-                    <span style={{ fontSize: '20px' }}>
+                    <span style={{ fontSize: '18px' }}>
                       {getItemEmoji(item.category)}
                     </span>
                     <span style={{
-                      fontSize: '0.68rem',
+                      fontSize: '0.66rem',
                       color: '#e5dec9',
                       textAlign: 'center',
                       whiteSpace: 'nowrap',
                       overflow: 'hidden',
                       textOverflow: 'ellipsis',
                       width: '100%',
-                      marginTop: '2px'
+                      marginTop: '1px'
                     }}>
                       {item.name}
                     </span>
@@ -587,8 +579,8 @@ export const Cauldron: React.FC<Props> = ({
           alignItems: 'center',
           justifyContent: 'space-between',
           width: '100%',
-          marginTop: '12px',
-          gap: '12px'
+          marginTop: '8px',
+          gap: '10px'
         }}
       >
         {/* Stir Button */}
@@ -596,7 +588,7 @@ export const Cauldron: React.FC<Props> = ({
           onClick={handleStir}
           style={{
             flex: '1',
-            padding: '10px 8px',
+            padding: '9px 8px',
             background: 'linear-gradient(180deg, #2d221b 0%, #1c1511 100%)',
             border: '1px solid #4d3a2b',
             color: '#d4c5a9',
@@ -636,7 +628,7 @@ export const Cauldron: React.FC<Props> = ({
               disabled={!isCraftable}
               style={{
                 flex: '2',
-                padding: '12px 14px',
+                padding: '10px 14px',
                 background: isCraftable 
                   ? mode === 'alquimia'
                     ? 'linear-gradient(180deg, #b8863b 0%, #855818 100%)'
@@ -646,7 +638,7 @@ export const Cauldron: React.FC<Props> = ({
                 color: isCraftable ? '#ffffff' : '#6b5847',
                 borderRadius: '8px',
                 fontFamily: 'var(--font-display)',
-                fontSize: '0.92rem',
+                fontSize: '0.88rem',
                 fontWeight: 700,
                 letterSpacing: '0.5px',
                 cursor: isCraftable ? 'pointer' : 'not-allowed',
