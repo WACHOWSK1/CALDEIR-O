@@ -29,6 +29,7 @@ interface Props {
   onSwitchShop: (type: ShopType) => void;
   playerInventory: Ingredient[];
   discoveredRecipeIds: Set<string>;
+  discoveredRecipes?: Recipe[];
   onBuyIngredient: (ingredient: Ingredient, quantity: number, totalCost: number) => void;
   onBuyRecipe: (recipe: Recipe, cost: number) => void;
   masterIngredients: Ingredient[];
@@ -43,6 +44,7 @@ export const ShopModal: React.FC<Props> = ({
   onSwitchShop,
   playerInventory,
   discoveredRecipeIds,
+  discoveredRecipes,
   onBuyIngredient,
   onBuyRecipe,
   masterIngredients,
@@ -62,6 +64,7 @@ export const ShopModal: React.FC<Props> = ({
   const [shopNotice, setShopNotice] = useState<string | null>(null);
   const [isRestocking, setIsRestocking] = useState(false);
 
+
   const normalize = (s: string) =>
     s
       .normalize('NFD')
@@ -70,6 +73,56 @@ export const ShopModal: React.FC<Props> = ({
       .replace(/[-_]/g, ' ')
       .replace(/\s+/g, ' ')
       .trim();
+
+  // Consolidated list of recipes in player's possession
+  const playerDiscoveredRecipes = useMemo(() => {
+    if (discoveredRecipes && discoveredRecipes.length > 0) {
+      return discoveredRecipes;
+    }
+    const all = [...allAlchemyRecipes, ...allGastroRecipes];
+    return all.filter(r => discoveredRecipeIds.has(r.id));
+  }, [discoveredRecipes, allAlchemyRecipes, allGastroRecipes, discoveredRecipeIds]);
+
+  // Map of normalized ingredient name -> array of recipes that use it
+  const playerRecipesByIngredient = useMemo(() => {
+    const map = new Map<string, Recipe[]>();
+    playerDiscoveredRecipes.forEach(recipe => {
+      const ingList = [
+        ...(recipe.normalizedIngredients || []),
+        ...(recipe.ingredients || [])
+      ];
+      const seen = new Set<string>();
+      ingList.forEach(rawIng => {
+        if (!rawIng) return;
+        const norm = normalize(rawIng);
+        if (norm && !seen.has(norm)) {
+          seen.add(norm);
+          const list = map.get(norm) || [];
+          list.push(recipe);
+          map.set(norm, list);
+        }
+      });
+    });
+    return map;
+  }, [playerDiscoveredRecipes]);
+
+  // Helper to retrieve player recipes for a given ingredient
+  const getIngredientPlayerRecipes = useCallback((ingredient: Ingredient): Recipe[] => {
+    const normsToCheck = [
+      ingredient.normName ? normalize(ingredient.normName) : '',
+      ingredient.name ? normalize(ingredient.name) : '',
+      ingredient.id ? normalize(ingredient.id) : ''
+    ].filter(Boolean);
+
+    for (const n of normsToCheck) {
+      const list = playerRecipesByIngredient.get(n);
+      if (list && list.length > 0) {
+        return list;
+      }
+    }
+    return [];
+  }, [playerRecipesByIngredient]);
+
 
   // Ingredient unit price mapping:
   // T$50 para comuns, T$200 para incomuns, T$400 para raros, T$1000 para lendários
@@ -659,7 +712,8 @@ export const ShopModal: React.FC<Props> = ({
             <div style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-              gap: '10px'
+              gap: '10px',
+              paddingTop: '10px'
             }}>
               {currentStock.map(itemStock => {
                 const { ingredient, stock } = itemStock;
@@ -670,12 +724,21 @@ export const ShopModal: React.FC<Props> = ({
                 const isOutOfStock = stock <= 0;
                 const playerBackpackCount = getPlayerBackpackQty(ingredient);
 
+                // Check if this ingredient is part of any recipe the player possesses
+                const matchingRecipes = getIngredientPlayerRecipes(ingredient);
+                const isPartOfPlayerRecipe = matchingRecipes.length > 0;
+
                 return (
                   <div
                     key={ingredient.id}
+                    className={isPartOfPlayerRecipe && !isOutOfStock ? 'shop-item-card-recipe-match' : ''}
                     style={{
                       background: isOutOfStock ? '#15110e' : '#1c1511',
-                      border: `1px solid ${isOutOfStock ? '#2d2118' : rarity.color + '44'}`,
+                      border: isOutOfStock
+                        ? '1px solid #2d2118'
+                        : isPartOfPlayerRecipe
+                          ? '1px solid rgba(34, 197, 94, 0.75)'
+                          : `1px solid ${rarity.color + '44'}`,
                       borderRadius: '8px',
                       padding: '10px',
                       display: 'flex',
@@ -684,19 +747,38 @@ export const ShopModal: React.FC<Props> = ({
                       gap: '8px',
                       opacity: isOutOfStock ? 0.6 : 1,
                       transition: 'border-color 0.15s, box-shadow 0.15s',
-                      position: 'relative'
+                      position: 'relative',
+                      boxShadow: isPartOfPlayerRecipe && !isOutOfStock
+                        ? '0 0 14px rgba(34, 197, 94, 0.25), inset 0 0 10px rgba(34, 197, 94, 0.08)'
+                        : 'none'
                     }}
                   >
                     {/* Top Info */}
                     <div>
                       <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '8px' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', minWidth: 0 }}>
-                          <span style={{ fontSize: '20px' }}>{getItemEmoji(ingredient.category)}</span>
+                          <span style={{ fontSize: '20px', position: 'relative', display: 'inline-flex' }}>
+                            {getItemEmoji(ingredient.category)}
+                            {isPartOfPlayerRecipe && !isOutOfStock && (
+                              <span
+                                style={{
+                                  position: 'absolute',
+                                  top: '-2px',
+                                  right: '-3px',
+                                  width: '7px',
+                                  height: '7px',
+                                  borderRadius: '50%',
+                                  background: '#22c55e',
+                                  boxShadow: '0 0 6px #22c55e'
+                                }}
+                              />
+                            )}
+                          </span>
                           <div style={{ minWidth: 0 }}>
                             <p style={{
                               fontSize: '0.84rem',
                               fontWeight: 700,
-                              color: '#ede3d1',
+                              color: isPartOfPlayerRecipe && !isOutOfStock ? '#86efac' : '#ede3d1',
                               whiteSpace: 'nowrap',
                               overflow: 'hidden',
                               textOverflow: 'ellipsis'
@@ -717,19 +799,32 @@ export const ShopModal: React.FC<Props> = ({
                           </div>
                         </div>
 
-                        {/* Stock Pill */}
-                        <span style={{
-                          fontSize: '0.66rem',
-                          fontWeight: 700,
-                          padding: '2px 6px',
-                          borderRadius: '4px',
-                          background: isOutOfStock ? 'rgba(239, 68, 68, 0.15)' : 'rgba(234, 179, 8, 0.15)',
-                          color: isOutOfStock ? '#f87171' : '#facc15',
-                          border: `1px solid ${isOutOfStock ? '#ef4444' : '#ca8a04'}`,
-                          flexShrink: 0
-                        }}>
-                          {isOutOfStock ? 'Esgotado' : `Estoque: ${stock}/5`}
-                        </span>
+                        {/* Top Right: Recipe Indicator (Visual badge without text) + Stock Pill */}
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
+                          {isPartOfPlayerRecipe && !isOutOfStock && (
+                            <div
+                              className="shop-item-recipe-indicator"
+                              title="Item de receita"
+                              aria-label="Item de receita"
+                            >
+                              <BookOpen size={13} color="#86efac" />
+                            </div>
+                          )}
+
+                          {/* Stock Pill */}
+                          <span style={{
+                            fontSize: '0.66rem',
+                            fontWeight: 700,
+                            padding: '2px 6px',
+                            borderRadius: '4px',
+                            background: isOutOfStock ? 'rgba(239, 68, 68, 0.15)' : 'rgba(234, 179, 8, 0.15)',
+                            color: isOutOfStock ? '#f87171' : '#facc15',
+                            border: `1px solid ${isOutOfStock ? '#ef4444' : '#ca8a04'}`,
+                            flexShrink: 0
+                          }}>
+                            {isOutOfStock ? 'Esgotado' : `Estoque: ${stock}/5`}
+                          </span>
+                        </div>
                       </div>
 
                       {/* Origin & Backpack Tracker */}
@@ -854,6 +949,44 @@ export const ShopModal: React.FC<Props> = ({
                         )}
                       </button>
                     </div>
+
+                    {/* Floating Tooltip Box (Appears on Hover) */}
+                    {isPartOfPlayerRecipe && (
+                      <div
+                        className="shop-recipe-floating-box"
+                        role="tooltip"
+                      >
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                          <span style={{ fontSize: '15px', filter: 'drop-shadow(0 0 5px #22c55e)' }}>📜</span>
+                          <span style={{
+                            fontFamily: 'var(--font-display)',
+                            fontSize: '0.84rem',
+                            fontWeight: 700,
+                            color: '#86efac',
+                            letterSpacing: '0.3px',
+                            whiteSpace: 'nowrap'
+                          }}>
+                            item de receita
+                          </span>
+                        </div>
+                        {matchingRecipes.length > 0 && (
+                          <div style={{
+                            marginTop: '6px',
+                            paddingTop: '5px',
+                            borderTop: '1px solid rgba(34, 197, 94, 0.3)',
+                            fontSize: '0.72rem',
+                            color: '#d4c8b8',
+                            lineHeight: 1.35,
+                            whiteSpace: 'normal',
+                            textAlign: 'left'
+                          }}>
+                            <span style={{ color: '#4ade80', fontWeight: 600 }}>Receita(s): </span>
+                            {matchingRecipes.slice(0, 3).map(r => r.name).join(', ')}
+                            {matchingRecipes.length > 3 ? ` (+${matchingRecipes.length - 3})` : ''}
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
                 );
               })}

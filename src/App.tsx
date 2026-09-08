@@ -573,6 +573,7 @@ export const App: React.FC = () => {
         onSwitchShop={type => setShopType(type)}
         playerInventory={playerInventory}
         discoveredRecipeIds={new Set(discoveredRecipes.map(r => r.id))}
+        discoveredRecipes={discoveredRecipes}
         onBuyIngredient={handleBuyIngredient}
         onBuyRecipe={handleBuyRecipe}
         masterIngredients={masterIngredients}
