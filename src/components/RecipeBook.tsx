@@ -30,7 +30,6 @@ export const RecipeBook: React.FC<Props> = ({
         borderRadius: '12px',
         padding: '16px',
         boxShadow: 'inset 0 1px 1px rgba(255,255,255,0.06), 0 8px 24px rgba(0,0,0,0.7)',
-        maxHeight: '740px',
         position: 'relative'
       }}
     >

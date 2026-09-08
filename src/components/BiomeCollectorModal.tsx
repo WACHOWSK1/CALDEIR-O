@@ -68,6 +68,7 @@ export const BiomeCollectorModal: React.FC<Props> = ({ isOpen, onClose, onAddGat
     >
       <div
         onClick={e => e.stopPropagation()}
+        className="modal-dialog-card"
         style={{
           background: 'linear-gradient(180deg, #241a13 0%, #15100d 100%)',
           border: '1px solid #6b523b',
@@ -75,6 +76,8 @@ export const BiomeCollectorModal: React.FC<Props> = ({ isOpen, onClose, onAddGat
           padding: '24px',
           maxWidth: '560px',
           width: '100%',
+          maxHeight: '90vh',
+          overflowY: 'auto',
           boxShadow: '0 10px 40px rgba(0,0,0,0.8), inset 0 1px 1px rgba(255,255,255,0.08)',
           position: 'relative'
         }}

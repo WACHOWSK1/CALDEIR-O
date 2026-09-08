@@ -16,22 +16,23 @@ export const App: React.FC = () => {
   const [cauldronState, setCauldronState] = useState<CauldronState>('idle');
   const [slottedIngredients, setSlottedIngredients] = useState<Ingredient[]>([]);
 
-  // Initialize ingredients guaranteeing all 287 items from master catalog are present
-  const [ingredients, setIngredients] = useState<Ingredient[]>(() => {
-    const masterList = initialIngredientsData as Ingredient[];
-    const savedStr = localStorage.getItem('caldeiro_ingredients_v3');
+  // Master ingredients catalog (kept in memory, hidden from players)
+  const masterIngredients = useMemo(() => initialIngredientsData as Ingredient[], []);
+
+  // Player Inventory (Only items actually possessed by the player)
+  const [playerInventory, setPlayerInventory] = useState<Ingredient[]>(() => {
+    const savedStr = localStorage.getItem('caldeiro_player_inventory_v1');
     if (savedStr) {
       try {
-        const savedMap = new Map<string, number>(JSON.parse(savedStr));
-        return masterList.map(item => ({
-          ...item,
-          quantity: savedMap.has(item.normName) ? savedMap.get(item.normName)! : item.quantity
-        }));
+        const parsed = JSON.parse(savedStr);
+        if (Array.isArray(parsed)) {
+          return parsed.filter((item: Ingredient) => item && item.quantity > 0);
+        }
       } catch (e) {
-        console.error('Erro ao restaurar inventario salvo:', e);
+        console.error('Erro ao restaurar inventario do jogador:', e);
       }
     }
-    return masterList;
+    return [];
   });
 
   const [discoveredRecipes, setDiscoveredRecipes] = useState<Recipe[]>(() => {
@@ -57,11 +58,20 @@ export const App: React.FC = () => {
                         : (r.id.startsWith('gas') || r.id.startsWith('herb_gas') || r.id.startsWith('exp_gas'))
   );
 
-  // Persistence
+  // Helper for consistent diacritics and casing normalization
+  const getNorm = (str: string) =>
+    str
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .replace(/[-_]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+  // Persistence for player's backpack
   useEffect(() => {
-    const qtyMap = ingredients.map(i => [i.normName, i.quantity]);
-    localStorage.setItem('caldeiro_ingredients_v3', JSON.stringify(qtyMap));
-  }, [ingredients]);
+    localStorage.setItem('caldeiro_player_inventory_v1', JSON.stringify(playerInventory));
+  }, [playerInventory]);
 
   useEffect(() => {
     localStorage.setItem('caldeiro_discovered', JSON.stringify(discoveredRecipes));
@@ -75,9 +85,6 @@ export const App: React.FC = () => {
     setFeedbackNotice(msg);
     setTimeout(() => setFeedbackNotice(null), 4000);
   };
-
-  // Helper for consistent diacritics and casing normalization
-  const getNorm = (str: string) => str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
 
   // Pre-emptive check: has this exact slotted combination already failed in history?
   const isKnownFailure = useMemo(() => {
@@ -94,26 +101,59 @@ export const App: React.FC = () => {
     });
   }, [slottedIngredients, experimentHistory, mode]);
 
-  // Add ingredient to cauldron (max 4)
+  // Add item to player inventory with specific quantity (accumulates if already present)
+  const handleAddToInventory = (ingredient: Ingredient, qtyToAdd: number) => {
+    setPlayerInventory(prev => {
+      const norm = ingredient.normName || getNorm(ingredient.name);
+      const existingIndex = prev.findIndex(i => (i.normName || getNorm(i.name)) === norm);
+      if (existingIndex >= 0) {
+        const next = [...prev];
+        next[existingIndex] = {
+          ...next[existingIndex],
+          quantity: next[existingIndex].quantity + qtyToAdd
+        };
+        return next;
+      } else {
+        return [{ ...ingredient, quantity: qtyToAdd }, ...prev];
+      }
+    });
+    showNotification(`+${qtyToAdd}x "${ingredient.name}" guardado(s) na sua mochila.`);
+  };
+
+  // Update or discard item from player inventory
+  const handleUpdateInventoryQuantity = (ingredientId: string, newQty: number) => {
+    setPlayerInventory(prev => {
+      if (newQty <= 0) {
+        return prev.filter(i => i.id !== ingredientId);
+      }
+      return prev.map(i => i.id === ingredientId ? { ...i, quantity: newQty } : i);
+    });
+  };
+
+  // Add ingredient from backpack to cauldron (max 4, limited to available quantity)
   const handleAddIngredient = (ingredient: Ingredient) => {
     if (slottedIngredients.length >= 4) {
       showNotification('O caldeirão já está com a capacidade máxima de 4 reagentes.');
       return;
     }
 
-    // Check stock availability
-    const countInCauldron = slottedIngredients.filter(s => s.normName === ingredient.normName).length;
-    if (countInCauldron >= ingredient.quantity) {
-      showNotification(`Você já colocou todas as suas ${ingredient.quantity} unidades de "${ingredient.name}" no caldeirão.`);
+    const norm = ingredient.normName || getNorm(ingredient.name);
+    const invItem = playerInventory.find(i => (i.normName || getNorm(i.name)) === norm);
+    const maxAvailable = invItem ? invItem.quantity : 0;
+    const countInCauldron = slottedIngredients.filter(s => (s.normName || getNorm(s.name)) === norm).length;
+
+    if (countInCauldron >= maxAvailable) {
+      showNotification(`Você já colocou todas as suas ${maxAvailable} unidade(s) de "${ingredient.name}" no caldeirão.`);
       return;
     }
 
     setSlottedIngredients(prev => [...prev, ingredient]);
+    showNotification(`"${ingredient.name}" colocado no caldeirão (${slottedIngredients.length + 1}/4).`);
     setCauldronState('receiving');
     setTimeout(() => setCauldronState('idle'), 350);
   };
 
-  // Remove single ingredient from cauldron
+  // Remove single ingredient from cauldron slot (returns to player's available stock)
   const handleRemoveIngredient = (index: number) => {
     setSlottedIngredients(prev => prev.filter((_, i) => i !== index));
     setCauldronState('idle');
@@ -125,7 +165,7 @@ export const App: React.FC = () => {
     setCauldronState('idle');
   };
 
-  // Check and craft recipe
+  // Check and craft recipe - Consumes items from player's inventory!
   const handleCombine = () => {
     const minRequired = mode === 'alquimia' ? 2 : 1;
     if (slottedIngredients.length < minRequired) return;
@@ -147,14 +187,19 @@ export const App: React.FC = () => {
       const now = new Date();
       const timeStr = `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
 
-      // Deduct consumed ingredients from stock
-      setIngredients(prev => prev.map(item => {
-        const used = slottedIngredients.filter(s => (s.normName || getNorm(s.name)) === (item.normName || getNorm(item.name))).length;
-        if (used > 0) {
-          return { ...item, quantity: Math.max(0, item.quantity - used) };
-        }
-        return item;
-      }));
+      // Deduct consumed ingredients from player inventory (removes item if quantity hits 0)
+      setPlayerInventory(prev => {
+        return prev
+          .map(item => {
+            const norm = item.normName || getNorm(item.name);
+            const used = slottedIngredients.filter(s => (s.normName || getNorm(s.name)) === norm).length;
+            if (used > 0) {
+              return { ...item, quantity: Math.max(0, item.quantity - used) };
+            }
+            return item;
+          })
+          .filter(item => item.quantity > 0);
+      });
 
       if (matched) {
         // Success
@@ -187,8 +232,8 @@ export const App: React.FC = () => {
         const failureMsg = mode === 'cozinha' && slottedIngredients.length === 1
           ? 'Este item é um reagente não-comestível e queimou na panela sem produzir alimento. Fórmulas compostas ou alquimia são necessárias.'
           : mode === 'cozinha'
-            ? 'Os ingredientes não harmonizaram e a receita desandou. A tentativa foi registrada no histórico.'
-            : 'A mistura ferveu e virou cinzas instáveis. A combinação foi registrada em seu histórico para evitar repetições.';
+            ? 'Os ingredientes não harmonizaram e a receita desandou. Os reagentes foram consumidos.'
+            : 'A mistura ferveu e virou cinzas instáveis. Os reagentes foram consumidos e a tentativa foi anotada.';
         showNotification(failureMsg);
 
         setExperimentHistory(prev => [
@@ -207,46 +252,46 @@ export const App: React.FC = () => {
     }, 650);
   };
 
-  // Autofill recipe from Grimoire
+  // Autofill recipe from Grimoire (Only allows if player actually has the ingredients in their backpack!)
   const handleAutoFillRecipe = (recipe: Recipe) => {
-    // Map recipe ingredients to available items
-    const needed = recipe.ingredients.map(ingName => {
-      const norm = ingName.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
-      const found = ingredients.find(i => i.normName === norm || i.name.toLowerCase().trim() === norm);
-      if (found) return found;
+    const missing: string[] = [];
+    const neededItems: Ingredient[] = [];
+    const tempUsed = new Map<string, number>();
 
-      const masterItem = (initialIngredientsData as Ingredient[]).find(i => i.normName === norm);
-      if (masterItem) return { ...masterItem, quantity: 1 };
+    for (const ingName of recipe.ingredients) {
+      const norm = getNorm(ingName);
+      const invItem = playerInventory.find(i => (i.normName || getNorm(i.name)) === norm);
+      const currentUsed = tempUsed.get(norm) || 0;
 
-      return {
-        id: `temp_${Math.random()}`,
-        name: ingName,
-        normName: norm,
-        category: 'Reagente',
-        rarity: 'comum' as const,
-        quantity: 1,
-        description: 'Reagente de fórmula arquivada.',
-        resourceType: 'Ingrediente' as const,
-        isEdible: false
-      };
-    });
+      if (!invItem || invItem.quantity <= currentUsed) {
+        missing.push(ingName);
+      } else {
+        tempUsed.set(norm, currentUsed + 1);
+        neededItems.push(invItem);
+      }
+    }
 
-    setSlottedIngredients(needed.slice(0, 4));
+    if (missing.length > 0) {
+      showNotification(`Você não possui todos os reagentes necessários na mochila. Falta: ${missing.join(', ')}.`);
+      return;
+    }
+
+    setSlottedIngredients(neededItems.slice(0, 4));
     setCauldronState('idle');
-    showNotification(`Reagentes de "${recipe.name}" colocados no caldeirão.`);
+    showNotification(`Reagentes de "${recipe.name}" preparados no caldeirão.`);
   };
 
-  // Add items gathered from Biome Collector
+  // Add items gathered from Biome Collector directly into player's backpack
   const handleAddGatheredItems = (itemNames: string[]) => {
-    setIngredients(prev => {
+    setPlayerInventory(prev => {
       const next = [...prev];
       itemNames.forEach(name => {
-        const norm = name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
-        const existing = next.find(i => i.normName === norm);
+        const norm = getNorm(name);
+        const existing = next.find(i => (i.normName || getNorm(i.name)) === norm);
         if (existing) {
           existing.quantity += 1;
         } else {
-          const masterItem = (initialIngredientsData as Ingredient[]).find(i => i.normName === norm);
+          const masterItem = masterIngredients.find(i => (i.normName || getNorm(i.name)) === norm);
           if (masterItem) {
             next.unshift({ ...masterItem, quantity: 1 });
           } else {
@@ -267,7 +312,7 @@ export const App: React.FC = () => {
       return next;
     });
 
-    showNotification(`${itemNames.length} itens coletados guardados na prateleira.`);
+    showNotification(`${itemNames.length} itens coletados guardados na sua mochila.`);
   };
 
   return (
@@ -307,13 +352,13 @@ export const App: React.FC = () => {
         </div>
       )}
 
-      {/* Mobile Surface Switcher (On Demand Navigation) */}
+      {/* Mobile Surface Switcher */}
       <div className="mobile-surface-tabs">
         <button
           className={mobileTab === 'prateleira' ? 'active' : ''}
           onClick={() => setMobileTab('prateleira')}
         >
-          🎒 Prateleira ({ingredients.length})
+          🎒 Mochila ({playerInventory.length})
         </button>
         <button
           className={mobileTab === 'caldeirao' ? 'active' : ''}
@@ -331,11 +376,15 @@ export const App: React.FC = () => {
 
       {/* Main 3-Flank Physical Workbench */}
       <main className="workbench-main">
-        {/* Left Flank: Apothecary Shelves */}
+        {/* Left Flank: Apothecary Backpack & Hidden Requisition */}
         <div className={`workbench-panel panel-shelf ${mobileTab === 'prateleira' ? 'mobile-active' : ''}`}>
           <IngredientShelf
-            ingredients={ingredients}
-            onAddIngredient={handleAddIngredient}
+            playerInventory={playerInventory}
+            masterIngredients={masterIngredients}
+            slottedIngredients={slottedIngredients}
+            onAddToInventory={handleAddToInventory}
+            onUpdateInventoryQuantity={handleUpdateInventoryQuantity}
+            onAddIngredientToCauldron={handleAddIngredient}
             disabledSlots={slottedIngredients.length >= 4}
           />
         </div>
@@ -404,7 +453,7 @@ export const App: React.FC = () => {
           }}
         >
           <span className="nav-icon-box">🎒</span>
-          <span>Prateleira</span>
+          <span>Mochila</span>
         </button>
 
         <button

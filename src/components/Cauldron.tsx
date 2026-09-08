@@ -103,6 +103,19 @@ export const Cauldron: React.FC<Props> = ({
 
   const liquid = getLiquidTheme();
 
+  const getItemEmoji = (cat: string) => {
+    if (cat.includes('Criatura') || cat.includes('Osso')) return '🦴';
+    if (cat.includes('Erva') || cat.includes('Raiz')) return '🌿';
+    if (cat.includes('Flor')) return '🌸';
+    if (cat.includes('Fungo') || cat.includes('Cogumelo')) return '🍄';
+    if (cat.includes('Mineral') || cat.includes('Cristal')) return '💎';
+    if (cat.includes('Líquido') || cat.includes('Óleo')) return '🧪';
+    if (cat.includes('Essência')) return '✨';
+    if (cat.includes('Alimento') || cat.includes('Proteína')) return '🥩';
+    if (cat.includes('Tempero') || cat.includes('Pimenta')) return '🌶️';
+    return '📦';
+  };
+
   return (
     <section 
       aria-label="Bancada Central e Caldeirão"
@@ -114,10 +127,10 @@ export const Cauldron: React.FC<Props> = ({
         background: 'radial-gradient(circle at 50% 50%, #221a15 0%, #14100d 85%)',
         border: '1px solid #3d2c20',
         borderRadius: '12px',
-        padding: '20px 16px 16px',
+        padding: '16px 14px 14px',
         boxShadow: 'inset 0 0 60px rgba(0,0,0,0.8), 0 8px 24px rgba(0,0,0,0.6)',
         position: 'relative',
-        minHeight: '620px'
+        minHeight: '520px'
       }}
     >
       {/* Tabletop Atmosphere Ambient Indicators */}
@@ -538,12 +551,7 @@ export const Cauldron: React.FC<Props> = ({
                       <X size={13} />
                     </button>
                     <span style={{ fontSize: '20px' }}>
-                      {item.category.includes('Criatura') ? '🦴' :
-                       item.category.includes('Erva') ? '🌿' :
-                       item.category.includes('Fungo') ? '🍄' :
-                       item.category.includes('Mineral') ? '💎' :
-                       item.category.includes('Líquido') ? '🧪' :
-                       item.category.includes('Alimento') ? '🥩' : '✨'}
+                      {getItemEmoji(item.category)}
                     </span>
                     <span style={{
                       fontSize: '0.68rem',

@@ -94,6 +94,7 @@ export const RecipeChestModal: React.FC<Props> = ({
     >
       <div
         onClick={e => e.stopPropagation()}
+        className="modal-dialog-card"
         style={{
           background: 'linear-gradient(180deg, #2b1f16 0%, #17110d 100%)',
           border: '2px solid #c59341',
@@ -101,6 +102,8 @@ export const RecipeChestModal: React.FC<Props> = ({
           padding: '24px 22px',
           maxWidth: '540px',
           width: '100%',
+          maxHeight: '90vh',
+          overflowY: 'auto',
           boxShadow: '0 10px 40px rgba(0,0,0,0.8), inset 0 0 20px rgba(197, 147, 65, 0.15)',
           position: 'relative',
           textAlign: 'center'

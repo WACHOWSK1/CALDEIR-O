@@ -44,6 +44,7 @@ export const DiscoveryModal: React.FC<Props> = ({ recipe, onClose }) => {
     >
       <div 
         onClick={e => e.stopPropagation()}
+        className="modal-dialog-card"
         style={{
           background: 'linear-gradient(180deg, #2b1f16 0%, #17110d 100%)',
           border: '2px solid #eab308',
@@ -51,6 +52,8 @@ export const DiscoveryModal: React.FC<Props> = ({ recipe, onClose }) => {
           padding: '28px 24px',
           maxWidth: '480px',
           width: '100%',
+          maxHeight: '90vh',
+          overflowY: 'auto',
           boxShadow: '0 0 50px rgba(234, 179, 8, 0.5), inset 0 0 30px rgba(0,0,0,0.8)',
           textAlign: 'center',
           position: 'relative',
