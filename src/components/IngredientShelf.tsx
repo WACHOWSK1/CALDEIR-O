@@ -64,11 +64,16 @@ export const IngredientShelf: React.FC<Props> = ({
     e.dataTransfer.effectAllowed = 'copy';
   };
 
-  // Filter player's own inventory
+  // Filter and sort player's own inventory alphabetically
   const filteredInventory = useMemo(() => {
-    if (!inventoryFilter.trim()) return playerInventory;
-    const term = normalize(inventoryFilter);
-    return playerInventory.filter(item => normalize(item.name).includes(term));
+    let list = playerInventory;
+    if (inventoryFilter.trim()) {
+      const term = normalize(inventoryFilter);
+      list = list.filter(item => normalize(item.name).includes(term));
+    }
+    return [...list].sort((a, b) =>
+      a.name.localeCompare(b.name, 'pt-BR', { sensitivity: 'base' })
+    );
   }, [playerInventory, inventoryFilter]);
 
   const totalInventoryUnits = useMemo(() => {

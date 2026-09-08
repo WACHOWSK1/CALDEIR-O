@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Recipe, ExperimentLog, CraftMode } from '../types';
-import { BookOpen, History, Sparkles, AlertTriangle, ArrowRight } from 'lucide-react';
+import { BookOpen, History, Sparkles, AlertTriangle, ArrowRight, Search, X } from 'lucide-react';
 
 interface Props {
   mode: CraftMode;
@@ -18,6 +18,33 @@ export const RecipeBook: React.FC<Props> = ({
   onAutoFillRecipe
 }) => {
   const [activeTab, setActiveTab] = useState<'receitas' | 'historico'>('receitas');
+  const [recipeFilter, setRecipeFilter] = useState('');
+
+  const normalize = (s: string) =>
+    s
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .replace(/[-_]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+  // Filter and sort discovered recipes (pergaminhos) alphabetically
+  const sortedDiscoveredRecipes = useMemo(() => {
+    let list = discoveredRecipes;
+    if (recipeFilter.trim()) {
+      const term = normalize(recipeFilter);
+      list = list.filter(r =>
+        normalize(r.name).includes(term) ||
+        normalize(r.effect).includes(term) ||
+        normalize(r.category).includes(term) ||
+        r.ingredients.some(ing => normalize(ing).includes(term))
+      );
+    }
+    return [...list].sort((a, b) =>
+      a.name.localeCompare(b.name, 'pt-BR', { sensitivity: 'base' })
+    );
+  }, [discoveredRecipes, recipeFilter]);
 
   return (
     <aside 
@@ -60,7 +87,7 @@ export const RecipeBook: React.FC<Props> = ({
       <div style={{
         display: 'flex',
         borderBottom: '1px solid #3d2d21',
-        marginBottom: '12px',
+        marginBottom: '10px',
         gap: '4px'
       }}>
         <button
@@ -112,6 +139,55 @@ export const RecipeBook: React.FC<Props> = ({
         </button>
       </div>
 
+      {/* Search Input for Scrolls / Recipes (if player has discovered recipes) */}
+      {activeTab === 'receitas' && discoveredRecipes.length > 2 && (
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          background: '#14100d',
+          border: '1px solid #3d2c20',
+          borderRadius: '5px',
+          padding: '4px 8px',
+          marginBottom: '10px',
+          gap: '6px'
+        }}>
+          <Search size={13} color="#8c7a68" />
+          <input
+            type="text"
+            value={recipeFilter}
+            onChange={e => setRecipeFilter(e.target.value)}
+            placeholder="Filtrar pergaminhos / receitas..."
+            style={{
+              flex: 1,
+              background: 'transparent',
+              border: 'none',
+              color: '#f5edd6',
+              fontSize: '0.78rem',
+              fontFamily: 'var(--font-ui)',
+              outline: 'none'
+            }}
+          />
+          {recipeFilter && (
+            <button
+              type="button"
+              onClick={() => setRecipeFilter('')}
+              style={{
+                background: 'transparent',
+                border: 'none',
+                color: '#8c7a68',
+                cursor: 'pointer',
+                padding: '2px',
+                display: 'flex',
+                alignItems: 'center'
+              }}
+              title="Limpar busca"
+            >
+              <X size={12} />
+            </button>
+          )}
+        </div>
+      )}
+
       {/* Content Area */}
       <div 
         tabIndex={0}
@@ -127,7 +203,8 @@ export const RecipeBook: React.FC<Props> = ({
       >
         {activeTab === 'receitas' ? (
           discoveredRecipes.length > 0 ? (
-            discoveredRecipes.map(recipe => (
+            sortedDiscoveredRecipes.length > 0 ? (
+              sortedDiscoveredRecipes.map(recipe => (
               <div
                 key={recipe.id}
                 style={{
@@ -221,6 +298,37 @@ export const RecipeBook: React.FC<Props> = ({
                 </button>
               </div>
             ))
+            ) : (
+              <div style={{
+                textAlign: 'center',
+                padding: '40px 16px',
+                color: '#8a7866'
+              }}>
+                <Search size={22} color="#c59341" style={{ marginBottom: '8px' }} />
+                <p style={{ fontFamily: 'var(--font-display)', fontSize: '0.88rem', color: '#f5edd6', marginBottom: '4px' }}>
+                  Nenhum pergaminho encontrado
+                </p>
+                <p style={{ fontSize: '0.74rem', color: '#a89885', marginBottom: '10px' }}>
+                  Nenhuma receita bate com o termo "{recipeFilter}".
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setRecipeFilter('')}
+                  style={{
+                    background: '#2b2018',
+                    border: '1px solid #4a382a',
+                    color: '#c59341',
+                    borderRadius: '4px',
+                    padding: '4px 10px',
+                    fontSize: '0.74rem',
+                    cursor: 'pointer',
+                    fontFamily: 'var(--font-ui)'
+                  }}
+                >
+                  Limpar busca
+                </button>
+              </div>
+            )
           ) : (
             <div style={{
               textAlign: 'center',

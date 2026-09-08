@@ -29,7 +29,9 @@ export const App: React.FC = () => {
       try {
         const parsed = JSON.parse(savedStr);
         if (Array.isArray(parsed)) {
-          return parsed.filter((item: Ingredient) => item && item.quantity > 0);
+          return parsed
+            .filter((item: Ingredient) => item && item.quantity > 0)
+            .sort((a, b) => a.name.localeCompare(b.name, 'pt-BR', { sensitivity: 'base' }));
         }
       } catch (e) {
         console.error('Erro ao restaurar inventario do jogador:', e);
@@ -40,7 +42,17 @@ export const App: React.FC = () => {
 
   const [discoveredRecipes, setDiscoveredRecipes] = useState<Recipe[]>(() => {
     const saved = localStorage.getItem('caldeiro_discovered');
-    return saved ? JSON.parse(saved) : [];
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) {
+          return parsed.sort((a, b) => a.name.localeCompare(b.name, 'pt-BR', { sensitivity: 'base' }));
+        }
+      } catch (e) {
+        console.error('Erro ao restaurar receitas descobertas:', e);
+      }
+    }
+    return [];
   });
 
   const [experimentHistory, setExperimentHistory] = useState<ExperimentLog[]>(() => {
@@ -114,7 +126,7 @@ export const App: React.FC = () => {
   // Buy recipe handler from shop (adds to grimoire and notifies)
   const handleBuyRecipe = (recipe: Recipe, cost: number) => {
     if (!discoveredRecipes.some(r => r.id === recipe.id)) {
-      setDiscoveredRecipes(prev => [recipe, ...prev]);
+      setDiscoveredRecipes(prev => [...prev, recipe].sort((a, b) => a.name.localeCompare(b.name, 'pt-BR', { sensitivity: 'base' })));
     }
     showNotification(`Pergaminho de "${recipe.name}" aprendido por T$ ${cost} e anotado no Grimório!`);
   };
@@ -241,7 +253,7 @@ export const App: React.FC = () => {
 
         // Record into grimoire if new
         if (!discoveredRecipes.some(r => r.id === matched.id)) {
-          setDiscoveredRecipes(prev => [matched, ...prev]);
+          setDiscoveredRecipes(prev => [...prev, matched].sort((a, b) => a.name.localeCompare(b.name, 'pt-BR', { sensitivity: 'base' })));
         }
 
         // Add to history
@@ -342,7 +354,7 @@ export const App: React.FC = () => {
           }
         }
       });
-      return next;
+      return next.sort((a, b) => a.name.localeCompare(b.name, 'pt-BR', { sensitivity: 'base' }));
     });
 
     showNotification(`${itemNames.length} itens coletados guardados na sua mochila.`);
@@ -354,8 +366,14 @@ export const App: React.FC = () => {
     discoveredRecipes: Recipe[];
     experimentHistory: ExperimentLog[];
   }) => {
-    setPlayerInventory(backup.playerInventory);
-    setDiscoveredRecipes(backup.discoveredRecipes);
+    const sortedInv = [...backup.playerInventory].sort((a, b) =>
+      a.name.localeCompare(b.name, 'pt-BR', { sensitivity: 'base' })
+    );
+    const sortedRec = [...backup.discoveredRecipes].sort((a, b) =>
+      a.name.localeCompare(b.name, 'pt-BR', { sensitivity: 'base' })
+    );
+    setPlayerInventory(sortedInv);
+    setDiscoveredRecipes(sortedRec);
     setExperimentHistory(backup.experimentHistory);
     showNotification('Progresso restaurado com sucesso a partir do backup!');
   };
@@ -541,7 +559,7 @@ export const App: React.FC = () => {
         discoveredRecipeIds={new Set(discoveredRecipes.map(r => r.id))}
         onUnlockRecipe={recipe => {
           if (!discoveredRecipes.some(r => r.id === recipe.id)) {
-            setDiscoveredRecipes(prev => [recipe, ...prev]);
+            setDiscoveredRecipes(prev => [...prev, recipe].sort((a, b) => a.name.localeCompare(b.name, 'pt-BR', { sensitivity: 'base' })));
           }
           showNotification(`Pergaminho de "${recipe.name}" aprendido com sucesso e registrado no Grimório!`);
         }}

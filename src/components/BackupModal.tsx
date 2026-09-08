@@ -69,8 +69,8 @@ export const BackupModal: React.FC<Props> = ({
       version: 1,
       app: 'CALDEIRAO_RPG_TORMENTA20',
       exportedAt: new Date().toISOString(),
-      playerInventory,
-      discoveredRecipes,
+      playerInventory: [...playerInventory].sort((a, b) => a.name.localeCompare(b.name, 'pt-BR', { sensitivity: 'base' })),
+      discoveredRecipes: [...discoveredRecipes].sort((a, b) => a.name.localeCompare(b.name, 'pt-BR', { sensitivity: 'base' })),
       experimentHistory,
       shopKitchen,
       shopAlchemy
